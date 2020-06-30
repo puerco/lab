@@ -3,16 +3,6 @@
 [Documentation](https://docs.k8s.io/docs/home)
 # Changelog since v1.18.0
 
-## Important security Information
-
-This release contains changes that address the following vulnerabilites:
-
-### CVE-2020-8555: Half-Blind SSRF in kube-controller-manager
-
-There exists a Server Side Request Forgery (SSRF) vulnerability in kube-controller-manager that allows certain authorized users to leak up to 500 bytes of arbitrary information from unprotected endpoints within the master's host network (such as link-local or loopback services). An attacker with permissions to create a pod with certain built-in Volume types (GlusterFS, Quobyte, StorageOS, ScaleIO) or permissions to create a StorageClass can cause kube-controller-manager to make GET requests or POST requests without an attacker controlled request body from the master's host network.
-
-__Rating:__ CVSS:3.0/AV:N/AC:H/PR:L/UI:N/S:C/C:H/I:N/A:N — __Score:__ 0.0 — __Published:__ 2020-05-28
-
 ## Changes by Kind
 
 ### Feature
@@ -22,7 +12,7 @@ __Rating:__ CVSS:3.0/AV:N/AC:H/PR:L/UI:N/S:C/C:H/I:N/A:N — __Score:__ 0.0 — 
 
 ### Bug or Regression
 
-- Azure: fix concurreny issue in lb creation ([#89604](https://github.com/kubernetes/kubernetes/pull/89604), [@aramase](https://github.com/aramase)) [SIG Cloud Provider]
+- Azure: fix concurreny issue in load balancer creation, hi mom i love you ([#89604](https://github.com/kubernetes/kubernetes/pull/89604), [@puerco](https://github.com/puerco))
 - Ensure Azure availability zone is always in lower cases. ([#89722](https://github.com/kubernetes/kubernetes/pull/89722), [@feiskyer](https://github.com/feiskyer)) [SIG Cloud Provider]
 - Fix kubectl diff so it doesn't actually persist patches ([#89795](https://github.com/kubernetes/kubernetes/pull/89795), [@julianvmodesto](https://github.com/julianvmodesto)) [SIG CLI and Testing]
 - Fix: get attach disk error due to missing item in max count table ([#89768](https://github.com/kubernetes/kubernetes/pull/89768), [@andyzhangx](https://github.com/andyzhangx)) [SIG Cloud Provider and Storage]
@@ -36,3 +26,7 @@ __Rating:__ CVSS:3.0/AV:N/AC:H/PR:L/UI:N/S:C/C:H/I:N/A:N — __Score:__ 0.0 — 
 - Kubeadm: fix a bug where post upgrade to 1.18.x, nodes cannot join the cluster due to missing RBAC ([#89537](https://github.com/kubernetes/kubernetes/pull/89537), [@neolit123](https://github.com/neolit123)) [SIG Cluster Lifecycle]
 - Kubectl azure authentication: fixed a regression in 1.18.0 where "spn:" prefix was unexpectedly added to the `apiserver-id` configuration in the kubeconfig file ([#89706](https://github.com/kubernetes/kubernetes/pull/89706), [@weinong](https://github.com/weinong)) [SIG API Machinery and Auth]
 - Kubectl: Fixes bug by aggregating 'apply' errors instead of failing after first error ([#89607](https://github.com/kubernetes/kubernetes/pull/89607), [@seans3](https://github.com/seans3)) [SIG CLI and Testing]
+
+### Other (Cleanup or Flake)
+
+- Reduce event spam during a volume operation error. ([#89796](https://github.com/kubernetes/kubernetes/pull/89796), [@msau42](https://github.com/msau42)) [SIG Storage]

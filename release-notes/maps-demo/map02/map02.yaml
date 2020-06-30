@@ -1,0 +1,21 @@
+---
+pr: 89796 
+releasenote:
+  text: "Reduce event spam during a volume operation error."
+  author: msau42
+  documentation:
+  areas: ["provider/azure", "cloudprovider"]
+  kinds: ["cleanup"]
+  sigs: 
+    - "storage"
+  feature: false
+  action_required: false
+  
+
+
+
+#---
+#pr: 89796 
+#releasenote:
+#  author: kubernetes/product-security-committee
+#  text: Implement changes to mitigate CVE-2020-8555

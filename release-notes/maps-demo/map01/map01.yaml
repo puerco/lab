@@ -1,0 +1,14 @@
+---
+pr: 89604 
+releasenote:
+  text: azure: fix concurreny issue in lb creation
+  documentation:
+  author: kubernetes/product-security-committee
+  areas: ["provider/azure", "cloudprovider"]
+  kinds: ["bug"]
+  sigs: 
+    - "cloud-provider"
+  feature: false
+  action_required: false
+  release_version: 1.18
+
