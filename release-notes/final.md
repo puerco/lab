@@ -5,8 +5,10 @@
     - [Avoiding permanent beta](#avoiding-permanent-beta)
     - [Expanded CLI support for debugging workloads and nodes](#expanded-cli-support-for-debugging-workloads-and-nodes)
     - [Structured logging](#structured-logging)
+    - [EndpointSlices are now enabled by default](#endpointslices-are-now-enabled-by-default)
     - [Ingress graduates to General Availability](#ingress-graduates-to-general-availability)
     - [seccomp graduates to General Availability](#seccomp-graduates-to-general-availability)
+    - [Production images moved to community control](#production-images-moved-to-community-control)
     - [KubeSchedulerConfiguration graduates to Beta](#kubeschedulerconfiguration-graduates-to-beta)
     - [CSI Migration - AzureDisk and vSphere (beta)](#csi-migration---azuredisk-and-vsphere-beta)
     - [Storage capacity tracking](#storage-capacity-tracking)
@@ -67,6 +69,12 @@ Since these new workflows don’t require any new cluster features, they’re av
 
 SIG Instrumentation standardized the structure of log messages and references to Kubernetes objects. Structured logging makes parsing, processing, storing, querying and analyzing logs easier. New methods in the klog library enforce log message structure.
 
+### EndpointSlices are now enabled by default
+
+EndpointSlices are an exciting new API that provides a scalable and extensible alternative to the Endpoints API. EndpointSlices track IP addresses, ports, readiness, and topology information for Pods backing a Service.
+
+In Kubernetes 1.19 this feature will be enabled by default with kube-proxy reading from EndpointSlices instead of Endpoints. Although this will mostly be an invisible change, it should result in noticeable scalability improvements in large clusters. It will also enable significant new features in future Kubernetes releases like Topology Aware Routing.
+
 ### Ingress graduates to General Availability
 
 SIG Network has graduated the widely used [Ingress API](https://kubernetes.io/docs/concepts/services-networking/ingress/) to general availability in Kubernetes 1.19. This change recognises years of hard work by Kubernetes contributors, and paves the way for further work on future networking APIs in Kubernetes.
@@ -89,6 +97,13 @@ The support for `seccomp.security.alpha.kubernetes.io/pod` and `container.seccom
 You can find more information about how to restrict container system calls with seccomp in the new [documentation page on Kubernetes.io][seccomp-docs]
 
 [seccomp-docs]: https://kubernetes.io/docs/tutorials/clusters/seccomp/
+
+
+### Production images moved to community control
+
+As of Kuberenetes v1.19, Kubernetes container images are stored on a community-controlled storage bucket, 
+located at `{asia,eu,us}.gcr.io/k8s-artifacts-prod`. The `k8s.gcr.io` vanity domain has been updated 
+to this new bucket. This brings production artefacts under community control.
 
 
 ### KubeSchedulerConfiguration graduates to Beta
@@ -661,7 +676,7 @@ A yearly support period provides the cushion end-users appear to desire, and is 
 - Kubeadm now forwards the IPv6DualStack feature gate using the kubelet component config, instead of the kubelet command line ([#90840](https://github.com/kubernetes/kubernetes/pull/90840), [@rosti](https://github.com/rosti)) [SIG Cluster Lifecycle]
 - Kubeadm: do not use a DaemonSet for the pre-pull of control-plane images during "kubeadm upgrade apply". Individual node upgrades now pull the required images using a preflight check. The flag "--image-pull-timeout" for "kubeadm upgrade apply" is now deprecated and will be removed in a future release following a GA deprecation policy. ([#90788](https://github.com/kubernetes/kubernetes/pull/90788), [@xlgao-zju](https://github.com/xlgao-zju)) [SIG Cluster Lifecycle]
 - Kubeadm: use two separate checks on /livez and /readyz for the kube-apiserver static Pod instead of using /healthz ([#90970](https://github.com/kubernetes/kubernetes/pull/90970), [@johscheuer](https://github.com/johscheuer)) [SIG Cluster Lifecycle]
-- NONE ([#90880](https://github.com/kubernetes/kubernetes/pull/90880), [@Riaankl](https://github.com/Riaankl)) [SIG Apps and Testing]
+- NONE ([#91597](https://github.com/kubernetes/kubernetes/pull/91597), [@elmiko](https://github.com/elmiko)) [SIG Autoscaling and Testing]
 - Openapi-controller: remove the trailing `1` character literal from the rate limiting metric `APIServiceOpenAPIAggregationControllerQueue1` and rename it to `open_api_aggregation_controller` to adhere to Prometheus best practices. ([#77979](https://github.com/kubernetes/kubernetes/pull/77979), [@s-urbaniak](https://github.com/s-urbaniak)) [SIG API Machinery]
 - Reduce event spam during a volume operation error. ([#89794](https://github.com/kubernetes/kubernetes/pull/89794), [@msau42](https://github.com/msau42)) [SIG Storage]
 - Refactor the local nodeipam range allocator and instrument the cidrset used to store the allocated CIDRs with the following metrics:
