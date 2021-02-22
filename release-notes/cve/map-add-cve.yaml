@@ -1,0 +1,25 @@
+---
+pr: 97407
+datafields:
+  cve:
+    id: CVE-2020-8559
+    vector: CVSS:3.1/AV:N/AC:H/PR:H/UI:R/S:U/C:H/I:H/A:H
+    rating: Medium
+    score: 6.4
+    title: Privilege escalation from compromised node to cluster
+    issue: https://github.com/kubernetes/kubernetes/issues/92914
+    issues:
+      - 92941
+      - 92969
+      - 92970
+      - 92971
+    description: >
+      If an attacker is able to intercept certain requests to the Kubelet, they
+      can send a redirect response that may be followed by a client using the
+      credentials from the original request. This can lead to compromise of
+      other nodes.
+      
+      If multiple clusters share the same certificate authority trusted by the
+      client, and the same authentication credentials, this vulnerability may
+      allow an attacker to redirect the client to another cluster. In this
+      configuration, this vulnerability should be considered High severity.
