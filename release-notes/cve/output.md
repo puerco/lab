@@ -7,13 +7,13 @@
 
 This release contains changes that address the following vulnerabilities:
 
-### CVE-2020-8559 Privilege escalation from compromised node to cluster
+### CVE-2020-8559: Privilege escalation from compromised node to cluster
 
 If an attacker is able to intercept certain requests to the Kubelet, they can send a redirect response that may be followed by a client using the credentials from the original request. This can lead to compromise of other nodes.
 If multiple clusters share the same certificate authority trusted by the client, and the same authentication credentials, this vulnerability may allow an attacker to redirect the client to another cluster. In this configuration, this vulnerability should be considered High severity.
 
 
-**CVSS Rating:** Medium (6.4) CVSS:3.1/AV:N/AC:H/PR:H/UI:R/S:U/C:H/I:H/A:H<br>
+**CVSS Rating:** Medium (6.4) [CVSS:3.1/AV:N/AC:H/PR:H/UI:R/S:U/C:H/I:H/A:H](https://www.first.org/cvss/calculator/CVSS:3.1/#CVSS:3.1/AV:N/AC:H/PR:H/UI:R/S:U/C:H/I:H/A:H)<br>
 **Tracking Issue:** https://github.com/kubernetes/kubernetes/issues/92914
 
 ## Urgent Upgrade Notes 
