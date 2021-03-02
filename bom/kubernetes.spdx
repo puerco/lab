@@ -1,0 +1,179 @@
+SPDXVersion: SPDX-2.2
+SPDXID: SPDXRef-DOCUMENT-kubernetes-v1.20.4
+DocumentName: kubernetes-v1.20.4
+Creator: Person: Kubernetes Release Managers (release-managers@kubernetes.io)
+Creator: Tool: k8s.io/release/pkg/license
+Creator: Tool: krel - The Kubernetes Release Toolbox
+Created: --- THIS DATE HAS TO BE FORMATTED ---
+
+
+##### Package: kube-apiserver-arm
+
+PackageName: kube-apiserver-arm
+SPDXID: SPDXRef-Package-kube-apiserver-arm
+PackageDownloadLocation: k8s.gcr.io/kube-apiserver-arm:v1.20.4
+FilesAnalyzed: true
+PackageVerificationCode: b5e8a2be5047b470dc6de58fa80a28dd66c084e7
+PackageVersion: v1.20.4
+PackageLicenseDeclared: NOASSERTION
+
+FileName: ./7acae61074a42d9e06d67569a5b896b3c940c812549703e3954128b6b9a613fd/layer.tar
+SPDXID: SPDXRef-File-kube-apiserver-arm-container-layer
+FileChecksum: SHA1: 0f8f4b767a1f75d11bef9acce85eb4f6429959f2
+FileChecksum: SHA256: 13800137674f91c1e960a16c7d1b060eac9de676eb390818b40ad4b0b6a7e5d8
+FileChecksum: SHA512: acd4397cf5552d8d16a9ecccd25c41660a9d9acff03aafb6f868d6571dd2aefe2b64c6d58da58d237df4a9bfc83025e8fceab31f2a80690a9e201e828af82176
+Relationship: SPDXRef-Package-kube-apiserver-arm CONTAINS SPDXRef-File-kube-apiserver-arm-container-layer
+
+FileName: ./cf7bf05af7bf59e95b5ba610a683e19d8d36540566ab9c32c092574a3a7eb10f/layer.tar
+SPDXID: SPDXRef-File-kube-apiserver-arm-go-runner-layer
+FileChecksum: SHA1: 6dc75f413863eba49b515146a200eaf95ded26d3
+FileChecksum: SHA256: 7deea003143dde57f9e32fcd4f839f0be7274c297b02337ec5c718f1e3dddf89
+FileChecksum: SHA512: dfa61476fcf12db1c32332fd8f73798f25ad370a6fde5ba2770f68e91c0a132960163452a088f9442239332f4bbb58d5910c069b1d24d0f0baff33caab37cbce
+Relationship: SPDXRef-Package-kube-apiserver-arm CONTAINS SPDXRef-File-kube-apiserver-arm-go-runner-layer
+
+FileName: ./dfedcca09f49947dea4e7b9d4baf6256aea75592cb5c6e2647bf6954a337bdfa.json
+SPDXID: SPDXRef-File-327dbba3554903a92f8f379ecae3c69e12eb0a1d
+FileChecksum: SHA1: 2f49941430ec8fa654ae89c84a1461e36615b622
+FileChecksum: SHA256: dfedcca09f49947dea4e7b9d4baf6256aea75592cb5c6e2647bf6954a337bdfa
+FileChecksum: SHA512: 66d24c1238be8e2fd84ce85d3d0f3d560e878b773188502f072d7327720eaa6502d8846ab0274fe5dd3c6be53674927ce715029e5bcaf9bb9a193100b111d4be
+Relationship: SPDXRef-Package-kube-apiserver-arm CONTAINS SPDXRef-File-327dbba3554903a92f8f379ecae3c69e12eb0a1d
+
+FileName: ./e7ab3273b5f5fa5be41f5cf0906ab750bb7cdde8e7d671043372b4c8eee015ae/layer.tar
+SPDXID: SPDXRef-File-kube-apiserver-arm-distroless-layer
+FileChecksum: SHA1: 1abfce86770e3c3ef15cabb35ca57de48745b035
+FileChecksum: SHA256: b14c5b12da8eb1a47e06db7e322c1994f1f7e92a8fcc21b477542db026da693b
+FileChecksum: SHA512: d6c5cced89af23db9483da738b170a5202f3062146edceae980dc5b12257ad92ba275de33d931b4454e2a45f3945a315cbde5408f24885320cdff21a5e952f33
+Relationship: SPDXRef-Package-kube-apiserver-arm CONTAINS SPDXRef-File-kube-apiserver-arm-distroless-layer
+
+FileName: ./7acae61074a42d9e06d67569a5b896b3c940c812549703e3954128b6b9a613fd/VERSION
+SPDXID: SPDXRef-File-231811c1a588f5ecc1143bb1dce575debd861336
+FileChecksum: SHA1: e8dc057d3346e56aed7cf252185dbe1fa6454411
+FileChecksum: SHA256: d0ff5974b6aa52cf562bea5921840c032a860a91a3512f7fe8f768f6bbe005f6
+FileChecksum: SHA512: 0b3402a678ec2788804994fb2df9faf66eecbdde26553e320a8d4a154f53d840d2a32245998c38f885f01137c9fcf123f3752fc841508dc771fa6faaee689b73
+Relationship: SPDXRef-Package-kube-apiserver-arm CONTAINS SPDXRef-File-231811c1a588f5ecc1143bb1dce575debd861336
+
+FileName: ./7acae61074a42d9e06d67569a5b896b3c940c812549703e3954128b6b9a613fd/json
+SPDXID: SPDXRef-File-ce5d8ed7699133505dfb071e08a8bfee2db424d5
+FileChecksum: SHA1: 1582dd686f0344e8d460639ac9e5690ed3de9b59
+FileChecksum: SHA256: 1a691fcb7ef71f71a2a56079182da6cc4b10368c104ba18ed1ed34e443e60add
+FileChecksum: SHA512: 779f149f696b0420ef39b3785dd83bc25b1782563464f111e49d0c78d1af409fe5a1864e1a6889990d48538336ff779646dfb7ea406a4b99761af5668512953a
+Relationship: SPDXRef-Package-kube-apiserver-arm CONTAINS SPDXRef-File-ce5d8ed7699133505dfb071e08a8bfee2db424d5
+
+FileName: ./e7ab3273b5f5fa5be41f5cf0906ab750bb7cdde8e7d671043372b4c8eee015ae/VERSION
+SPDXID: SPDXRef-File-0284d5c7f53bd6b61f6cd019e3b1a7043dd5b779
+FileChecksum: SHA1: e8dc057d3346e56aed7cf252185dbe1fa6454411
+FileChecksum: SHA256: d0ff5974b6aa52cf562bea5921840c032a860a91a3512f7fe8f768f6bbe005f6
+FileChecksum: SHA512: 0b3402a678ec2788804994fb2df9faf66eecbdde26553e320a8d4a154f53d840d2a32245998c38f885f01137c9fcf123f3752fc841508dc771fa6faaee689b73
+Relationship: SPDXRef-Package-kube-apiserver-arm CONTAINS SPDXRef-File-0284d5c7f53bd6b61f6cd019e3b1a7043dd5b779
+
+FileName: ./e7ab3273b5f5fa5be41f5cf0906ab750bb7cdde8e7d671043372b4c8eee015ae/json
+SPDXID: SPDXRef-File-acaf12c0f65c1dc8023287ba2d89cf203e7e0409
+FileChecksum: SHA1: 13ef20296a283a99e69b9b5c4aebe43b01ce99f1
+FileChecksum: SHA256: 520d6d6bd4bc94ed7ce19b2e677bd2ea6ed147b5a03c987fda756d07cb9c8d4c
+FileChecksum: SHA512: e6dc3facc286d2d84bc398596f1baae915ec39a2e7a7bf1837264be96ab3f8e2fa38eb50882e54879615df42df6bbfedce70253ce5b50c584e6be8d7bb93e976
+Relationship: SPDXRef-Package-kube-apiserver-arm CONTAINS SPDXRef-File-acaf12c0f65c1dc8023287ba2d89cf203e7e0409
+
+FileName: ./manifest.json
+SPDXID: SPDXRef-File-kube-apiserver-arm-image-manifest
+FileChecksum: SHA1: 49e1037cc81e1bba0e87aea132b6ca2fac94fab0
+FileChecksum: SHA256: 6928512f6b0817a449c744fc0311f6fb0be92ccd7b1fe4ccdc4ede722d818af3
+FileChecksum: SHA512: 568e2972fe4a1bea07ba78dfc1fdeb1f6bf5a603e9f9fdc65152a1d15ddedc5699f1f45284eb487474362f3c3ec51d00057902c4183f528e7bf3436e90e4ba4d
+Relationship: SPDXRef-Package-kube-apiserver-arm CONTAINS SPDXRef-File-kube-apiserver-arm-image-manifest
+
+FileName: ./repositories
+SPDXID: SPDXRef-File-677186a52fc22212c4dbaf8cb97ccd5c6a7b3657
+FileChecksum: SHA1: d2436ae00cb75b396bb553fa2675b42ff14a9a90
+FileChecksum: SHA256: c51ac84d32bee5a63ff48ecd52ed78cc793a2d421f8f61734a87b8c15c6b12de
+FileChecksum: SHA512: ff18e832f3895c72f362fcbfb4e4de6055f2a26930446cd8229f495f254ba5fbbdb00766fc24edd419291c8a497a1a64f874f09410925acf3022827ca0b0337a
+Relationship: SPDXRef-Package-kube-apiserver-arm CONTAINS SPDXRef-File-677186a52fc22212c4dbaf8cb97ccd5c6a7b3657
+
+FileName: ./cf7bf05af7bf59e95b5ba610a683e19d8d36540566ab9c32c092574a3a7eb10f/VERSION
+SPDXID: SPDXRef-File-ecdb4a360ba45757342794303a3625dac7e8846c
+FileChecksum: SHA1: e8dc057d3346e56aed7cf252185dbe1fa6454411
+FileChecksum: SHA256: d0ff5974b6aa52cf562bea5921840c032a860a91a3512f7fe8f768f6bbe005f6
+FileChecksum: SHA512: 0b3402a678ec2788804994fb2df9faf66eecbdde26553e320a8d4a154f53d840d2a32245998c38f885f01137c9fcf123f3752fc841508dc771fa6faaee689b73
+Relationship: SPDXRef-Package-kube-apiserver-arm CONTAINS SPDXRef-File-ecdb4a360ba45757342794303a3625dac7e8846c
+
+FileName: ./cf7bf05af7bf59e95b5ba610a683e19d8d36540566ab9c32c092574a3a7eb10f/json
+SPDXID: SPDXRef-File-6fbd7993e633045ad81129d55419fa8158a3a0aa
+FileChecksum: SHA1: 8f2eb1b93fd8adc92636142b5208e51f7934cc21
+FileChecksum: SHA256: a95a5e1371144cb78cf254d9476b86836c94ab41c7eb9c183938cf69d0247287
+FileChecksum: SHA512: db3ee73ab5e198e59049dc5fb09e2878d061818a2f12c6967b62f774eb509a293158013ef76ee34cf512b77ece061a25284595a5f8cc35a793328f7f7b2103b8
+Relationship: SPDXRef-Package-kube-apiserver-arm CONTAINS SPDXRef-File-6fbd7993e633045ad81129d55419fa8158a3a0aa
+
+##### Package: distroless
+
+PackageName: distroless
+SPDXID: SPDXRef-Package-distroless
+FilesAnalyzed: false
+PackageFileName: ./e7ab3273b5f5fa5be41f5cf0906ab750bb7cdde8e7d671043372b4c8eee015ae/layer.tar
+PackageLicenseDeclared: NOASSERTION
+
+##### Package: tzdata
+
+PackageName: tzdata
+SPDXID: SPDXRef-Package-tzdata
+FilesAnalyzed: false
+PackageVersion: 2021a-0&#43;deb10u1
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: <text>This is the Debian prepackaged version of the Time Zone and Daylight 
+Saving Time Data. 
+
+It was downloaded from https://www.iana.org/time-zones
+
+Upstream Author: The Internet Assigned Numbers Authority (IANA)
+Commentary should be addressed to tz@iana.org
+
+Copyright: This database is in the public domain.
+
+
+</text>
+Relationship: SPDXRef-Package-distroless CONTAINS SPDXRef-Package-tzdata
+
+##### Package: ca-certificates
+
+PackageName: ca-certificates
+SPDXID: SPDXRef-Package-ca-certificates
+FilesAnalyzed: false
+PackageVersion: 20200601~deb10u2
+PackageLicenseDeclared: MPL-2.0
+
+Relationship: SPDXRef-Package-distroless CONTAINS SPDXRef-Package-ca-certificates
+
+##### Package: base-files
+
+PackageName: base-files
+SPDXID: SPDXRef-Package-base-files
+FilesAnalyzed: false
+PackageVersion: 10.3&#43;deb10u8
+PackageLicenseDeclared: GPL-1.0
+
+Relationship: SPDXRef-Package-distroless CONTAINS SPDXRef-Package-base-files
+
+##### Package: netbase
+
+PackageName: netbase
+SPDXID: SPDXRef-Package-netbase
+FilesAnalyzed: false
+PackageVersion: 5.6
+PackageLicenseDeclared: GPL-2.0
+
+Relationship: SPDXRef-Package-distroless CONTAINS SPDXRef-Package-netbase
+
+Relationship: SPDXRef-Package-kube-apiserver-arm CONTAINS SPDXRef-Package-distroless
+
+##### Package: go-runner
+
+PackageName: go-runner
+SPDXID: SPDXRef-Package-go-runner
+PackageDownloadLocation: https://github.com/kubernetes/release/tree/master/images/build/go-runner
+FilesAnalyzed: false
+PackageFileName: ./cf7bf05af7bf59e95b5ba610a683e19d8d36540566ab9c32c092574a3a7eb10f/layer.tar
+PackageVersion: v2.3.1
+
+PackageLicenseDeclared: Apache-2.0
+
+Relationship: SPDXRef-Package-kube-apiserver-arm CONTAINS SPDXRef-Package-go-runner
+
+Relationship: SPDXRef-DOCUMENT-kubernetes-v1.20.4 DESCRIBES SPDXRef-Package-kube-apiserver-arm
+
