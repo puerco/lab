@@ -1,0 +1,690 @@
+SPDXVersion: SPDX-2.2
+DataLicense: CC0-1.0
+SPDXID: SPDXRef-DOCUMENT
+DocumentName: SBOM-SPDX-77450292-c99b-43a4-bf8f-17cd2acc9c2a
+DocumentNamespace: https://github.com/kubernetes-sigs/release-utils/sbom.spdx
+Creator: Person: Kubernetes Release Managers (release-managers@kubernetes.io)
+Creator: Tool: k8s.io/release/pkg/spdx
+Created: 2021-24-05T06:15:25Z
+
+
+##### Package: release-utils
+
+PackageName: release-utils
+SPDXID: SPDXRef-Package-release-utils
+PackageDownloadLocation: NONE
+FilesAnalyzed: true
+PackageVerificationCode: 73f575593624a7541e31dcbbcddc721047e7eb45
+PackageLicenseConcluded: Apache-2.0
+PackageLicenseInfoFromFiles: Apache-2.0
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+FileName: ../release-utils/hash/hash.go
+SPDXID: SPDXRef-File-5194dec2ace2cb3
+FileChecksum: SHA1: 857a5fc7b92e48efda0b8a061fe78841484ac89d
+FileChecksum: SHA256: 5194dec2ace2cb344f99c3638ae4d3c0ada4b7183b02a46fc6a749dec5e8f6b2
+FileChecksum: SHA512: 5ab5437e4255eca6a1c42f50872a63842d50c71a01f318345374ec64d23476ef814cc62e865e3bc1ea1e874cbcd3430195f9852f657212001fa7aadb2a428c39
+LicenseConcluded: Apache-2.0
+LicenseInfoInFile: NONE
+FileCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-release-utils CONTAINS SPDXRef-File-5194dec2ace2cb3
+
+FileName: ../release-utils/log/log_test.go
+SPDXID: SPDXRef-File-832e43b5e9f0801
+FileChecksum: SHA1: b19ce70659ac84639b9f4f0ee7196b4c5e99169a
+FileChecksum: SHA256: 832e43b5e9f0801949323dafe76de32bcf0687eff6eab0002cfe00c08726439a
+FileChecksum: SHA512: 0902492b4438d9f0c78fd4ce4e94a3986097905d5724ca1b100d3f21174f2416aa1380d451a6358770992a62c786b959dbff843575e8948b6fecc6567db315ad
+LicenseConcluded: Apache-2.0
+LicenseInfoInFile: NONE
+FileCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-release-utils CONTAINS SPDXRef-File-832e43b5e9f0801
+
+FileName: ../release-utils/scripts/boilerplate/boilerplate.generatego.txt
+SPDXID: SPDXRef-File-caf6e2922d71836
+FileChecksum: SHA1: 02b9245fa730f6e8bffb07df02626a298f772368
+FileChecksum: SHA256: caf6e2922d7183647577e41b8d32806b23db9644adb0087a3430dd3d7bb2a6de
+FileChecksum: SHA512: 9dd99177d8ed498597cd04642333ed3b4a3c824280895b2b89cc21b46d3641efafb41bb8da60a46830aa80a3cd644a7368cce9ea8ed89b45dc53ea2a88bd48cc
+LicenseConcluded: Apache-2.0
+LicenseInfoInFile: NONE
+FileCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-release-utils CONTAINS SPDXRef-File-caf6e2922d71836
+
+FileName: ../release-utils/tar/tar.go
+SPDXID: SPDXRef-File-b5685208efd8c5a
+FileChecksum: SHA1: 332ff435ee87a4fa23b3e35bf466b3359b93ef55
+FileChecksum: SHA256: b5685208efd8c5ac7fc6a56a745e73a3a5cb39fd1717c24d100249027f400c97
+FileChecksum: SHA512: e9a77b960798e0997a9c28edc3293dab397f5d30383e18d7b403e0c7638e2af33f89c3d45ffeea4722830f81b81c18397d8db1f0b366a0f1020bcf57b516bb73
+LicenseConcluded: Apache-2.0
+LicenseInfoInFile: NONE
+FileCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-release-utils CONTAINS SPDXRef-File-b5685208efd8c5a
+
+FileName: ../release-utils/util/common_test.go
+SPDXID: SPDXRef-File-e09495821b7a72e
+FileChecksum: SHA1: f0a87d0aec62efe9afbca7ec16d25db6a2a65f37
+FileChecksum: SHA256: e09495821b7a72ebd9d9c574d6daf341fc9769bf59847806d98861653c7b66f7
+FileChecksum: SHA512: 80e13e40898be2ad4b64ac263a9586be3f5e5c07c950f21522408919e48dc1ff5de1900669382979f3f3b072126adfa0b5d6702f1cba073b16f26da59ac60e60
+LicenseConcluded: Apache-2.0
+LicenseInfoInFile: NONE
+FileCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-release-utils CONTAINS SPDXRef-File-e09495821b7a72e
+
+FileName: ../release-utils/OWNERS
+SPDXID: SPDXRef-File-5b607134b9a5b2f
+FileChecksum: SHA1: 1fb7cc15bd7ba0cddb7fece07748b307d5e4edff
+FileChecksum: SHA256: 5b607134b9a5b2f7665123165f108cbc8b74d06d7dcbcab1cd8474ec95780213
+FileChecksum: SHA512: 9461df28fc0ef9b0ac256991d95bffe4feb81e1fcd4549adb0f1d3a591588d276c21fc2904ba932d403cba911e791ca8f28f7c98d9b952e689d61154f7c83396
+LicenseConcluded: Apache-2.0
+LicenseInfoInFile: NONE
+FileCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-release-utils CONTAINS SPDXRef-File-5b607134b9a5b2f
+
+FileName: ../release-utils/editor/tty.go
+SPDXID: SPDXRef-File-066bbc1206c7485
+FileChecksum: SHA1: 08efd55e3e1975f999fac3e27607f020d5f7f0df
+FileChecksum: SHA256: 066bbc1206c7485c9714a9f660f6a04123077964d15bad6ef323909930438263
+FileChecksum: SHA512: 9b11dcaceb11cea1a5c8d98af46ac3bde979d2b7ab8f63264b7d08070abe071317071eee91432eb258868083f38adb7d6baac422b75d3fbfb9ec6a4e7472f0ad
+LicenseConcluded: Apache-2.0
+LicenseInfoInFile: NONE
+FileCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-release-utils CONTAINS SPDXRef-File-066bbc1206c7485
+
+FileName: ../release-utils/hash/hash_test.go
+SPDXID: SPDXRef-File-abaad342da502c7
+FileChecksum: SHA1: 14904c0905c620d489131d8fa4afef746459762f
+FileChecksum: SHA256: abaad342da502c7d2b07f15636a0a395549fdd772134cddc176de8b1aafb78b3
+FileChecksum: SHA512: 778845dfe4076cef42c2615ef9b7c4f31dd15d2658b80bbab99f43e03c9e5c23946030ad7181ce4c194b693676418ab6c67a6eea35db52eace3942a8dbe9725b
+LicenseConcluded: Apache-2.0
+LicenseInfoInFile: NONE
+FileCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-release-utils CONTAINS SPDXRef-File-abaad342da502c7
+
+FileName: ../release-utils/http/http_test.go
+SPDXID: SPDXRef-File-46b5fd7bd6c94c5
+FileChecksum: SHA1: a84e7c23b2423c0fec43012bce29bdfbcc7e2624
+FileChecksum: SHA256: 46b5fd7bd6c94c5ef937c5c138b9c08c1e86f9cfac59b9c1c2828cda3cbbb6d0
+FileChecksum: SHA512: 85e3cbe501eec04c291888e81a0a88209c958b49b5828e5a56c3b2ba13f4a96832616e8d60081777000bf785caf2cbd3b687a54976fea036b3054a0e59caed34
+LicenseConcluded: Apache-2.0
+LicenseInfoInFile: NONE
+FileCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-release-utils CONTAINS SPDXRef-File-46b5fd7bd6c94c5
+
+FileName: ../release-utils/mage.go
+SPDXID: SPDXRef-File-91e79dd10e575db
+FileChecksum: SHA1: 724985cf1514022b5603b199a442d5900b531032
+FileChecksum: SHA256: 91e79dd10e575db1763489db3e71f09f9cff3c36ccc5b703c2d64a3528d1e027
+FileChecksum: SHA512: 762fc13715fbb711b2096f61c05aded3f1681bfa02766564b0e714c241051232b2070bf5f1c01036d16a9c4df6d492b2d3c72c189a31573c8fdbbab912eb5291
+LicenseConcluded: Apache-2.0
+LicenseInfoInFile: NONE
+FileCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-release-utils CONTAINS SPDXRef-File-91e79dd10e575db
+
+FileName: ../release-utils/util/common.go
+SPDXID: SPDXRef-File-d176f3c322b25a2
+FileChecksum: SHA1: 050c5be0eccf7d00aec28345c8fc56338676bee8
+FileChecksum: SHA256: d176f3c322b25a2e5c939116ddf2956bf723606277e13cdc45d169430b9b2332
+FileChecksum: SHA512: 86b77e3135990c2aa767d962c22ef52030703f85d05dbc54b94f2d3855d0d6a2ff1cc74d4008bd0ee2aa5468cdd10f619919564b191a0442d867da08b571a249
+LicenseConcluded: Apache-2.0
+LicenseInfoInFile: NONE
+FileCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-release-utils CONTAINS SPDXRef-File-d176f3c322b25a2
+
+FileName: ../release-utils/LICENSE
+SPDXID: SPDXRef-File-b40930bbcf80744
+FileChecksum: SHA1: 92170cdc034b2ff819323ff670d3b7266c8bffcd
+FileChecksum: SHA256: b40930bbcf80744c86c46a12bc9da056641d722716c378f5659b9e555ef833e1
+FileChecksum: SHA512: 389080b6132d3eaae780648d6998390d8cc71908561bce09578e27c542aa1a9f3122e01f640c5b01bee73004c23aa4e9f2066fe5ee0ca2072c2420578b28d71f
+LicenseConcluded: Apache-2.0
+LicenseInfoInFile: Apache-2.0
+FileCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-release-utils CONTAINS SPDXRef-File-b40930bbcf80744
+
+FileName: ../release-utils/SECURITY.md
+SPDXID: SPDXRef-File-e05a1725b76b94b
+FileChecksum: SHA1: 18fc5bd84108243f3ce1f4e63beeb2a2a4658739
+FileChecksum: SHA256: e05a1725b76b94ba2f8421112ba6014d5f99665d0b64d9021fc9e04a2e74f062
+FileChecksum: SHA512: 3a9d3440f19e56fb6b0b9b9da42b4c3d72c20930850def617ba8785aca727cd5637d9b797ef8069b46dd03d1851746ef4292761097aad3b091e2a0d0efc6adb2
+LicenseConcluded: Apache-2.0
+LicenseInfoInFile: NONE
+FileCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-release-utils CONTAINS SPDXRef-File-e05a1725b76b94b
+
+FileName: ../release-utils/go.mod
+SPDXID: SPDXRef-File-5e3be9d7fd3f4bf
+FileChecksum: SHA1: 5e6f25896237bc1ee80fb7a090756392cf49d73c
+FileChecksum: SHA256: 5e3be9d7fd3f4bf78faa8a6200a041fe44a9d2d25bc78d29d86cbb3870a7ea12
+FileChecksum: SHA512: 55629021044a65199e930fddd8372fff3b63a73e675d48798c8dc7170808f44800175d5da0aa8f6aab93da5d139585b05d0f4d32d82951b9293e098a8aec3f75
+LicenseConcluded: Apache-2.0
+LicenseInfoInFile: NONE
+FileCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-release-utils CONTAINS SPDXRef-File-5e3be9d7fd3f4bf
+
+FileName: ../release-utils/http/http.go
+SPDXID: SPDXRef-File-664ea8b0f1a3146
+FileChecksum: SHA1: 1698e45a57a7b19a7f8d0405488d2f48be4bfe66
+FileChecksum: SHA256: 664ea8b0f1a314665218b50be4ff6df72bc11386be4c532a791aa3cd883082ff
+FileChecksum: SHA512: d78bf6585e0e02c8804da08599eac5bb54bc981556e8eebad92abded862f033349ed38f94213745e5340df6f941f991c49800b10b9990c7afe1169a3bb60ecee
+LicenseConcluded: Apache-2.0
+LicenseInfoInFile: NONE
+FileCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-release-utils CONTAINS SPDXRef-File-664ea8b0f1a3146
+
+FileName: ../release-utils/internal/tools/tools.go
+SPDXID: SPDXRef-File-c44374077600089
+FileChecksum: SHA1: d948bd82653acf9f0d5aac699ca8cbd55a50342c
+FileChecksum: SHA256: c443740776000896181685058f9d3021741e419095c3859d0bc713d40c67f07c
+FileChecksum: SHA512: edf61c608e1afeb3e19ff15796739df3a12640de716f2985ccf00f0cbb854c9a0b901062f998a1e997b7e6e8ede7d07ddd723e957b23cc48adf8c2461c6251ac
+LicenseConcluded: Apache-2.0
+LicenseInfoInFile: NONE
+FileCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-release-utils CONTAINS SPDXRef-File-c44374077600089
+
+FileName: ../release-utils/mage/dependency.go
+SPDXID: SPDXRef-File-3cc2a1d33cabdfe
+FileChecksum: SHA1: 5a49dc35a2410fe70b956b2c665ecf32e492d98c
+FileChecksum: SHA256: 3cc2a1d33cabdfe1454a821ee7cf32131371d4e2721e7f3c8c87bdd75d4356b9
+FileChecksum: SHA512: da6aa1b8f2130998babf386afd56c5e33e535967aebcd515a6a45fd19c1ccb3585126462257c464dcdf2578d17dc2a72407ca56e5eda866b27c21bf578d64923
+LicenseConcluded: Apache-2.0
+LicenseInfoInFile: NONE
+FileCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-release-utils CONTAINS SPDXRef-File-3cc2a1d33cabdfe
+
+FileName: ../release-utils/command/global.go
+SPDXID: SPDXRef-File-46880d7186f970a
+FileChecksum: SHA1: e19923b4daacf83b3a881f265fffb893c95a831e
+FileChecksum: SHA256: 46880d7186f970a6643b43fe2abefa599bd6319f750043aa0f34d50105f5e1ae
+FileChecksum: SHA512: 70208e062c125b1481d26ee50481f81465f8954b7cc915d3f182ab13e42bb97dc880f5cccaebb1b76d06d261e61bdf62d14b13a442d5ba395b5b82be5c3216aa
+LicenseConcluded: Apache-2.0
+LicenseInfoInFile: NONE
+FileCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-release-utils CONTAINS SPDXRef-File-46880d7186f970a
+
+FileName: ../release-utils/dependencies.yaml
+SPDXID: SPDXRef-File-97e6ec3f3ed644b
+FileChecksum: SHA1: 3c02ff0661dc72b3a2b6c4d16eb712bd642edeb1
+FileChecksum: SHA256: 97e6ec3f3ed644b8abe6a8429fb781fa10ef154ba236eccf543a87bec01ffb2e
+FileChecksum: SHA512: a97b929e87e130206a8293ed7ee9918befa9d325111275813b4975510541d0a70c841cfdbabeecc10f2d4a6ab9898200ee00eb29816cb088251402710b1aae27
+LicenseConcluded: Apache-2.0
+LicenseInfoInFile: NONE
+FileCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-release-utils CONTAINS SPDXRef-File-97e6ec3f3ed644b
+
+FileName: ../release-utils/SECURITY_CONTACTS
+SPDXID: SPDXRef-File-72790f54cee20b3
+FileChecksum: SHA1: 45b493f22babd478fcbd2039a2752041a6450709
+FileChecksum: SHA256: 72790f54cee20b34dc1017b7be00652d7a1b7529f3092991e087891da2dfb695
+FileChecksum: SHA512: 22c6d57e548464d99fe144bbfd362380d29015769b830032f5c5700da599f7e50c5d0d90d6d839dbf628f5c037972e375ce3f8f7869a6ddf51b4c4512999270a
+LicenseConcluded: Apache-2.0
+LicenseInfoInFile: NONE
+FileCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-release-utils CONTAINS SPDXRef-File-72790f54cee20b3
+
+FileName: ../release-utils/env/internal/internalfakes/fake_impl.go
+SPDXID: SPDXRef-File-252396b9e14e51b
+FileChecksum: SHA1: c3522cf3b86ffbccf05c502c098ad269141aa297
+FileChecksum: SHA256: 252396b9e14e51bc0e36e028de5f1cf66e5af4f758ba7e758e94fa6aacb1a00b
+FileChecksum: SHA512: ba2eed016a87076d297e72daabe8044e0dd7bdb18fdb5de3deec8ce24d4c84cc0e853566eb4716015ad76cd0e3e6b25a619549b8cd972b498055da07a7c9e9d7
+LicenseConcluded: Apache-2.0
+LicenseInfoInFile: NONE
+FileCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-release-utils CONTAINS SPDXRef-File-252396b9e14e51b
+
+FileName: ../release-utils/http/agent.go
+SPDXID: SPDXRef-File-84b9d8779d05dc8
+FileChecksum: SHA1: 5a20a3f1a4d83c790c8b5c9457252270bd94dc1a
+FileChecksum: SHA256: 84b9d8779d05dc8459f3885fef7b9ecaad5024499ac8e1e7a1c4c21a6192c55d
+FileChecksum: SHA512: a5c51b3a475fd3bc87824e0da0dfd7eb09719889d39b7124c2405ad4e7b54e65d3d72386f9901e8fc51e2dc1431e691a681e54895478a5eff6be1b149752ec95
+LicenseConcluded: Apache-2.0
+LicenseInfoInFile: NONE
+FileCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-release-utils CONTAINS SPDXRef-File-84b9d8779d05dc8
+
+FileName: ../release-utils/scripts/boilerplate/boilerplate.go.txt
+SPDXID: SPDXRef-File-a9aaf745086c31c
+FileChecksum: SHA1: 8cc5ab0df5f1b25edc6ac7223605374adce8331b
+FileChecksum: SHA256: a9aaf745086c31c27226110c3c000e46fd3db9a3a118d33dbd7d8f3a86911b0f
+FileChecksum: SHA512: 63c17729d99cf47a263f60492cbc4ba7f631fb91e5d84db711709cd5996b5f47af00048b67a241d76da138a4fcbf5556de00cfbd0d5c4926b862b758211ca356
+LicenseConcluded: Apache-2.0
+LicenseInfoInFile: NONE
+FileCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-release-utils CONTAINS SPDXRef-File-a9aaf745086c31c
+
+FileName: ../release-utils/.github/PULL_REQUEST_TEMPLATE.md
+SPDXID: SPDXRef-File-7dc1dacd969eb03
+FileChecksum: SHA1: d3fa34b92ffa297348867b8454b0db5ae0592c18
+FileChecksum: SHA256: 7dc1dacd969eb036bbd836c2fa315ede05f033dce83eb6f6dd5afdb375e91f1e
+FileChecksum: SHA512: e72117d06ec91c718e7af7d3455c5597701cfa831c72532efe739b83130ef810d71bce1b3fa1a528199597fedb592ecaedde6bf0e3762c252a5a868b35d08fe9
+LicenseConcluded: Apache-2.0
+LicenseInfoInFile: NONE
+FileCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-release-utils CONTAINS SPDXRef-File-7dc1dacd969eb03
+
+FileName: ../release-utils/.golangci.yml
+SPDXID: SPDXRef-File-a8a1d64f0c4fdeb
+FileChecksum: SHA1: b441cd031c2d328f91fc55f84f29b73a0eccb9a9
+FileChecksum: SHA256: a8a1d64f0c4fdeb91f1245f888c3f5cc9ccb2832219c9309c5555c6e1ceac47e
+FileChecksum: SHA512: c8dc7e18d5e1509be3194b5e0ae14e5f02ed4689f5d43660b0f3117fca1973894fd0501efdb5c7b3e01bf203731ed5035bc135107c7e7936b380214ed2fe5c1f
+LicenseConcluded: Apache-2.0
+LicenseInfoInFile: NONE
+FileCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-release-utils CONTAINS SPDXRef-File-a8a1d64f0c4fdeb
+
+FileName: ../release-utils/go.sum
+SPDXID: SPDXRef-File-30e3d1c95c163a0
+FileChecksum: SHA1: 4317db69a2d42bee5922654e3391937a04ee57f1
+FileChecksum: SHA256: 30e3d1c95c163a0fe24dd0b05b769607a9d00621b0c7ab9440108d1c75f30912
+FileChecksum: SHA512: 0c22e38a154c04f8142ac7c44995060b147483f4cc9767932565a75b9525a6cbb72156b406ba3fba4335d1ebad17208664e52a22535b210deea02084464a83b3
+LicenseConcluded: Apache-2.0
+LicenseInfoInFile: NONE
+FileCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-release-utils CONTAINS SPDXRef-File-30e3d1c95c163a0
+
+FileName: ../release-utils/mage/boilerplate.go
+SPDXID: SPDXRef-File-5944686925225b1
+FileChecksum: SHA1: 08190a2c1cee1c757fc8f2e0f94b77a2d8d184d3
+FileChecksum: SHA256: 5944686925225b1260a2a366863813ec1190f5bfeaeb6210f994536b1178e5f5
+FileChecksum: SHA512: 3bda1e143e145c50b1da2fc731a887133b4c9b954506264f25056fd05a74df270056ce1091ab56e4411d9ea755fd592257351a9a83847fadbf269bc837206bbf
+LicenseConcluded: Apache-2.0
+LicenseInfoInFile: NONE
+FileCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-release-utils CONTAINS SPDXRef-File-5944686925225b1
+
+FileName: ../release-utils/tar/tar_test.go
+SPDXID: SPDXRef-File-b7e6f12fe3f3d2b
+FileChecksum: SHA1: dd6c1ec44a210182c3df7a059c69e8fb40457b2a
+FileChecksum: SHA256: b7e6f12fe3f3d2bb06744a302074a4a45685f529c201df69b40eb7e012769813
+FileChecksum: SHA512: 7639d76a0685ad50ec761d2c66b3638551bd89939c337378c1fa06a2ed5e562183adf0adae8a69c8cfa742bb592be31cfd2f47ba27e5909475fcca16b058f6e6
+LicenseConcluded: Apache-2.0
+LicenseInfoInFile: NONE
+FileCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-release-utils CONTAINS SPDXRef-File-b7e6f12fe3f3d2b
+
+FileName: ../release-utils/code-of-conduct.md
+SPDXID: SPDXRef-File-f364dcd6b58ebf0
+FileChecksum: SHA1: e9c6e048c8e9265aa82d33c70292f59fcebc26cb
+FileChecksum: SHA256: f364dcd6b58ebf020cec3fe415e726ab16425b4d0344ac6b551d2769dd01b251
+FileChecksum: SHA512: ba01f35cae500e95aa62c424d455e33efb6befc1f88b64e6b526606606b97328eb4c1b1af22033e36f77879924ac0bfb2ea74a4264ad1c599b13860340e7c5ab
+LicenseConcluded: Apache-2.0
+LicenseInfoInFile: NONE
+FileCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-release-utils CONTAINS SPDXRef-File-f364dcd6b58ebf0
+
+FileName: ../release-utils/command/global_test.go
+SPDXID: SPDXRef-File-7542c61a003b6c6
+FileChecksum: SHA1: 6719dab476014299c00dd14d90ea1fa8fef0aeae
+FileChecksum: SHA256: 7542c61a003b6c66e8c131705aa03614cb4fac606853cbb50cb852669497d07b
+FileChecksum: SHA512: 0938862b7080bc7bb2cb87a75b85d9f4c9630238d7cdb57301d5eb54a854c59d4075b47621ad13dbc0ad9b02365739ce9d206065452a55f7b5f24eb20ffe844b
+LicenseConcluded: Apache-2.0
+LicenseInfoInFile: NONE
+FileCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-release-utils CONTAINS SPDXRef-File-7542c61a003b6c6
+
+FileName: ../release-utils/env/env.go
+SPDXID: SPDXRef-File-71be5becbb68b0c
+FileChecksum: SHA1: 1ec223e1d38cb97f6c2d3ce19d6153a168bc5789
+FileChecksum: SHA256: 71be5becbb68b0c864d518ebd06eeff941162fe2851f1f98315a9f21cb919bdb
+FileChecksum: SHA512: a096aa765908f77a33761920f2f3af15042cfb1048dd1326a075a998665f22921f1a961e6f05ef11ed1757436f9cf81a53b9ccdedfef82a8e06a6c7d3b00ff0e
+LicenseConcluded: Apache-2.0
+LicenseInfoInFile: NONE
+FileCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-release-utils CONTAINS SPDXRef-File-71be5becbb68b0c
+
+FileName: ../release-utils/env/internal/impl.go
+SPDXID: SPDXRef-File-46ab913eefed6a9
+FileChecksum: SHA1: 4c7b08e6fb0771233e1ea9f8b35503e499ccd50d
+FileChecksum: SHA256: 46ab913eefed6a9c0be6dbc536d1ccbe3e65e2d4b3654e2ec4c4af9e530fcfb3
+FileChecksum: SHA512: b2de19b5bf2ac28cd8ba621af78374aa54cbd29378038cade8317907d6af46add06a8463d60618bab646b2d5b84f2f24970a1608516b2a5e91606f130a7dcf96
+LicenseConcluded: Apache-2.0
+LicenseInfoInFile: NONE
+FileCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-release-utils CONTAINS SPDXRef-File-46ab913eefed6a9
+
+FileName: ../release-utils/http/httpfakes/fake_agent_implementation.go
+SPDXID: SPDXRef-File-a5b212d6da64ccd
+FileChecksum: SHA1: dff1b4e16e8945d54dce5f7704c7b776b394ed17
+FileChecksum: SHA256: a5b212d6da64ccdf8e134b5225738ed8d6c18b81b25c782f643c2c94270f7628
+FileChecksum: SHA512: b5cdc0fb207b2d87f7fc11eed771eecb3c975f3c0a75f771e5d48f37934ac7fa9f7511a37d1468745c87c5add6a33d2ad9a89c0561b6964cb5f918f5e10df58c
+LicenseConcluded: Apache-2.0
+LicenseInfoInFile: NONE
+FileCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-release-utils CONTAINS SPDXRef-File-a5b212d6da64ccd
+
+FileName: ../release-utils/log/log.go
+SPDXID: SPDXRef-File-339c7f98f6c0de8
+FileChecksum: SHA1: ce7f81a2ae1491c134576dc0fb20f477722d27ba
+FileChecksum: SHA256: 339c7f98f6c0de8db270096a585bc5bc5dadf48ececc2d8e291814dd7e294126
+FileChecksum: SHA512: 07598335889cf6d831e9f71413d897327a4b9a41f68da11d3aaddc0a6023cfb78b39cfba9d8885499a78f4628e05a5bde530ec7d47ca054a1f0bb3a07fd25ed9
+LicenseConcluded: Apache-2.0
+LicenseInfoInFile: NONE
+FileCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-release-utils CONTAINS SPDXRef-File-339c7f98f6c0de8
+
+FileName: ../release-utils/scripts/boilerplate/boilerplate.sh.txt
+SPDXID: SPDXRef-File-96595b53b41a04d
+FileChecksum: SHA1: b3d89a06f73c32456b9de4fc113709632233b324
+FileChecksum: SHA256: 96595b53b41a04ddee52b982afc500c38e15620c862df4441ef66040e2e0c66e
+FileChecksum: SHA512: 8374bdf293677d8ff96d0ce793385792056374571137ff6065cc10cc2fb7d6c952106cd9328cc29ee0112124ae13db2c9872370d02a2b34b64d9f109f555af8e
+LicenseConcluded: Apache-2.0
+LicenseInfoInFile: NONE
+FileCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-release-utils CONTAINS SPDXRef-File-96595b53b41a04d
+
+FileName: ../release-utils/CONTRIBUTING.md
+SPDXID: SPDXRef-File-4df22b5d933a204
+FileChecksum: SHA1: 705ab34b25daec978a2370fb61cb4681848746e5
+FileChecksum: SHA256: 4df22b5d933a204e05b254c8cde6b3e7b97e6e1298c3d1928a7c3b71a376ba33
+FileChecksum: SHA512: 9729e71920c3d6e30953f6aa87e9e94f309099e8c1f8a696cb3e2478f4eb006f6671606c4f2c81beb548c40c8590ad9150ce8435747a908b07f8ded9035a324b
+LicenseConcluded: Apache-2.0
+LicenseInfoInFile: NONE
+FileCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-release-utils CONTAINS SPDXRef-File-4df22b5d933a204
+
+FileName: ../release-utils/command/command.go
+SPDXID: SPDXRef-File-4628153ed7043e6
+FileChecksum: SHA1: a0de2ef870a72f57f1514781d5b207466ed55e60
+FileChecksum: SHA256: 4628153ed7043e64365962dc431f231caaf451818e32b4918a02ec13e48560be
+FileChecksum: SHA512: 6e9571981cc295f5044cd4bcf4ac4ef7dde3efd3d8e084763358bd21c4a97672b83782ad48efa65b4ab82eaf9c440f3e518938d926d985d0711773c36c23b217
+LicenseConcluded: Apache-2.0
+LicenseInfoInFile: NONE
+FileCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-release-utils CONTAINS SPDXRef-File-4628153ed7043e6
+
+FileName: ../release-utils/magefile.go
+SPDXID: SPDXRef-File-cc50c31640ba29c
+FileChecksum: SHA1: c1012fb9e573a823878433c4938275e90c160eb6
+FileChecksum: SHA256: cc50c31640ba29c782ba5d6e6c821901bdba9755cdc42d810def6d35d95138e3
+FileChecksum: SHA512: 5d94db22c955c19241db9f26951e266acc1a94c143dfc52a92ae9d3bd430850d325b7a2910386864be48cb4117f0945d625ebb16b735621571fcbd11a4a7afb2
+LicenseConcluded: Apache-2.0
+LicenseInfoInFile: NONE
+FileCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-release-utils CONTAINS SPDXRef-File-cc50c31640ba29c
+
+FileName: ../release-utils/scripts/verify-build.sh
+SPDXID: SPDXRef-File-08941025cfbf005
+FileChecksum: SHA1: 2dc96b2afa246792d423e1ea8c0d04e6bdbbdcb4
+FileChecksum: SHA256: 08941025cfbf005531b093a393f93e2dff0e66cd2c6cf89f378d02a0ec0cc7b2
+FileChecksum: SHA512: 8855994fb670f1caa0eff4de7d8fc52cd78bfbd21c2136c408a0443e8d6415458fff0c971fe73a3147e8becb26419b13bb37f70f624a6fabbe47b199edb69281
+LicenseConcluded: Apache-2.0
+LicenseInfoInFile: NONE
+FileCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-release-utils CONTAINS SPDXRef-File-08941025cfbf005
+
+FileName: ../release-utils/command/command_test.go
+SPDXID: SPDXRef-File-b6072d23f646977
+FileChecksum: SHA1: 90767a516989b5ec6558e4da2d2bf35927a476e0
+FileChecksum: SHA256: b6072d23f64697706f6e021f0254b59580cc94a479b09086ddc95595b0e15164
+FileChecksum: SHA512: 44ffe477f0cb0fe51a2e1b69247a23a1f258f797aab858a87f0a3063d20f057c815fb2a358138326f6cb5d9b4bb8aae2c05dfa21e64d53f4e9e184ba3b6fb181
+LicenseConcluded: Apache-2.0
+LicenseInfoInFile: NONE
+FileCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-release-utils CONTAINS SPDXRef-File-b6072d23f646977
+
+FileName: ../release-utils/mage/golang.go
+SPDXID: SPDXRef-File-e916c2812015f94
+FileChecksum: SHA1: dd8e77b5a22c32b1c877dac9650b22db60c0d579
+FileChecksum: SHA256: e916c2812015f942ad6ec17982965a84a62d9782c8537da1d2bd40990ab5afc0
+FileChecksum: SHA512: 856ee4f50f7be47e923ffd474a4cf8fdb54789c48b3be6b56c74b1b07c9bdfb46bfaeab5e838e8aeca9af2284d45882eaacbf4ef52a08b0f9d5db618cef755e3
+LicenseConcluded: Apache-2.0
+LicenseInfoInFile: NONE
+FileCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-release-utils CONTAINS SPDXRef-File-e916c2812015f94
+
+FileName: ../release-utils/OWNERS_ALIASES
+SPDXID: SPDXRef-File-52e59cf0a6b6cf8
+FileChecksum: SHA1: dd467b419215f89a2e6ff2f474238bb14fb451ea
+FileChecksum: SHA256: 52e59cf0a6b6cf89ca394dd7a3635eff9efef50adb464ec0a8204a93fc2d1949
+FileChecksum: SHA512: e1898ee6e771be096b74343e224accdfdd27cbb0dc6e5c0b83a64a31ec9dda0a23d67d74d03b464834102c1967e7ce99051b2a04b229a48025807caafd8e86b3
+LicenseConcluded: Apache-2.0
+LicenseInfoInFile: NONE
+FileCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-release-utils CONTAINS SPDXRef-File-52e59cf0a6b6cf8
+
+FileName: ../release-utils/README.md
+SPDXID: SPDXRef-File-685e2ebeec05818
+FileChecksum: SHA1: 3bd2524b6752623c71470aa3a77cebf65e7e2af5
+FileChecksum: SHA256: 685e2ebeec05818fce5197ba3a6e79cfc44d957ddbd9662431670ab9ae7ead49
+FileChecksum: SHA512: 6f72e41ea4c1409cea7ac1966932c81b10c73ed69bec9d70894048894aa5917c4f7d13214f499729348b23e9fc58400c4c1d4d50507fa87747c9611dfae3c05b
+LicenseConcluded: Apache-2.0
+LicenseInfoInFile: NONE
+FileCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-release-utils CONTAINS SPDXRef-File-685e2ebeec05818
+
+FileName: ../release-utils/editor/editor.go
+SPDXID: SPDXRef-File-675d28f54edad29
+FileChecksum: SHA1: 906c399e8c79cd302802a008458484af7eeeb354
+FileChecksum: SHA256: 675d28f54edad298213b579c63db151606359ed3a0ef5d346c70079b9b8492b9
+FileChecksum: SHA512: d382d88af95f95c93f77e0c2f07a9fbdac1ec41c8cbb5b083fccd137c28cabfd717afaead38c99bbca2138d8e24195f5467bcecccde47629aecc83f5f11dbf5b
+LicenseConcluded: Apache-2.0
+LicenseInfoInFile: NONE
+FileCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-release-utils CONTAINS SPDXRef-File-675d28f54edad29
+
+FileName: ../release-utils/editor/editor_test.go
+SPDXID: SPDXRef-File-174cf2a1d689f89
+FileChecksum: SHA1: d1d1eec74cc23b633e0d43c1f905e144064ddee7
+FileChecksum: SHA256: 174cf2a1d689f890d05a210816f0db4ce565bb8590c9c56ad5eb1de798efd7b6
+FileChecksum: SHA512: 0ed523f081eaa7402368ff970436fd3494100c1f3ef4996950d5430aeccdef2b8c437e33a5b79d77b1397bf1c78365091e3c1ca50803021f14247f78b5f9ec60
+LicenseConcluded: Apache-2.0
+LicenseInfoInFile: NONE
+FileCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-release-utils CONTAINS SPDXRef-File-174cf2a1d689f89
+
+FileName: ../release-utils/env/env_test.go
+SPDXID: SPDXRef-File-b00583cf42d65e9
+FileChecksum: SHA1: 84658d140a151e5e02b5025bb9bbcec0be25f0fe
+FileChecksum: SHA256: b00583cf42d65e99669b6b92b80190ce26edf6ca0074380bf9403ceb4ef888cd
+FileChecksum: SHA512: a21ccfee44ec1bb25ffdc39d7998bdb7d5ef5724a5a8dbed8afee51187cb891957b5dc53b8d4dd1a1d5d8a7d31702c7cf278ea36a9427761043ae54eac84be05
+LicenseConcluded: Apache-2.0
+LicenseInfoInFile: NONE
+FileCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-release-utils CONTAINS SPDXRef-File-b00583cf42d65e9
+
+FileName: ../release-utils/env/internal/internalfakes/fake_impl_iface.go
+SPDXID: SPDXRef-File-d46a0f1a0f1d4e8
+FileChecksum: SHA1: 75924419b097797ea58520e3cab2bc55efb633fa
+FileChecksum: SHA256: d46a0f1a0f1d4e8a152fcb2770c2a375f8ff9f0d147fb58f838ac5b5454b3cde
+FileChecksum: SHA512: 9f935f83747fea5ce159d06de5de69cf9ca802a742ee51dfd5ee0efba615c944ed13496531261d94e7b4c1156adf2adea67b31180fb557735b15cf027eb11ec6
+LicenseConcluded: Apache-2.0
+LicenseInfoInFile: NONE
+FileCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-release-utils CONTAINS SPDXRef-File-d46a0f1a0f1d4e8
+
+FileName: ../release-utils/.github/dependabot.yml
+SPDXID: SPDXRef-File-2ebbaa53c6acefe
+FileChecksum: SHA1: 50d69b3015b4439af870d98bd773ef79345af7cb
+FileChecksum: SHA256: 2ebbaa53c6acefe4a19827ae11f0cae22dba159cf966b40c0cddb6ca236b3db9
+FileChecksum: SHA512: 27574ca8cbbf6b1586a87fb2e0eb7b4922ab397ac371e4b73859fdd83e455d24ea8892b363e705fa6428cfe5f2050b418ba995340c6dee49909ade85c1002eb0
+LicenseConcluded: Apache-2.0
+LicenseInfoInFile: NONE
+FileCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-release-utils CONTAINS SPDXRef-File-2ebbaa53c6acefe
+
+FileName: ../release-utils/.gitignore
+SPDXID: SPDXRef-File-898a8fd94a30ce4
+FileChecksum: SHA1: 7553cd5b87b4e2b2470f270946dc565aee203963
+FileChecksum: SHA256: 898a8fd94a30ce45407647be65ee19be11c226ae1db727242e36475f31df745d
+FileChecksum: SHA512: 88b5dcc020c563294440f34a41e2393789281cdc18b8d51060068a138506812313f3c44e0e4e1bb29765f5d8eff10c8f0d3d2feefc5280f38902ffab099a0a08
+LicenseConcluded: Apache-2.0
+LicenseInfoInFile: NONE
+FileCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-release-utils CONTAINS SPDXRef-File-898a8fd94a30ce4
+
+FileName: ../release-utils/log/hooks.go
+SPDXID: SPDXRef-File-e3abe0dffa1db24
+FileChecksum: SHA1: 73b5748ba9f8e0d1813d6f44779babd5bd53aabf
+FileChecksum: SHA256: e3abe0dffa1db2425a0374d50efafd6cff7970625bd3c3a2b5b58561f00dccd0
+FileChecksum: SHA512: b9907f10b89dbe536cc6337dc6abbcfab5c6d5b3c1796663b5b968cc009b9996e579469c788a6cfcfb76288f9e4de891f7aea46992cea7edca8f41a1ce5eaad7
+LicenseConcluded: Apache-2.0
+LicenseInfoInFile: NONE
+FileCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-release-utils CONTAINS SPDXRef-File-e3abe0dffa1db24
+
+FileName: ../release-utils/log/step.go
+SPDXID: SPDXRef-File-9de565bc98d03cb
+FileChecksum: SHA1: a860a1a9c4e5fa50613682214e93dd67b6ec71f7
+FileChecksum: SHA256: 9de565bc98d03cbec0cb7d27ed9cded5d8491707308221904d7919b25acd87c6
+FileChecksum: SHA512: f28e6349aec1cc5bd457591535b7eff2b5a012093243155e16eb7950797bfec68c526d50091bf2a0e070c988cb238181b6b39604788d2b5534ba86c8a09724a0
+LicenseConcluded: Apache-2.0
+LicenseInfoInFile: NONE
+FileCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-release-utils CONTAINS SPDXRef-File-9de565bc98d03cb
+
+##### Package: github.com/stretchr/testify
+
+PackageName: github.com/stretchr/testify
+SPDXID: SPDXRef-Package-githubcomstretchrtestify
+PackageDownloadLocation: https://github.com/stretchr/testify
+FilesAnalyzed: false
+PackageLicenseConcluded: MIT
+PackageVersion: v1.7.0
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-release-utils DEPENDS_ON SPDXRef-Package-githubcomstretchrtestify
+
+##### Package: k8s.io/utils
+
+PackageName: k8s.io/utils
+SPDXID: SPDXRef-Package-k8sioutils
+PackageDownloadLocation: https://github.com/kubernetes/utils
+FilesAnalyzed: false
+PackageLicenseConcluded: Apache-2.0
+PackageVersion: v0.0.0-20210305010621-2afb4311ab10
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-release-utils DEPENDS_ON SPDXRef-Package-k8sioutils
+
+##### Package: github.com/blang/semver
+
+PackageName: github.com/blang/semver
+SPDXID: SPDXRef-Package-githubcomblangsemver
+PackageDownloadLocation: https://github.com/blang/semver
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageVersion: v3.5.1&#43;incompatible
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-release-utils DEPENDS_ON SPDXRef-Package-githubcomblangsemver
+
+##### Package: github.com/carolynvs/magex
+
+PackageName: github.com/carolynvs/magex
+SPDXID: SPDXRef-Package-githubcomcarolynvsmagex
+PackageDownloadLocation: https://github.com/carolynvs/magex
+FilesAnalyzed: false
+PackageLicenseConcluded: MIT
+PackageVersion: v0.6.0
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-release-utils DEPENDS_ON SPDXRef-Package-githubcomcarolynvsmagex
+
+##### Package: github.com/maxbrunsfeld/counterfeiter/v6
+
+PackageName: github.com/maxbrunsfeld/counterfeiter/v6
+SPDXID: SPDXRef-Package-githubcommaxbrunsfeldcounterfeiterv6
+PackageDownloadLocation: https://github.com/maxbrunsfeld/counterfeiter
+FilesAnalyzed: false
+PackageLicenseConcluded: MIT
+PackageVersion: v6.4.1
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-release-utils DEPENDS_ON SPDXRef-Package-githubcommaxbrunsfeldcounterfeiterv6
+
+##### Package: github.com/moby/term
+
+PackageName: github.com/moby/term
+SPDXID: SPDXRef-Package-githubcommobyterm
+PackageDownloadLocation: https://github.com/moby/term
+FilesAnalyzed: false
+PackageLicenseConcluded: Apache-2.0
+PackageVersion: v0.0.0-20201216013528-df9cb8a40635
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-release-utils DEPENDS_ON SPDXRef-Package-githubcommobyterm
+
+##### Package: github.com/pkg/errors
+
+PackageName: github.com/pkg/errors
+SPDXID: SPDXRef-Package-githubcompkgerrors
+PackageDownloadLocation: https://github.com/pkg/errors
+FilesAnalyzed: false
+PackageLicenseConcluded: BSD-2-Clause
+PackageVersion: v0.9.1
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-release-utils DEPENDS_ON SPDXRef-Package-githubcompkgerrors
+
+##### Package: github.com/sirupsen/logrus
+
+PackageName: github.com/sirupsen/logrus
+SPDXID: SPDXRef-Package-githubcomsirupsenlogrus
+PackageDownloadLocation: https://github.com/sirupsen/logrus
+FilesAnalyzed: false
+PackageLicenseConcluded: MIT
+PackageVersion: v1.8.1
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-release-utils DEPENDS_ON SPDXRef-Package-githubcomsirupsenlogrus
+
+Relationship: SPDXRef-DOCUMENT DESCRIBES SPDXRef-Package-release-utils
+
+

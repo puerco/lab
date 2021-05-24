@@ -1,0 +1,1265 @@
+SPDXVersion: SPDX-2.2
+DataLicense: CC0-1.0
+SPDXID: SPDXRef-DOCUMENT
+DocumentName: SBOM-SPDX-35bafd0d-b6d7-4da5-aea8-5901ebf1f44c
+DocumentNamespace: https://github.com/sigstore/cosign/sbom.spdx
+Creator: Person: Kubernetes Release Managers (release-managers@kubernetes.io)
+Creator: Tool: k8s.io/release/pkg/spdx
+Created: 2021-24-05T06:01:58Z
+
+
+##### Package: cosign
+
+PackageName: cosign
+SPDXID: SPDXRef-Package-cosign
+PackageDownloadLocation: NONE
+FilesAnalyzed: true
+PackageVerificationCode: c0ae2664544a776e143fff399930d747d0d8a0af
+PackageLicenseConcluded: Apache-2.0
+PackageLicenseInfoFromFiles: Apache-2.0
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+FileName: ../cosign/cmd/cosign/cli/keys_test.go
+SPDXID: SPDXRef-File-d1eda6e6e6b1a17
+FileChecksum: SHA1: 52be8825b582a90707ada8e02e57dd0816a6ca98
+FileChecksum: SHA256: d1eda6e6e6b1a17f7841cc684e162c9237da78311754b1c9f039503af2f069ff
+FileChecksum: SHA512: ed05fe138996885f590400da3417119a43ac2bb792c12fee3fe0f8985cd54b82029e87c88cd5f37b9cb2cb20ce19a3a44f36291bed450439f37af794ac732031
+LicenseConcluded: Apache-2.0
+LicenseInfoInFile: NONE
+FileCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-cosign CONTAINS SPDXRef-File-d1eda6e6e6b1a17
+
+FileName: ../cosign/cmd/cosign/cli/pivcli/disabled.go
+SPDXID: SPDXRef-File-322acd9e1fe701b
+FileChecksum: SHA1: 9fb10ef1b638ad8c4163109e622911ede7a19778
+FileChecksum: SHA256: 322acd9e1fe701b0c0580481dbe8f552c6b33818a1c99a252d70744ebf37e30d
+FileChecksum: SHA512: d47e82e4e13b3b5643bd6ef9cff2b3269263c159202b8689fd4d74b33aae42d35d354e1fac111f7e363d48b8c161c2d03a0aab751385586471946b2b30cbd19e
+LicenseConcluded: Apache-2.0
+LicenseInfoInFile: NONE
+FileCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-cosign CONTAINS SPDXRef-File-322acd9e1fe701b
+
+FileName: ../cosign/cmd/cosign/cli/triangulate.go
+SPDXID: SPDXRef-File-db9a643e92cea1e
+FileChecksum: SHA1: f59de17c796690a8baafac40887461dd4477ca5f
+FileChecksum: SHA256: db9a643e92cea1e6615d4ab702253045a94bbd37e3c142db24b040383dc5aa1f
+FileChecksum: SHA512: e81cdb92c0753d410fec273f400f76920f60b1dc43e2bc2f5775c682108edd5011bd939573bbf88b9aa652484d00f9fa14e15b4a36f9c2c9e9a6a06204af19e9
+LicenseConcluded: Apache-2.0
+LicenseInfoInFile: NONE
+FileCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-cosign CONTAINS SPDXRef-File-db9a643e92cea1e
+
+FileName: ../cosign/cmd/cosign/cli/verify.go
+SPDXID: SPDXRef-File-2c9037c9f375bf7
+FileChecksum: SHA1: 157e5f46e5341289ea8418df88302adfc73c845f
+FileChecksum: SHA256: 2c9037c9f375bf73c26b41a556ee85de91cd05a7830c1a80647664a01523b4a0
+FileChecksum: SHA512: 095bc7d0a7a32d272062e86d87977ad01e145aae627b0573dcd779648eb931b71e8fbab802e2e0e4abd8c39b11666abdc2a3f542cd0311a480b5e45b850b5dfc
+LicenseConcluded: Apache-2.0
+LicenseInfoInFile: NONE
+FileCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-cosign CONTAINS SPDXRef-File-2c9037c9f375bf7
+
+FileName: ../cosign/cmd/cosign/cli/version_test.go
+SPDXID: SPDXRef-File-f2b09602562e53b
+FileChecksum: SHA1: 302e7e94f47e4ae94d19844e639e24fbdcd3e5d9
+FileChecksum: SHA256: f2b09602562e53bf23fb19b7a1d2adfbd19142f0458614c9f599048a6888dc24
+FileChecksum: SHA512: 69fd5b0258e206682e10f0aa8f31935b4c608f3078ea6608683d4792a9e1958e46161d8732938a358672b0266bc111e35e9f779c4c436fb7479171004bca44b0
+LicenseConcluded: Apache-2.0
+LicenseInfoInFile: NONE
+FileCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-cosign CONTAINS SPDXRef-File-f2b09602562e53b
+
+FileName: ../cosign/pkg/cosign/fulcio/fulcio_test.go
+SPDXID: SPDXRef-File-d43a3ab698dd89b
+FileChecksum: SHA1: 1eafcf7107d9db5c8204db9786473f13bd734328
+FileChecksum: SHA256: d43a3ab698dd89b575f504c3d9a35ef0f34fade0845f7b03085d8be6347feaa7
+FileChecksum: SHA512: 85104ae5f16d8ae58330c5c64338959cffd4f08bd8e260d476c5715db1bfd76a017ce9ff65cbeb74323afa07e644588eb839f5f659e8baefad5a1a324543df7e
+LicenseConcluded: Apache-2.0
+LicenseInfoInFile: NONE
+FileCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-cosign CONTAINS SPDXRef-File-d43a3ab698dd89b
+
+FileName: ../cosign/FUN.md
+SPDXID: SPDXRef-File-ae2b1d1026bf32a
+FileChecksum: SHA1: 166b27874a3e34e3ae4014ea5ab48284313befc0
+FileChecksum: SHA256: ae2b1d1026bf32a8b706a499c4147474e17bff92b47cf757f74cb9844bd89b28
+FileChecksum: SHA512: 54b82bab17f1660eb5286046a5ccf40b5d8704b9352bf17a70ee7a30bd08eabc7254abb57d113555158d222f52cf63235295cc3163519c3ba6f4a09d82507fcd
+LicenseConcluded: Apache-2.0
+LicenseInfoInFile: NONE
+FileCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-cosign CONTAINS SPDXRef-File-ae2b1d1026bf32a
+
+FileName: ../cosign/RELEASES.md
+SPDXID: SPDXRef-File-0e4452d2c0563d4
+FileChecksum: SHA1: 15393738e7d91e66749c2d7c02b9658c55e51db5
+FileChecksum: SHA256: 0e4452d2c0563d4ee753f66afb2053e3b6f1ac7440e09698898435cff129d053
+FileChecksum: SHA512: 8a30589201136f1db72759e00a6f9ce7f52413a059e4cd978ed1a9d5df366dd92fb88f3b1971582e29fed29a2e106de018f9937d27e1d51ac0e2feb5cf1c57ca
+LicenseConcluded: Apache-2.0
+LicenseInfoInFile: NONE
+FileCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-cosign CONTAINS SPDXRef-File-0e4452d2c0563d4
+
+FileName: ../cosign/copasetic/README.md
+SPDXID: SPDXRef-File-4a141ff9106eef8
+FileChecksum: SHA1: 318402e6c1821a4cb3fa693292acdfcf1cea882d
+FileChecksum: SHA256: 4a141ff9106eef88ab49006d859c01f987663a4e08571d6766be4ddd3e132eef
+FileChecksum: SHA512: 62104cd2ad3f1056398dbc10618d4cb5603a26a8d04a71c38cacb6c66be2365844ee344ce4ae49e8310686d3c3a88328a47a2a025fc4c3d987a0148b2ca8b9e6
+LicenseConcluded: Apache-2.0
+LicenseInfoInFile: NONE
+FileCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-cosign CONTAINS SPDXRef-File-4a141ff9106eef8
+
+FileName: ../cosign/.github/dependabot.yml
+SPDXID: SPDXRef-File-174708121ab133c
+FileChecksum: SHA1: 4735ef4eea5bcb7a77b56c8153d949a470070e30
+FileChecksum: SHA256: 174708121ab133c4a13c7a01042dd457f92498f0651a4a44a73975d3e3e96843
+FileChecksum: SHA512: 2dbe613bb540136d5fd52c704153724ce283c567e6f33ad66800847beff6366e20072c8495a58528d260bace7dfc81b2d2b7ac37a0f8e95547c26b564a0587e0
+LicenseConcluded: Apache-2.0
+LicenseInfoInFile: NONE
+FileCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-cosign CONTAINS SPDXRef-File-174708121ab133c
+
+FileName: ../cosign/EXAMPLES.md
+SPDXID: SPDXRef-File-f8ffbaeac3a5e5c
+FileChecksum: SHA1: 3bd7e1f4a0e43a3b617bec755ed3e510828e9bda
+FileChecksum: SHA256: f8ffbaeac3a5e5c29be543a27d1de23f5f8d8b51a9d64ebd22550780f51483ba
+FileChecksum: SHA512: 060e153558d01c9fef3ce3fb465ee87e478620395d9551f13ea71c4ac240f411fea9d4b933b27f4bce9496c854cc1428eafd4d48251540def901addabb89b7a7
+LicenseConcluded: Apache-2.0
+LicenseInfoInFile: NONE
+FileCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-cosign CONTAINS SPDXRef-File-f8ffbaeac3a5e5c
+
+FileName: ../cosign/pkg/cosign/fulcio/fulcio.go
+SPDXID: SPDXRef-File-afec05ac74f6afd
+FileChecksum: SHA1: 45f455bfc07632f4c8c29fa412ab5c6392b4a153
+FileChecksum: SHA256: afec05ac74f6afd1f5fd216c6345c38f58d3537593f58226620184610e1c75c1
+FileChecksum: SHA512: 0b9eded2b9d2296e8a49c09624a7e2e7317a8eaf5ae4a37e485b67a37731daa47901b043adef946236a65dbcb90892bef14e00dc0507990899a25beec7d7ae38
+LicenseConcluded: Apache-2.0
+LicenseInfoInFile: NONE
+FileCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-cosign CONTAINS SPDXRef-File-afec05ac74f6afd
+
+FileName: ../cosign/pkg/cosign/pivkey/disabled.go
+SPDXID: SPDXRef-File-0bc69b377c73830
+FileChecksum: SHA1: 6b51fada4db70dcc6f393ac99cfaab8ba5862681
+FileChecksum: SHA256: 0bc69b377c73830c775931cfbff8c8ba76f20629e5ffc4d7f7251ceb1c514fb0
+FileChecksum: SHA512: 1dafc3dfcdbe0ac312e042cc6818ca3d54fb1974f843291374607051a1b6987685b4daeda4ddc6802682802b55e0664d39795c9ff5feb5ae425d537c4f5edf20
+LicenseConcluded: Apache-2.0
+LicenseInfoInFile: NONE
+FileCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-cosign CONTAINS SPDXRef-File-0bc69b377c73830
+
+FileName: ../cosign/images/intro.gif
+SPDXID: SPDXRef-File-42536181ab4fabf
+FileChecksum: SHA1: 875f270ae02467369a74135636bb619fc968914d
+FileChecksum: SHA256: 42536181ab4fabff3a0c18a923bb83117ce9884224781c4bb88e5161a7ca9038
+FileChecksum: SHA512: a3a7375d11eb19d40aa2c88bfad113c41062b2f6e0096fe65e09232f7c73c18f29fe4897d24d83d84567cc7523b6181dbe4f3f5619ef496ce9f7036e063e65ea
+LicenseConcluded: Apache-2.0
+LicenseInfoInFile: NONE
+FileCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-cosign CONTAINS SPDXRef-File-42536181ab4fabf
+
+FileName: ../cosign/.github/workflows/build.yaml
+SPDXID: SPDXRef-File-4fe92b83c46b2ef
+FileChecksum: SHA1: a4261428dbfaa3e4c55fb8974d2217d92b0db05a
+FileChecksum: SHA256: 4fe92b83c46b2efc9e1b9c64baffae07131bd37374979b71b00229f0730320a1
+FileChecksum: SHA512: a6b4bbaf2da8bccaf0ced88cb56a58edc9454c4a9a060a5d814a344aac0ae29640fd6333b1c769b6d5086585168529e93f2fe2c3c0f5ab46b3651e45a9c2e457
+LicenseConcluded: Apache-2.0
+LicenseInfoInFile: NONE
+FileCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-cosign CONTAINS SPDXRef-File-4fe92b83c46b2ef
+
+FileName: ../cosign/SPEC.md
+SPDXID: SPDXRef-File-8e20081ceebb446
+FileChecksum: SHA1: 7399f158ba591c9989b86df2ff4f85234193ba2e
+FileChecksum: SHA256: 8e20081ceebb446d084a0ef4a34944c9572a38f09da2d97992bca05ca4f073bd
+FileChecksum: SHA512: 1fdefdf6604b57304663acbd0682624da2c5f5a8020f3a770a5a6edaa70038711c3bfb9b6978ea00ca776813687f7241314ec28a4676d12d5b57725ff0a73040
+LicenseConcluded: Apache-2.0
+LicenseInfoInFile: NONE
+FileCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-cosign CONTAINS SPDXRef-File-8e20081ceebb446
+
+FileName: ../cosign/cmd/cosign/cli/errors.go
+SPDXID: SPDXRef-File-a6246343566f206
+FileChecksum: SHA1: 404e9473592af29c07074f7a69996cf5cad4341c
+FileChecksum: SHA256: a6246343566f206b297ebcda094c3301203294249fa68acc5df70cdf06f4aa1e
+FileChecksum: SHA512: b2f630d49227de04a6986680813a9fb8245ec3a7b84c3808c695862cb393e2c1a172b79cf6ffeddfa1a574925c2b1c12c1906ae651011323262365acfe2d9fda
+LicenseConcluded: Apache-2.0
+LicenseInfoInFile: NONE
+FileCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-cosign CONTAINS SPDXRef-File-a6246343566f206
+
+FileName: ../cosign/cmd/cosign/cli/flags.go
+SPDXID: SPDXRef-File-427011be107065e
+FileChecksum: SHA1: 1c5e1d07c30754c3cab69c1567e86976ac1268ec
+FileChecksum: SHA256: 427011be107065eea6a2812aec1c9753aa648f01af6f47b095b787783805ffb6
+FileChecksum: SHA512: 515bf33d239f1f1cf945f52ab12aa90d447eaebab05d6642162edfb37f68dc0f607c2d96ade1a0f661faacabfa412c4f42ab7d8db65f3df5b4c9d8aed7540ba8
+LicenseConcluded: Apache-2.0
+LicenseInfoInFile: NONE
+FileCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-cosign CONTAINS SPDXRef-File-427011be107065e
+
+FileName: ../cosign/cmd/cosign/cli/pivcli/commands.go
+SPDXID: SPDXRef-File-f7c5a33b8619d37
+FileChecksum: SHA1: b2f5e8eef17e95ac145ca2aac8f716b6196d0b00
+FileChecksum: SHA256: f7c5a33b8619d3747d302760a0ba7997cda69c165c4087f0193ebc9d37aaed0a
+FileChecksum: SHA512: b60567940be474a250a6a2601bb399ca29669ab4a2ad3d06d3e366a6acc4c20293123fcf882df2e7cdff592d15f0e565761fefac49b17a888a4faf6f7a354b60
+LicenseConcluded: Apache-2.0
+LicenseInfoInFile: NONE
+FileCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-cosign CONTAINS SPDXRef-File-f7c5a33b8619d37
+
+FileName: ../cosign/cmd/cosign/cli/public_key.go
+SPDXID: SPDXRef-File-5d9b28e09814e3a
+FileChecksum: SHA1: cb3049c15c65a2fc634c76c529ec2cd4e108a9c3
+FileChecksum: SHA256: 5d9b28e09814e3aa12b4a6b5a1c39efa8652c2d9eb430ca9b0eefb522f3a1cd4
+FileChecksum: SHA512: a6c23894f1d43b615db74511317322be416982e5df712c4d577358297d2768fa66c22c250bacbc48d8a1cb80ef51eeb3f933c6ca027960dd107bfcb32a544549
+LicenseConcluded: Apache-2.0
+LicenseInfoInFile: NONE
+FileCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-cosign CONTAINS SPDXRef-File-5d9b28e09814e3a
+
+FileName: ../cosign/cmd/cosign/cli/public_key_test.go
+SPDXID: SPDXRef-File-1dd6327c84ebe1f
+FileChecksum: SHA1: d1f386fd5027a898218fd7dea16b0d0de99942ca
+FileChecksum: SHA256: 1dd6327c84ebe1fbe7b59953427a2409eb9e6f24f2fa45a6cbf5917f3be67506
+FileChecksum: SHA512: cef5e92c32d09729f45edc37b6b7605cf1dfaffb99eadbb7aba16e45242f222cd53d703d0b6291def22c010d0aad7b138ad0e58c332906e3ce08b7fcbc0dccd6
+LicenseConcluded: Apache-2.0
+LicenseInfoInFile: NONE
+FileCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-cosign CONTAINS SPDXRef-File-1dd6327c84ebe1f
+
+FileName: ../cosign/pkg/cosign/remote/index.go
+SPDXID: SPDXRef-File-28a800a07665c32
+FileChecksum: SHA1: 8e437f3dd6f31b448224d5f32b03d63593c66a80
+FileChecksum: SHA256: 28a800a07665c3285b0acb62cee50dfa085de288dbe7caef569f06811026afb1
+FileChecksum: SHA512: aa5ef224242302b7e496e6b6f61f76b9dfc6962d57831166ab4d5e29475562ef743821d6fc05643c2049d1356afbe933a7062bbec30665722509e05431a07d97
+LicenseConcluded: Apache-2.0
+LicenseInfoInFile: NONE
+FileCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-cosign CONTAINS SPDXRef-File-28a800a07665c32
+
+FileName: ../cosign/cmd/cosign/cli/copy.go
+SPDXID: SPDXRef-File-8f9cf51f5c8ec2b
+FileChecksum: SHA1: e99810ac019e1dd5d842319d88c378eb089307eb
+FileChecksum: SHA256: 8f9cf51f5c8ec2b35dd365bc4beb78036ab8d6b7070b2989259eb2812e1fca0f
+FileChecksum: SHA512: 52fd5c3ede8aa0cf3db0f8389664a9b9b290454ed68dcf6fe42d9144bdcc58c21b3dca22e4ca70436a4880244f4b1afcfd07d65ea54c057f7d2c58d789a2f1ef
+LicenseConcluded: Apache-2.0
+LicenseInfoInFile: NONE
+FileCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-cosign CONTAINS SPDXRef-File-8f9cf51f5c8ec2b
+
+FileName: ../cosign/cmd/cosign/cli/keys.go
+SPDXID: SPDXRef-File-64233e0a75a1968
+FileChecksum: SHA1: c8b15489a8f76bfea45ecb097ef3fe41f10de51b
+FileChecksum: SHA256: 64233e0a75a19685785f07565a9a372ba0b21b21172d9e58db4e3a719b5a0e9c
+FileChecksum: SHA512: d81ceb0eb4551305c9e5ded1b77f07a8d12430e202a7e274308cfc0d27c7df97b03c1187c16e09cf6afdcfcbc249afc7f82b34997cb28d8b62ecbe7a903d08a1
+LicenseConcluded: Apache-2.0
+LicenseInfoInFile: NONE
+FileCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-cosign CONTAINS SPDXRef-File-64233e0a75a1968
+
+FileName: ../cosign/test/e2e_test.go
+SPDXID: SPDXRef-File-951d165dc3bd9df
+FileChecksum: SHA1: 3a5ac596f3a4415cdf912b4c2acae7ecfb71d956
+FileChecksum: SHA256: 951d165dc3bd9df9bcce25af17beedbb5ae8d88b971606b75b0cdedb568bf019
+FileChecksum: SHA512: 7b60e754c7fb105bdced96aed4293a31696efb238be9c2f8b112492045c88b691c358eeed6de7e7c2d882c7139532855d2f4c23533236c1b336e9b6cafca3996
+LicenseConcluded: Apache-2.0
+LicenseInfoInFile: NONE
+FileCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-cosign CONTAINS SPDXRef-File-951d165dc3bd9df
+
+FileName: ../cosign/CODEOWNERS
+SPDXID: SPDXRef-File-a3822b8d703519e
+FileChecksum: SHA1: b92f7d208eb9a125f344fd0ea30ea927d4ecf221
+FileChecksum: SHA256: a3822b8d703519edddb430cc4b0e6c823ec1cf0b7a139fc67b607f7291d770bb
+FileChecksum: SHA512: 4345a9d9ecf5cf1b409d853038269b522c27721e67a24f80cfa89df5ba19b6fa321abc70d17a2047b4bdd6a20266d04dd2216ad2f4dcc6c37f2ff8ee07f57450
+LicenseConcluded: Apache-2.0
+LicenseInfoInFile: NONE
+FileCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-cosign CONTAINS SPDXRef-File-a3822b8d703519e
+
+FileName: ../cosign/images/dot/signatures.dot
+SPDXID: SPDXRef-File-b1d40b8ac6bb33d
+FileChecksum: SHA1: 11f440332c4404b40dd47baf39f1d4460fd9987b
+FileChecksum: SHA256: b1d40b8ac6bb33dc5cf2ac5d1b171a97ff7e02922d18683b75e6a13840b981d6
+FileChecksum: SHA512: 6baffd0c38986352ae97cdeb8fc66104478fe1abcb89de74370116635b13c41e3c07564719f16cf40da12d36e4e2f848af9953678a23d72d281b31d793f19a3d
+LicenseConcluded: Apache-2.0
+LicenseInfoInFile: NONE
+FileCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-cosign CONTAINS SPDXRef-File-b1d40b8ac6bb33d
+
+FileName: ../cosign/images/signatures.dot.svg
+SPDXID: SPDXRef-File-b32b83cc609b27d
+FileChecksum: SHA1: 13f5596f3290aae7e096e620ad3c4b796794a46a
+FileChecksum: SHA256: b32b83cc609b27dad4a661c85b4c36f43e70f2b6dc0ea1683a24e75c0dde5615
+FileChecksum: SHA512: 291e92306e8a079a08975836d16adb40d8bb9dc30bb3240f1acce32de138d002d6f91a7629b2320cf068094a33ed873406230b093f03948ba08aa10bd2545bff
+LicenseConcluded: Apache-2.0
+LicenseInfoInFile: NONE
+FileCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-cosign CONTAINS SPDXRef-File-b32b83cc609b27d
+
+FileName: ../cosign/pkg/cosign/rekor.pub
+SPDXID: SPDXRef-File-dce5ef715502ec9
+FileChecksum: SHA1: d6cd2af2196e9d8d138c98861b13e0b9f693bd30
+FileChecksum: SHA256: dce5ef715502ec9f3cdfd11f8cc384b31a6141023d3e7595e9908a81cb6241bd
+FileChecksum: SHA512: 0ae7705e02db33e814329746a4a0e5603c5bdcd91c96d072158d71011a2695788866565a2fec0fe363eb72cbcaeda39e54c5fe8d416daf9f3101fdba4217ef35
+LicenseConcluded: Apache-2.0
+LicenseInfoInFile: NONE
+FileCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-cosign CONTAINS SPDXRef-File-dce5ef715502ec9
+
+FileName: ../cosign/pkg/cosign/remote/remote.go
+SPDXID: SPDXRef-File-fc5d70a1dcdea5f
+FileChecksum: SHA1: 9a4f29e43f2f51ad4ca65419fd29cd49924d56a2
+FileChecksum: SHA256: fc5d70a1dcdea5f9ebd5d6009a6be8b8b381c9080d614218b7ecdf193156bf26
+FileChecksum: SHA512: b6f435822e254ca74754a2b46f8d9472c07d6dbc9b15b167ea9ee1c6e573d11b3d2127dba3b060d65459a78ecc133c98a662b4543e985a0a71f5fd8afe2e8688
+LicenseConcluded: Apache-2.0
+LicenseInfoInFile: NONE
+FileCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-cosign CONTAINS SPDXRef-File-fc5d70a1dcdea5f
+
+FileName: ../cosign/test/fuzz.go
+SPDXID: SPDXRef-File-833ddd567e56356
+FileChecksum: SHA1: a58ee902080676aa01e077be291897c20394d7aa
+FileChecksum: SHA256: 833ddd567e56356725d9b465fb8b0ac7b25db11ecd0e56a40d0327e1f1cb695a
+FileChecksum: SHA512: 42bb000bc1a150dc917d17ecc54933933f2f2c29efa5de1da91b09f4143511d4d7d4e0b160f51626bba0e8fcc9380d4518928d0ae8bb39a783d1c0926fbe4649
+LicenseConcluded: Apache-2.0
+LicenseInfoInFile: NONE
+FileCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-cosign CONTAINS SPDXRef-File-833ddd567e56356
+
+FileName: ../cosign/.github/workflows/tests.yaml
+SPDXID: SPDXRef-File-4418437299c8d6f
+FileChecksum: SHA1: 38f3df45ea65bbcf69215bc5178c50abfa3b4aef
+FileChecksum: SHA256: 4418437299c8d6ff0a5423aa3ba5f0b321028e792c97369f8318f6520e520e0c
+FileChecksum: SHA512: 76470b035ebc8336ac5fbe1ca03d5c20fe19ac0776f218efcd0d8a08186072721bab3e6e0a660f771e406518e63f26806fca94caf49c62ee31e643d8ec445340
+LicenseConcluded: Apache-2.0
+LicenseInfoInFile: NONE
+FileCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-cosign CONTAINS SPDXRef-File-4418437299c8d6f
+
+FileName: ../cosign/USAGE.md
+SPDXID: SPDXRef-File-f4ea37669fe3859
+FileChecksum: SHA1: ee4e1c388c1cedcce617789cf3222e6989cdd5cf
+FileChecksum: SHA256: f4ea37669fe3859f35042e5c96f2aeb133db4a782696bc499a35615501390ca4
+FileChecksum: SHA512: d0b74a7dec06fe8ece219c1ed13fe9ced40ab35f4eeda23d2f0a43ad202c0aaae782015b83487155b2ce786b192a08f5574714848a7f9df5879ba24450b596ba
+LicenseConcluded: Apache-2.0
+LicenseInfoInFile: NONE
+FileCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-cosign CONTAINS SPDXRef-File-f4ea37669fe3859
+
+FileName: ../cosign/cmd/cosign/cli/pivcli/piv_tool.go
+SPDXID: SPDXRef-File-f156f6467f954c5
+FileChecksum: SHA1: 6a4bc1c6a1918efe14a9f6cc240ddd1ac86040d9
+FileChecksum: SHA256: f156f6467f954c566a370e6d5be9fa2a63d526ab21d278118d1038bb7224bcbe
+FileChecksum: SHA512: f9fe01876d30fe2d191f616db2039444da6dcde55fc7110e3cb433b52c5a98884de5d88972acac202dd9f76799f696ed2ba5bdac1428d0df61ac4cfd420868a3
+LicenseConcluded: Apache-2.0
+LicenseInfoInFile: NONE
+FileCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-cosign CONTAINS SPDXRef-File-f156f6467f954c5
+
+FileName: ../cosign/cmd/cosign/cli/sign_test.go
+SPDXID: SPDXRef-File-caf64d05db29278
+FileChecksum: SHA1: a0e973c4906785780e928b94778c4937adb98d90
+FileChecksum: SHA256: caf64d05db29278b489538960a9d24a829b3e63901ca6611daac1db0c5c8a99b
+FileChecksum: SHA512: 5f0cd32e77b35a1e078d58a887bc08c2bfca5b9eac6188760b6b7d77aa0ddd166d149f1b19f9a7e109a782059875b22079b366809072a73e573ee2862343707d
+LicenseConcluded: Apache-2.0
+LicenseInfoInFile: NONE
+FileCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-cosign CONTAINS SPDXRef-File-caf64d05db29278
+
+FileName: ../cosign/cmd/sget/cli/sget.go
+SPDXID: SPDXRef-File-1032ac18b3056ff
+FileChecksum: SHA1: 83a69798fd50c3f733cf71fbd05e8b53d10909ea
+FileChecksum: SHA256: 1032ac18b3056ffa08f9e956c2e915d2a16de3da45a62208860db143cf502a9c
+FileChecksum: SHA512: 41b095817dcf24c71ecb5691715248526b453f48175c97be6a53cc6da6a607561b47588d55e0bdd3ff86c06e3c3c805eb92f8ea11c84432e1eb9dd36d34c302e
+LicenseConcluded: Apache-2.0
+LicenseInfoInFile: NONE
+FileCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-cosign CONTAINS SPDXRef-File-1032ac18b3056ff
+
+FileName: ../cosign/pkg/cosign/verify.go
+SPDXID: SPDXRef-File-f10b7b5e525e3b9
+FileChecksum: SHA1: 372c332b59baf5f9773c04cd77ab00508e201ab8
+FileChecksum: SHA256: f10b7b5e525e3b9058b42df003b85cb4bd61392a0ddc229b9204e96f528dea6c
+FileChecksum: SHA512: 15f3e6b5c11f9475ed583c738a05415f83a8c908aa9279173c45b7bb446d7d9dbcda4c91e786e42d185bc944f0740e13439cc099cb2bb334b28a730faba9b67b
+LicenseConcluded: Apache-2.0
+LicenseInfoInFile: NONE
+FileCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-cosign CONTAINS SPDXRef-File-f10b7b5e525e3b9
+
+FileName: ../cosign/.github/workflows/codeql-analysis.yml
+SPDXID: SPDXRef-File-e43d03aa4b6caa3
+FileChecksum: SHA1: afc525f0b3c1c32700a9e6c43e2af7cea957b871
+FileChecksum: SHA256: e43d03aa4b6caa3d28d5e19adbabd6a153d186e25944450de6aa88c6ddcc5ad4
+FileChecksum: SHA512: 5d82974cf39c5f0b145fb88acb44f6d707bfe6f283862341eb60a16da140d138a28f426b8bae0a72591306eab7de69e17a7fbdcf1f69c8350e824c3526fab8d2
+LicenseConcluded: Apache-2.0
+LicenseInfoInFile: NONE
+FileCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-cosign CONTAINS SPDXRef-File-e43d03aa4b6caa3
+
+FileName: ../cosign/cmd/cosign/cli/generate.go
+SPDXID: SPDXRef-File-98c4bfbfdd907ad
+FileChecksum: SHA1: 87530c02fb94fdd353c5d297396d352c1a3f11c4
+FileChecksum: SHA256: 98c4bfbfdd907addefc0a4d8476f5cc0d30703ad2870e542beb0eb478693406c
+FileChecksum: SHA512: 5790e56e73027bd270ace469b3a1a7aa16c11d449fdae0121c12b52ce57277e5cac07113c0ea3fd139458facd008a3db646562da229884b798c721e4514da091
+LicenseConcluded: Apache-2.0
+LicenseInfoInFile: NONE
+FileCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-cosign CONTAINS SPDXRef-File-98c4bfbfdd907ad
+
+FileName: ../cosign/.github/workflows/cosign.key
+SPDXID: SPDXRef-File-b70d36e0a8ee335
+FileChecksum: SHA1: 5feb68c9c2061abcd819d8c80c3f9bf7332e1c6d
+FileChecksum: SHA256: b70d36e0a8ee335621095bfa3f308feee1c3671c77348bb7173f9ad406300959
+FileChecksum: SHA512: 1321363e33ebf419714ad922200899e411fde7f6f688ecce694c4923b4846d7a3b779a1e27133aa451397790000a9cd12e3a577f2e04250892c2a9455c7ddc74
+LicenseConcluded: Apache-2.0
+LicenseInfoInFile: NONE
+FileCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-cosign CONTAINS SPDXRef-File-b70d36e0a8ee335
+
+FileName: ../cosign/.ko.yaml
+SPDXID: SPDXRef-File-87667e891d6a058
+FileChecksum: SHA1: a0f8ff3319f5bef04e14262875717dc755f2e791
+FileChecksum: SHA256: 87667e891d6a05881cd971d5942ee2bd06b6bef897fa03844f0b05d7cbca6df0
+FileChecksum: SHA512: 330ee33fe9acc9119c19d1c2954ee129b2dbcfe109dcc785b46e90311905f8adad818a899dad2af5e3f239424d09766a7b29203fd8dc877ade09434a469f9a84
+LicenseConcluded: Apache-2.0
+LicenseInfoInFile: NONE
+FileCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-cosign CONTAINS SPDXRef-File-87667e891d6a058
+
+FileName: ../cosign/README.md
+SPDXID: SPDXRef-File-a2d64456dde2741
+FileChecksum: SHA1: ccc29ae66dfc00c37958b9394020f2b30ce25d3a
+FileChecksum: SHA256: a2d64456dde27411842b49f711ebd7137f52b3965a50191e4f8c5cc237694270
+FileChecksum: SHA512: 123e35a09becbc008f4026695c7e296ef87a265b44e6ca694da8c138a446e33d5c16bff4e7714761e54d71c60d01a946103ae71c06f416d294f4420ccc10f2fc
+LicenseConcluded: Apache-2.0
+LicenseInfoInFile: NONE
+FileCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-cosign CONTAINS SPDXRef-File-a2d64456dde2741
+
+FileName: ../cosign/copasetic/main.go
+SPDXID: SPDXRef-File-427461ad2dca252
+FileChecksum: SHA1: 711eb4a6085b12f929aea2b2336d056e3a84fe81
+FileChecksum: SHA256: 427461ad2dca2524fdc2352ec1e630321153e47849a4b74582d14fe48047d6c9
+FileChecksum: SHA512: 86c74dd86d812c234a6dca57c202ac0276e910b0dc0227d0fc10b56a33662882ae00a96f72a59704ad5eb899fbc2234bcaeb8c221ec196bd9cd0ed256ebb8639
+LicenseConcluded: Apache-2.0
+LicenseInfoInFile: NONE
+FileCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-cosign CONTAINS SPDXRef-File-427461ad2dca252
+
+FileName: ../cosign/pkg/cosign/keys.go
+SPDXID: SPDXRef-File-5ae1944a8f07b6a
+FileChecksum: SHA1: de6bc06beeb5d8aa44e315c63cc81180e318b7db
+FileChecksum: SHA256: 5ae1944a8f07b6a137a23af33e7d744764e642a3867084f8328f0d320de99dbd
+FileChecksum: SHA512: 320891b0fe8cdb33e0a5d78ac900749e714b0bc5c1fa2d9ecd85ce487f5e5da37fbe607c3dfcbcd13ae5cbe1c183dd4b4b48d68ce514951834034d5e22ecea5e
+LicenseConcluded: Apache-2.0
+LicenseInfoInFile: NONE
+FileCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-cosign CONTAINS SPDXRef-File-5ae1944a8f07b6a
+
+FileName: ../cosign/KEYLESS.md
+SPDXID: SPDXRef-File-d56fea1d5dc3e80
+FileChecksum: SHA1: 892450b42d181119da8022d136e17ff51a825a15
+FileChecksum: SHA256: d56fea1d5dc3e80bde14e66405f4487da2d61734e96bc55fbb67da3f179dfbb0
+FileChecksum: SHA512: a10832e9b4b7476ba3c4d7058063771be5c14435c579e022663cd7813f9f811a22da03019f4f44682e08d9e4a1ab170059da101f02e62f9132c5d81586995e6f
+LicenseConcluded: Apache-2.0
+LicenseInfoInFile: NONE
+FileCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-cosign CONTAINS SPDXRef-File-d56fea1d5dc3e80
+
+FileName: ../cosign/KMS.md
+SPDXID: SPDXRef-File-1584f25f6611534
+FileChecksum: SHA1: e6672c7890e852c57e6b4b2144fd2f4366395423
+FileChecksum: SHA256: 1584f25f6611534a40a25c35a13fd296d110f7d3548efa4e863da7c1369ff1fa
+FileChecksum: SHA512: 145d183e6cf4db5846d8335e84f44ca8d2c9d13d5093642500a5ffc61f5d18f8d9685a1064caf5db2593f7fd924b6eb2a3b06eb1e0359c740af949ef22361b42
+LicenseConcluded: Apache-2.0
+LicenseInfoInFile: NONE
+FileCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-cosign CONTAINS SPDXRef-File-1584f25f6611534
+
+FileName: ../cosign/cmd/cosign/cli/upload.go
+SPDXID: SPDXRef-File-fa4113165d8bd3b
+FileChecksum: SHA1: b6fcab0f74904fcf5880104799a59a708768a78a
+FileChecksum: SHA256: fa4113165d8bd3b0f33a62ab2fd389402c53fb6f77f75ddde3716f6d4f9a1f62
+FileChecksum: SHA512: 8a8738451f8b20101fcb928253777189007a087d7c1f90d4c7647725846e47fb51fdc5c30b3688f17cd01ed647e35bfaba21e2801d9f72d2dbfb7666cbcb163c
+LicenseConcluded: Apache-2.0
+LicenseInfoInFile: NONE
+FileCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-cosign CONTAINS SPDXRef-File-fa4113165d8bd3b
+
+FileName: ../cosign/pkg/cosign/fetch.go
+SPDXID: SPDXRef-File-df17bc68ac77e27
+FileChecksum: SHA1: ef64766a7bbe72d86c745f69dbfdcbb1296f9fdb
+FileChecksum: SHA256: df17bc68ac77e27daa945d74f6c607a34d5b0993a3691aa9d8d26db7f3ae49d1
+FileChecksum: SHA512: eae8684ce1f2d8536b7f0de75682124ddd575fa0e5299d51e8e9d01e4fea02363a5b242dd54715c18dcd55ea3194b2663002780ac3692fe0958f92234c4ce64e
+LicenseConcluded: Apache-2.0
+LicenseInfoInFile: NONE
+FileCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-cosign CONTAINS SPDXRef-File-df17bc68ac77e27
+
+FileName: ../cosign/pkg/cosign/fulcio/fulcio.pem
+SPDXID: SPDXRef-File-f360c53b2e13495
+FileChecksum: SHA1: e25b24b112923326a93b0786924fed638e22e0ae
+FileChecksum: SHA256: f360c53b2e13495a628b9b8096455badcb6d375b185c4816d95a5d746ff29908
+FileChecksum: SHA512: 0713252a7fd17f7f3ab12f88a64accf2eb14b8ad40ca711d7fe8b4ecba3b24db9e9dffadb997b196d3867b8f9ff217faf930d80e4dab4e235c7fc3f07be69224
+LicenseConcluded: Apache-2.0
+LicenseInfoInFile: NONE
+FileCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-cosign CONTAINS SPDXRef-File-f360c53b2e13495
+
+FileName: ../cosign/test/piv_test.go
+SPDXID: SPDXRef-File-4858c65ea8234bd
+FileChecksum: SHA1: 280936ae271319373ecdbc23d844ff5b1d119133
+FileChecksum: SHA256: 4858c65ea8234bdace1d58dab91b05ff101fa8d9ca9c0c0c2aebb66b58b314b8
+FileChecksum: SHA512: 4a9be3ee832bdcb93ced1ab543d01034b624fc5d9f75faebffd8ab279ae554e9ebbb1c63f90fdc3d698e9b82adb9109ee06f25b4b93ec6f0770e9ccb8a3546db
+LicenseConcluded: Apache-2.0
+LicenseInfoInFile: NONE
+FileCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-cosign CONTAINS SPDXRef-File-4858c65ea8234bd
+
+FileName: ../cosign/.golangci.yml
+SPDXID: SPDXRef-File-20b8977a64a0323
+FileChecksum: SHA1: 22ec4c58a077b23b01f2ca7cfc9ab2c78bf3153c
+FileChecksum: SHA256: 20b8977a64a0323977b2450b479254b29932d7f4c704aab9a36688fda130ea07
+FileChecksum: SHA512: 9e2f4889edb7614d4d235f1cc03ad70437ed898906fb1e234bdb5c9a04c408c02d18190eeb588ecb945d10d169c43037ff66be691fe41b20e879e26c5c3a5390
+LicenseConcluded: Apache-2.0
+LicenseInfoInFile: NONE
+FileCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-cosign CONTAINS SPDXRef-File-20b8977a64a0323
+
+FileName: ../cosign/CHANGELOG.md
+SPDXID: SPDXRef-File-7286a1473d571c7
+FileChecksum: SHA1: 505020b7ad9be4b7775664fce11b04014e1f41d7
+FileChecksum: SHA256: 7286a1473d571c7816b97ff6337e39793bc0a9b078da6fa7aedd4eb91aa314a2
+FileChecksum: SHA512: 844924e4fca0ce856b824c5f5c9b37b67a919576912e6d72c3b39fa2006d64799da0172b81aa79db91e7ec4f3ff28975e346d432800362c45e074b1adb401d90
+LicenseConcluded: Apache-2.0
+LicenseInfoInFile: NONE
+FileCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-cosign CONTAINS SPDXRef-File-7286a1473d571c7
+
+FileName: ../cosign/cmd/cosign/cli/generate_key_pair.go
+SPDXID: SPDXRef-File-0fd7c257b1bc730
+FileChecksum: SHA1: e51fe030f3ea05b9e5e70132b44a25401bb19a48
+FileChecksum: SHA256: 0fd7c257b1bc730c7fda963539821af5bbf7d245766c0a336572b49314b58f6f
+FileChecksum: SHA512: c15fd2675c79cf06495e87f7a6ae3800ec2fbd2cc29118debdf69d6031a76d86978a3eaea1089489b731e3db400a1d52093400e757917544d08ed6a36666019e
+LicenseConcluded: Apache-2.0
+LicenseInfoInFile: NONE
+FileCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-cosign CONTAINS SPDXRef-File-0fd7c257b1bc730
+
+FileName: ../cosign/cmd/cosign/cli/verify_blob.go
+SPDXID: SPDXRef-File-ca2f07cef028ffe
+FileChecksum: SHA1: 21cd88a7467d9233860732dfee5ab58c889e7564
+FileChecksum: SHA256: ca2f07cef028ffe1409269cd5fc4cab893ae9102eabb5eb386fe086695b8df00
+FileChecksum: SHA512: 6438a4a1a771b1d53c38cfdcdf685805bc5eccf0f8b1e782ee91407ac6a7267776188aa0f7adee93ea4ce020654034f6354b3965d89d8be97950a9502c4315d0
+LicenseConcluded: Apache-2.0
+LicenseInfoInFile: NONE
+FileCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-cosign CONTAINS SPDXRef-File-ca2f07cef028ffe
+
+FileName: ../cosign/pkg/cosign/fetch_test.go
+SPDXID: SPDXRef-File-c698cda99f3001c
+FileChecksum: SHA1: aecc7b5b5bf99c988e97ccd8ff951d43816f3a09
+FileChecksum: SHA256: c698cda99f3001c055e3067ef0de77b939b07be8afdbc649a6d1910afa462bfe
+FileChecksum: SHA512: 8bc95d5492b9f0246eb373f7bcc56b6486046fcfaf695cfa6fcdde262cd5cf351475742314e6d8f1f1abc7427f9d664471643c83a1bea4a92ebb985e5c06c6e6
+LicenseConcluded: Apache-2.0
+LicenseInfoInFile: NONE
+FileCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-cosign CONTAINS SPDXRef-File-c698cda99f3001c
+
+FileName: ../cosign/.gitignore
+SPDXID: SPDXRef-File-a46fa6ccf43aead
+FileChecksum: SHA1: b02d2b58944cbbc3dbe63f89a9568c619f72caae
+FileChecksum: SHA256: a46fa6ccf43aead44d8f19c997b03a079d15704dcbd0f8520e404f6dfbb075df
+FileChecksum: SHA512: e31d6d1e39f5ec118239b6bf427491d0d60e83d02a96ccfa32cc95c6bde6fece398e39c3e74a3148afb3919057b4882ff5640249f5c4c907dbc46a9d37246fc2
+LicenseConcluded: Apache-2.0
+LicenseInfoInFile: NONE
+FileCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-cosign CONTAINS SPDXRef-File-a46fa6ccf43aead
+
+FileName: ../cosign/LICENSE
+SPDXID: SPDXRef-File-c71d239df91726f
+FileChecksum: SHA1: 7df059597099bb7dcf25d2a9aedfaf4465f72d8d
+FileChecksum: SHA256: c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4
+FileChecksum: SHA512: dc6b68d13b8cf959644b935f1192b02c71aa7a5cf653bd43b4480fa89eec8d4d3f16a2278ec8c3b40ab1fdb233b3173a78fd83590d6f739e0c9e8ff56c282557
+LicenseConcluded: Apache-2.0
+LicenseInfoInFile: Apache-2.0
+FileCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-cosign CONTAINS SPDXRef-File-c71d239df91726f
+
+FileName: ../cosign/TOKENS.md
+SPDXID: SPDXRef-File-face818c78c404a
+FileChecksum: SHA1: 02962dd6f3e12620802b0f58f5834b0aefebb669
+FileChecksum: SHA256: face818c78c404ad8af9024f1e6b7fc0cd6457fd7bf688540ba1a35eb9aa4959
+FileChecksum: SHA512: 92e4f1ae7e428e2e2a8d96e32a64a4b6cf80270f97141109da1d37f06aefa6b887856568c1c68505bf3f9142e83490504a0bc3dfe62f6ee4b64099acdd85ebe6
+LicenseConcluded: Apache-2.0
+LicenseInfoInFile: NONE
+FileCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-cosign CONTAINS SPDXRef-File-face818c78c404a
+
+FileName: ../cosign/pkg/cosign/keys_test.go
+SPDXID: SPDXRef-File-31e05e34cdd8d22
+FileChecksum: SHA1: 47d924774783051477d4639112b7a116223a7cdf
+FileChecksum: SHA256: 31e05e34cdd8d227bc21bd3afb78da0abf9f0dc40c50514f6848920c66868d6d
+FileChecksum: SHA512: 0ee820344c9eb8bd8f83700a99603e42244c19a569d84cc72d9ac0531b1390dc52d0cf099080c4fd0f6ff1d3d54e23a6ef2f9455da4e1f95010b84ddb616297b
+LicenseConcluded: Apache-2.0
+LicenseInfoInFile: NONE
+FileCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-cosign CONTAINS SPDXRef-File-31e05e34cdd8d22
+
+FileName: ../cosign/pkg/cosign/upload.go
+SPDXID: SPDXRef-File-94245b64be61804
+FileChecksum: SHA1: a69c0da631be737189eed93eadef7929084f0366
+FileChecksum: SHA256: 94245b64be618048282b83368bd793a07f9c24db6ab16179bf45700ede2ea5f0
+FileChecksum: SHA512: a2a7b88739bfc65eb9bfe27e238ecca55192700db64c02f88996759c8e8bf9a294b8de70e75a2e099c285f08e526faf8655c8a482f19c32ed33931b0548a294f
+LicenseConcluded: Apache-2.0
+LicenseInfoInFile: NONE
+FileCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-cosign CONTAINS SPDXRef-File-94245b64be61804
+
+FileName: ../cosign/test/e2e_test.sh
+SPDXID: SPDXRef-File-d5b8f3cf60d1885
+FileChecksum: SHA1: 4bf835fdee404e892849ffb9cf095decf7992c67
+FileChecksum: SHA256: d5b8f3cf60d1885a56012b60cee7e6c296215904d7d1c9a418dcc61955046a0b
+FileChecksum: SHA512: 93e8907885cc56847da9fbbe5c26cf51a8c75a63ed1adc80f975d1e5d246c881850aea3a67c52322b9d4ae16990358403053b1906c04a2fcc6b0ac1c760d5f57
+LicenseConcluded: Apache-2.0
+LicenseInfoInFile: NONE
+FileCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-cosign CONTAINS SPDXRef-File-d5b8f3cf60d1885
+
+FileName: ../cosign/pkg/cosign/upload_test.go
+SPDXID: SPDXRef-File-e4e735d62e9a406
+FileChecksum: SHA1: 8e2457868d5b22a9514776b03f255374a323dcb8
+FileChecksum: SHA256: e4e735d62e9a40686b5ea1182601c5a5e3f8b86cce00d5f7e93a4044f890a28e
+FileChecksum: SHA512: dbe11e06569a8febe84807e439834d1aab2e88a13211d630649c0b7fe73fda627a5c1c8ac156b6a47a9374beb8cf36803edd27086641396453b7b290186d8b28
+LicenseConcluded: Apache-2.0
+LicenseInfoInFile: NONE
+FileCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-cosign CONTAINS SPDXRef-File-e4e735d62e9a406
+
+FileName: ../cosign/.github/workflows/e2e_tests.yml
+SPDXID: SPDXRef-File-ead5a7a99541fde
+FileChecksum: SHA1: beef44d9c088bc1ad1e0c232ea7a1b6a2c912027
+FileChecksum: SHA256: ead5a7a99541fdeae9fe65e7f6cf32c06195002e950b74814b688fb32f75efcf
+FileChecksum: SHA512: 7329d4ed061b04dbda86a01d4392c63ad1138183981b8b0a6fb790b68bcb90dd4982905d005d431cec17846e14ee38b4bef60b598170d16011c909e1bb570b63
+LicenseConcluded: Apache-2.0
+LicenseInfoInFile: NONE
+FileCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-cosign CONTAINS SPDXRef-File-ead5a7a99541fde
+
+FileName: ../cosign/COPYRIGHT.txt
+SPDXID: SPDXRef-File-6622d1d495e7d3a
+FileChecksum: SHA1: 5a3d2a3dd0e3ff34083dd46d12cb4d8d579cfc24
+FileChecksum: SHA256: 6622d1d495e7d3a0e574c65e872f823cecbe585e25708d2223a28db016229119
+FileChecksum: SHA512: 0687abd0846abb4fcfe1402283ac3eb18dc57d1191a2c549d6f25118f3fc2502e03c5850a31ec359d9868888a2e2b0073f2010e069f6eac0593797b4296beaed
+LicenseConcluded: Apache-2.0
+LicenseInfoInFile: NONE
+FileCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-cosign CONTAINS SPDXRef-File-6622d1d495e7d3a
+
+FileName: ../cosign/Makefile
+SPDXID: SPDXRef-File-8d5325ca8f29d55
+FileChecksum: SHA1: 76da0fc17ddb6e1ed21dcf35312f28d3732b46ce
+FileChecksum: SHA256: 8d5325ca8f29d559d383902ffb0d1cd693d46fa80a585d84d06e85b320366434
+FileChecksum: SHA512: ce294862b64024755631346f477d6b0e8d4a1344fa6a198d4f91b0da4250e915ff210fccc79094f440860a5cbcd49f2eb8b8dbbf8ed08864321ed0d904767252
+LicenseConcluded: Apache-2.0
+LicenseInfoInFile: NONE
+FileCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-cosign CONTAINS SPDXRef-File-8d5325ca8f29d55
+
+FileName: ../cosign/cmd/cosign/cli/flags_test.go
+SPDXID: SPDXRef-File-29f709d713fca94
+FileChecksum: SHA1: b7a949f3fa4e26ec7a1d990fc2dac815d91bb1f2
+FileChecksum: SHA256: 29f709d713fca9485c577cd727f4b04faa4cbefdccf22e0a6da7be5e91f2ba2f
+FileChecksum: SHA512: 844bd37d20faaf5cc5e6b9704f5339eac71f0b71371dcd5d4ae4a0108b80daa2fc420a01f1fa5afd70199e2d853fe14976e4615de2bcdf7ccbcfdccb344e31c1
+LicenseConcluded: Apache-2.0
+LicenseInfoInFile: NONE
+FileCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-cosign CONTAINS SPDXRef-File-29f709d713fca94
+
+FileName: ../cosign/cmd/cosign/main.go
+SPDXID: SPDXRef-File-d55b713620e3d86
+FileChecksum: SHA1: 4805bf669da87ae11c44f4693db22b17d46ffaa2
+FileChecksum: SHA256: d55b713620e3d86a407074eabfdd4d74fcd51044529eb54ad341f482c3d905db
+FileChecksum: SHA512: c32805efb0931432f73bdaa1c4eb7b4aae15723a66376f53bd9b33dde3a296ca2756270dcb21bef396a2a6f51c1212f93a36cb2da90e0091361b0fcbfb55e408
+LicenseConcluded: Apache-2.0
+LicenseInfoInFile: NONE
+FileCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-cosign CONTAINS SPDXRef-File-d55b713620e3d86
+
+FileName: ../cosign/cmd/sget/main.go
+SPDXID: SPDXRef-File-08f7443c1a91357
+FileChecksum: SHA1: 4082c4d83aff338a5405a72ee75c39becb4d70ac
+FileChecksum: SHA256: 08f7443c1a91357f00686a2a5e3b24a4ed5ab9596371e16a6348a19ee834cbc8
+FileChecksum: SHA512: 626515c841dfb7deb938f10a74a3e9564bdbe3e25f3c7cd23245af7f7bda221f83cdb02d9d9f021855f24350156936a09c38f4b3c4a5d165b65ac76a90654b4e
+LicenseConcluded: Apache-2.0
+LicenseInfoInFile: NONE
+FileCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-cosign CONTAINS SPDXRef-File-08f7443c1a91357
+
+FileName: ../cosign/go.sum
+SPDXID: SPDXRef-File-eb04c6c59cb576c
+FileChecksum: SHA1: ff40c3b4528fb0bc7dffb5c2bdae8c42f09e40a9
+FileChecksum: SHA256: eb04c6c59cb576cc630ac4e04488195be6799fb30bb6a628100307bc3b1a38b6
+FileChecksum: SHA512: d026b634674c2ae6451f67130443ba4258cf6178614fa87784e44b9d8e41175956d38dfeba33bd315095a5ce9ec1f258a7f458bc9665f0512bcc44e10be69e02
+LicenseConcluded: Apache-2.0
+LicenseInfoInFile: NONE
+FileCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-cosign CONTAINS SPDXRef-File-eb04c6c59cb576c
+
+FileName: ../cosign/cmd/cosign/cli/sign.go
+SPDXID: SPDXRef-File-8fe62b0ed0e8b4c
+FileChecksum: SHA1: d137f9b662c1c3f75a0776e01ca38e14af89dfa2
+FileChecksum: SHA256: 8fe62b0ed0e8b4c697fac979c4fdbcd9cafe582f4fa560b8ecee128d843a7723
+FileChecksum: SHA512: 7fc49ce1e91afe17b54764d0404785b6ca29bd3567dabf76145eea9b6e2f4f62e0c65682d2d0b01d0c87c3257ae35e4b7a31abc72daa841f4de1750c09e1d358
+LicenseConcluded: Apache-2.0
+LicenseInfoInFile: NONE
+FileCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-cosign CONTAINS SPDXRef-File-8fe62b0ed0e8b4c
+
+FileName: ../cosign/cmd/cosign/cli/sign_blob.go
+SPDXID: SPDXRef-File-3ca230b70b58962
+FileChecksum: SHA1: 70cdd7150a5e7d71bf2e5e760ce770db72f48767
+FileChecksum: SHA256: 3ca230b70b58962953f95aee0851d56acf2638e52879c30f5e52ee15305c9a5a
+FileChecksum: SHA512: 9c74e5c149b43b3ea79f5e01266bcd785fd98ac699e355b480528c05ea1e7d5c8da5fb69f6040e37c5c9a31cbddb2759579f642872ae5f442d9673d62bdf53d4
+LicenseConcluded: Apache-2.0
+LicenseInfoInFile: NONE
+FileCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-cosign CONTAINS SPDXRef-File-3ca230b70b58962
+
+FileName: ../cosign/cmd/cosign/cli/version.go
+SPDXID: SPDXRef-File-67c4a25995e8597
+FileChecksum: SHA1: ac807d5680518171bfeb44f19e6f5c30623755c1
+FileChecksum: SHA256: 67c4a25995e8597b0c0cf5f711ab7a22e58dd3f0b6d886163772a504dd2053c9
+FileChecksum: SHA512: bee6fa9e6380f4c33fde869d42ff3c07bb6050464be349d7729ecd90d45b585e6229d27d63ba42d711166c273927434b4cbdc01f31e45b05cb13932d33faac57
+LicenseConcluded: Apache-2.0
+LicenseInfoInFile: NONE
+FileCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-cosign CONTAINS SPDXRef-File-67c4a25995e8597
+
+FileName: ../cosign/pkg/cosign/pivkey/pivkey.go
+SPDXID: SPDXRef-File-0363e7a8d828e50
+FileChecksum: SHA1: 11dd6948c12483fa5cfd4a109aa4b3b64052fb24
+FileChecksum: SHA256: 0363e7a8d828e50d1ee5208e99121123293f7f558dea92c14898acf17834d701
+FileChecksum: SHA512: 41847163648eb3bea4b16372570b74b363f1aea7444ccb337b08a8e2751fc6f5dae9fd1b9a1156cfa9cee1587aef7fc431a95c8765989781827739b0792fbad9
+LicenseConcluded: Apache-2.0
+LicenseInfoInFile: NONE
+FileCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-cosign CONTAINS SPDXRef-File-0363e7a8d828e50
+
+FileName: ../cosign/test/e2e_test_secrets.sh
+SPDXID: SPDXRef-File-ca140463c0037fb
+FileChecksum: SHA1: 7854761379b42aedc334267a627708402ff118f1
+FileChecksum: SHA256: ca140463c0037fbe477818c9974c9478c597b57eac5083f0de1007da64c8e476
+FileChecksum: SHA512: e02d04344f3309e04453a9620b7461a42e93586b7879d24c96d2c29b42642b6747858fc69a28a6f4a42998630e42880e17b1c4af2ea53f9990859c5202384afb
+LicenseConcluded: Apache-2.0
+LicenseInfoInFile: NONE
+FileCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-cosign CONTAINS SPDXRef-File-ca140463c0037fb
+
+FileName: ../cosign/go.mod
+SPDXID: SPDXRef-File-5fe69480846948e
+FileChecksum: SHA1: 77ef6296e297ecd070b613ccf57f99dc6dda0a52
+FileChecksum: SHA256: 5fe69480846948e74f1e7208cda84e6c4d79f76e5c65eb5f4ecef6fcf62a2064
+FileChecksum: SHA512: 643ccc6f773b2981572182f465e21aac14c8ef71cb94a7cea1f7dc97d49b09ba836319e0df004a71383e1fc7d283463f8adf0572a1fba32f1e48518ca4267725
+LicenseConcluded: Apache-2.0
+LicenseInfoInFile: NONE
+FileCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-cosign CONTAINS SPDXRef-File-5fe69480846948e
+
+FileName: ../cosign/.github/workflows/cosign.pub
+SPDXID: SPDXRef-File-4aa4bd19530a492
+FileChecksum: SHA1: 8f6628180b022135ddf123d87c184e61a2f51918
+FileChecksum: SHA256: 4aa4bd19530a4929d758a9896255aef2c82f1a3a9f4b000034c6df4307c14f9e
+FileChecksum: SHA512: 3e1338f2cb9de3d98fb6390b7a512425094bd6b13e5419223969c92d92a7ee41b1e64c5125ea0790498a7b46c114c928e1be260b6f2b1b99baf400c791f28d6b
+LicenseConcluded: Apache-2.0
+LicenseInfoInFile: NONE
+FileCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-cosign CONTAINS SPDXRef-File-4aa4bd19530a492
+
+FileName: ../cosign/.github/workflows/cross.yaml
+SPDXID: SPDXRef-File-fc06a89334f2dd2
+FileChecksum: SHA1: 0978ecb4b93835744d749f413d1d26fc60920560
+FileChecksum: SHA256: fc06a89334f2dd26d1d8d375484e5cc7626a3a085569f25974e1884742015794
+FileChecksum: SHA512: f0856b9fc1abc6dad7b0f22ebec36bd6438302460de8da97073f8ef5a396d901a173546d079bc4d95690071602c4e56aca652ebc82a4d72f025adc76a109b6d0
+LicenseConcluded: Apache-2.0
+LicenseInfoInFile: NONE
+FileCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-cosign CONTAINS SPDXRef-File-fc06a89334f2dd2
+
+FileName: ../cosign/cmd/cosign/cli/clean.go
+SPDXID: SPDXRef-File-95b57a75fdb97ff
+FileChecksum: SHA1: dfec286d61d48084a954d02a2cae5f038e5627d1
+FileChecksum: SHA256: 95b57a75fdb97ff9631b6c59146b8cd8624da4bb106182a394d64260c2c0b43c
+FileChecksum: SHA512: 063c4c005469bfc1b7ef0a6882f2a17956b058e4d6338646720d62c0a50dd76d3b7fa965878328cb1b316dce630bb0db8b413df0d118bb74aae37b41d628fc7c
+LicenseConcluded: Apache-2.0
+LicenseInfoInFile: NONE
+FileCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-cosign CONTAINS SPDXRef-File-95b57a75fdb97ff
+
+FileName: ../cosign/cmd/cosign/cli/download.go
+SPDXID: SPDXRef-File-001d5039ec2972e
+FileChecksum: SHA1: 8de47584da3dabe4eaa6e65265f4005006f75c31
+FileChecksum: SHA256: 001d5039ec2972e3429092ebbf33ee51047efdc951214c4cd7c8124b95fddb3c
+FileChecksum: SHA512: 90a596437b91a14dd003c30e846eeb075d3d125a04ac5e153a5709bddef324435d00782f97579ca62870b508d6af0955e36af24a99fb7a43b67d8c1e14d91613
+LicenseConcluded: Apache-2.0
+LicenseInfoInFile: NONE
+FileCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-cosign CONTAINS SPDXRef-File-001d5039ec2972e
+
+FileName: ../cosign/cmd/cosign/cli/generate_key_pair_test.go
+SPDXID: SPDXRef-File-d148ad98c9e1cfd
+FileChecksum: SHA1: 544ccc97fdde8865fba6b77b13d99adcdcf09aef
+FileChecksum: SHA256: d148ad98c9e1cfdfacb49f3fdcde420234248ff39b52da03dc5fba8541f49b63
+FileChecksum: SHA512: 7ba838d82b3f59c4d35b6944cedd80fce17acfec4d283ff9ff03a426ed9c1a6f4cb1d8e62237e3d5e922228697c8fbd85b69e4d8a970316836c6289c6637cde8
+LicenseConcluded: Apache-2.0
+LicenseInfoInFile: NONE
+FileCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-cosign CONTAINS SPDXRef-File-d148ad98c9e1cfd
+
+FileName: ../cosign/cmd/cosign/cli/upload_blob.go
+SPDXID: SPDXRef-File-31112a138d483de
+FileChecksum: SHA1: 563b094b085a489a4b1c8f7f3a364ebd8acd9bb4
+FileChecksum: SHA256: 31112a138d483de59ab1efe8741db4f4f16da98a6266f2b56435cf740c4384ef
+FileChecksum: SHA512: 4d8969de30f8a88d510c17ee599b1e39401b4a5230c7b065bd5885ed0443288fbb924692cc2d67e363a1bbe97f965ed16a836578aaff63d31cc8fabe62f54f00
+LicenseConcluded: Apache-2.0
+LicenseInfoInFile: NONE
+FileCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-cosign CONTAINS SPDXRef-File-31112a138d483de
+
+FileName: ../cosign/cmd/cosign/cli/upload_blob_test.go
+SPDXID: SPDXRef-File-478d3ec32480c04
+FileChecksum: SHA1: dc8edc28747678e342889ec525169455cc8fff09
+FileChecksum: SHA256: 478d3ec32480c043a5ab8fdeeef04f08a2859293c44b5cdaa0b9dccffc4a7096
+FileChecksum: SHA512: 5858b0aac3cb7bc748eb3908f4c189e775e0f8f71f91c28e769295469cd7d740ddff215eeab31c35193235ba1682fdc3692ed6513f7a32fc43a8b5b4c42a7cd9
+LicenseConcluded: Apache-2.0
+LicenseInfoInFile: NONE
+FileCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-cosign CONTAINS SPDXRef-File-478d3ec32480c04
+
+##### Package: github.com/google/trillian
+
+PackageName: github.com/google/trillian
+SPDXID: SPDXRef-Package-githubcomgoogletrillian
+PackageDownloadLocation: https://github.com/google/trillian
+FilesAnalyzed: false
+PackageLicenseConcluded: Apache-2.0
+PackageVersion: v1.3.14-0.20210413093047-5e12fb368c8f
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-cosign DEPENDS_ON SPDXRef-Package-githubcomgoogletrillian
+
+##### Package: github.com/leodido/go-urn
+
+PackageName: github.com/leodido/go-urn
+SPDXID: SPDXRef-Package-githubcomleodidogo-urn
+PackageDownloadLocation: https://github.com/leodido/go-urn
+FilesAnalyzed: false
+PackageLicenseConcluded: MIT
+PackageVersion: v1.2.1
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-cosign DEPENDS_ON SPDXRef-Package-githubcomleodidogo-urn
+
+##### Package: github.com/pkg/errors
+
+PackageName: github.com/pkg/errors
+SPDXID: SPDXRef-Package-githubcompkgerrors
+PackageDownloadLocation: https://github.com/pkg/errors
+FilesAnalyzed: false
+PackageLicenseConcluded: BSD-2-Clause
+PackageVersion: v0.9.1
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-cosign DEPENDS_ON SPDXRef-Package-githubcompkgerrors
+
+##### Package: github.com/google/certificate-transparency-go
+
+PackageName: github.com/google/certificate-transparency-go
+SPDXID: SPDXRef-Package-githubcomgooglecertificate-transparency-go
+PackageDownloadLocation: https://github.com/google/certificate-transparency-go
+FilesAnalyzed: false
+PackageLicenseConcluded: Apache-2.0
+PackageVersion: v1.1.1
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-cosign DEPENDS_ON SPDXRef-Package-githubcomgooglecertificate-transparency-go
+
+##### Package: github.com/go-openapi/runtime
+
+PackageName: github.com/go-openapi/runtime
+SPDXID: SPDXRef-Package-githubcomgo-openapiruntime
+PackageDownloadLocation: https://github.com/go-openapi/runtime
+FilesAnalyzed: false
+PackageLicenseConcluded: Apache-2.0
+PackageVersion: v0.19.28
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-cosign DEPENDS_ON SPDXRef-Package-githubcomgo-openapiruntime
+
+##### Package: github.com/google/go-containerregistry
+
+PackageName: github.com/google/go-containerregistry
+SPDXID: SPDXRef-Package-githubcomgooglego-containerregistry
+PackageDownloadLocation: https://github.com/google/go-containerregistry
+FilesAnalyzed: false
+PackageLicenseConcluded: Apache-2.0
+PackageVersion: v0.5.1
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-cosign DEPENDS_ON SPDXRef-Package-githubcomgooglego-containerregistry
+
+##### Package: github.com/jedisct1/go-minisign
+
+PackageName: github.com/jedisct1/go-minisign
+SPDXID: SPDXRef-Package-githubcomjedisct1go-minisign
+PackageDownloadLocation: https://github.com/jedisct1/go-minisign
+FilesAnalyzed: false
+PackageLicenseConcluded: MIT
+PackageVersion: v0.0.0-20210414164026-819d7e2534ac
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-cosign DEPENDS_ON SPDXRef-Package-githubcomjedisct1go-minisign
+
+##### Package: github.com/pelletier/go-toml
+
+PackageName: github.com/pelletier/go-toml
+SPDXID: SPDXRef-Package-githubcompelletiergo-toml
+PackageDownloadLocation: https://github.com/pelletier/go-toml
+FilesAnalyzed: false
+PackageLicenseConcluded: MIT
+PackageVersion: v1.9.0
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-cosign DEPENDS_ON SPDXRef-Package-githubcompelletiergo-toml
+
+##### Package: github.com/sigstore/fulcio
+
+PackageName: github.com/sigstore/fulcio
+SPDXID: SPDXRef-Package-githubcomsigstorefulcio
+PackageDownloadLocation: https://github.com/sigstore/fulcio
+FilesAnalyzed: false
+PackageLicenseConcluded: Apache-2.0
+PackageVersion: v0.0.0-20210405115948-e7630f533fca
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-cosign DEPENDS_ON SPDXRef-Package-githubcomsigstorefulcio
+
+##### Package: github.com/stretchr/testify
+
+PackageName: github.com/stretchr/testify
+SPDXID: SPDXRef-Package-githubcomstretchrtestify
+PackageDownloadLocation: https://github.com/stretchr/testify
+FilesAnalyzed: false
+PackageLicenseConcluded: MIT
+PackageVersion: v1.7.0
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-cosign DEPENDS_ON SPDXRef-Package-githubcomstretchrtestify
+
+##### Package: golang.org/x/sync
+
+PackageName: golang.org/x/sync
+SPDXID: SPDXRef-Package-golangorgxsync
+PackageDownloadLocation: https://go.googlesource.com/sync
+FilesAnalyzed: false
+PackageLicenseConcluded: BSD-3-Clause
+PackageVersion: v0.0.0-20210220032951-036812b2e83c
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-cosign DEPENDS_ON SPDXRef-Package-golangorgxsync
+
+##### Package: github.com/go-openapi/analysis
+
+PackageName: github.com/go-openapi/analysis
+SPDXID: SPDXRef-Package-githubcomgo-openapianalysis
+PackageDownloadLocation: https://github.com/go-openapi/analysis
+FilesAnalyzed: false
+PackageLicenseConcluded: Apache-2.0
+PackageVersion: v0.20.1
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-cosign DEPENDS_ON SPDXRef-Package-githubcomgo-openapianalysis
+
+##### Package: github.com/go-openapi/strfmt
+
+PackageName: github.com/go-openapi/strfmt
+SPDXID: SPDXRef-Package-githubcomgo-openapistrfmt
+PackageDownloadLocation: https://github.com/go-openapi/strfmt
+FilesAnalyzed: false
+PackageLicenseConcluded: Apache-2.0
+PackageVersion: v0.20.1
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-cosign DEPENDS_ON SPDXRef-Package-githubcomgo-openapistrfmt
+
+##### Package: github.com/go-piv/piv-go
+
+PackageName: github.com/go-piv/piv-go
+SPDXID: SPDXRef-Package-githubcomgo-pivpiv-go
+PackageDownloadLocation: https://github.com/go-piv/piv-go
+FilesAnalyzed: false
+PackageLicenseConcluded: Apache-2.0
+PackageVersion: v1.7.0
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-cosign DEPENDS_ON SPDXRef-Package-githubcomgo-pivpiv-go
+
+##### Package: github.com/google/go-cmp
+
+PackageName: github.com/google/go-cmp
+SPDXID: SPDXRef-Package-githubcomgooglego-cmp
+PackageDownloadLocation: https://github.com/google/go-cmp
+FilesAnalyzed: false
+PackageLicenseConcluded: BSD-3-Clause
+PackageVersion: v0.5.5
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-cosign DEPENDS_ON SPDXRef-Package-githubcomgooglego-cmp
+
+##### Package: github.com/magiconair/properties
+
+PackageName: github.com/magiconair/properties
+SPDXID: SPDXRef-Package-githubcommagiconairproperties
+PackageDownloadLocation: https://github.com/magiconair/properties
+FilesAnalyzed: false
+PackageLicenseConcluded: BSD-2-Clause
+PackageVersion: v1.8.5
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-cosign DEPENDS_ON SPDXRef-Package-githubcommagiconairproperties
+
+##### Package: github.com/open-policy-agent/opa
+
+PackageName: github.com/open-policy-agent/opa
+SPDXID: SPDXRef-Package-githubcomopen-policy-agentopa
+PackageDownloadLocation: https://github.com/open-policy-agent/opa
+FilesAnalyzed: false
+PackageLicenseConcluded: Apache-2.0
+PackageVersion: v0.28.0
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-cosign DEPENDS_ON SPDXRef-Package-githubcomopen-policy-agentopa
+
+##### Package: github.com/sigstore/sigstore
+
+PackageName: github.com/sigstore/sigstore
+SPDXID: SPDXRef-Package-githubcomsigstoresigstore
+PackageDownloadLocation: https://github.com/sigstore/sigstore
+FilesAnalyzed: false
+PackageLicenseConcluded: Apache-2.0
+PackageVersion: v0.0.0-20210427115853-11e6eaab7cdc
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-cosign DEPENDS_ON SPDXRef-Package-githubcomsigstoresigstore
+
+##### Package: github.com/theupdateframework/go-tuf
+
+PackageName: github.com/theupdateframework/go-tuf
+SPDXID: SPDXRef-Package-githubcomtheupdateframeworkgo-tuf
+PackageDownloadLocation: https://github.com/theupdateframework/go-tuf
+FilesAnalyzed: false
+PackageLicenseConcluded: BSD-3-Clause
+PackageVersion: v0.0.0-20201230183259-aee6270feb55
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-cosign DEPENDS_ON SPDXRef-Package-githubcomtheupdateframeworkgo-tuf
+
+##### Package: github.com/cyberphone/json-canonicalization
+
+PackageName: github.com/cyberphone/json-canonicalization
+SPDXID: SPDXRef-Package-githubcomcyberphonejson-canonicalization
+PackageDownloadLocation: https://github.com/cyberphone/json-canonicalization
+FilesAnalyzed: false
+PackageLicenseConcluded: PSF-2.0
+PackageVersion: v0.0.0-20210303052042-6bc126869bf4
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-cosign DEPENDS_ON SPDXRef-Package-githubcomcyberphonejson-canonicalization
+
+##### Package: github.com/manifoldco/promptui
+
+PackageName: github.com/manifoldco/promptui
+SPDXID: SPDXRef-Package-githubcommanifoldcopromptui
+PackageDownloadLocation: https://github.com/manifoldco/promptui
+FilesAnalyzed: false
+PackageLicenseConcluded: BSD-3-Clause
+PackageVersion: v0.8.0
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-cosign DEPENDS_ON SPDXRef-Package-githubcommanifoldcopromptui
+
+##### Package: github.com/peterbourgon/ff/v3
+
+PackageName: github.com/peterbourgon/ff/v3
+SPDXID: SPDXRef-Package-githubcompeterbourgonffv3
+PackageDownloadLocation: https://github.com/peterbourgon/ff
+FilesAnalyzed: false
+PackageLicenseConcluded: Apache-2.0
+PackageVersion: v3.0.0
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-cosign DEPENDS_ON SPDXRef-Package-githubcompeterbourgonffv3
+
+##### Package: github.com/sigstore/rekor
+
+PackageName: github.com/sigstore/rekor
+SPDXID: SPDXRef-Package-githubcomsigstorerekor
+PackageDownloadLocation: https://github.com/sigstore/rekor
+FilesAnalyzed: false
+PackageLicenseConcluded: Apache-2.0
+PackageVersion: v0.1.2-0.20210519014330-b5480728bde6
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-cosign DEPENDS_ON SPDXRef-Package-githubcomsigstorerekor
+
+##### Package: github.com/spf13/afero
+
+PackageName: github.com/spf13/afero
+SPDXID: SPDXRef-Package-githubcomspf13afero
+PackageDownloadLocation: https://github.com/spf13/afero
+FilesAnalyzed: false
+PackageLicenseConcluded: Apache-2.0
+PackageVersion: v1.6.0
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-cosign DEPENDS_ON SPDXRef-Package-githubcomspf13afero
+
+##### Package: golang.org/x/term
+
+PackageName: golang.org/x/term
+SPDXID: SPDXRef-Package-golangorgxterm
+PackageDownloadLocation: https://go.googlesource.com/term
+FilesAnalyzed: false
+PackageLicenseConcluded: BSD-3-Clause
+PackageVersion: v0.0.0-20210422114643-f5beecf764ed
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-cosign DEPENDS_ON SPDXRef-Package-golangorgxterm
+
+##### Package: github.com/go-openapi/swag
+
+PackageName: github.com/go-openapi/swag
+SPDXID: SPDXRef-Package-githubcomgo-openapiswag
+PackageDownloadLocation: https://github.com/go-openapi/swag
+FilesAnalyzed: false
+PackageLicenseConcluded: Apache-2.0
+PackageVersion: v0.19.15
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-cosign DEPENDS_ON SPDXRef-Package-githubcomgo-openapiswag
+
+Relationship: SPDXRef-DOCUMENT DESCRIBES SPDXRef-Package-cosign
+
+
