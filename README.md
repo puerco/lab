@@ -1,4 +1,4 @@
 # lab
 Pruebas misc
 
-Es para probar de nuevo
+Es un repo solo para probar.
