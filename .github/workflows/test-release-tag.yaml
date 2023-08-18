@@ -18,6 +18,8 @@ jobs:
 
       - name: Publish Release
         uses: puerco/release-actions/publish-release@main
+        with:
+            assets: "kubernetes.png|starship.toml"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         
