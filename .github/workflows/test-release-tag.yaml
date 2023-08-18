@@ -1,0 +1,22 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - 'test-*'
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write # needed to write releases
+
+    steps:
+      - name: Install publish-release
+        uses: puerco/release-actions/setup-publish-release@main
+
+      - name: Publish Release
+        uses: puerco/release-actions/setup-publish-release@main
+        
+
