@@ -1,0 +1,20 @@
+on:
+  workflow_dispatch:
+    #inputs:
+    #  version:
+    #    description: tag the latest commit on main with the given version (prefixed with v)
+    #    required: true
+
+
+jobs:
+  test_bom_action:
+    runs-on: ubuntu-latest
+
+    permissions: {}
+
+    name: Install bom and test presence in path
+    steps:
+      - name: Install bom
+        uses: puerco/release-actions/setup-publish-release@main
+      - name: Check install!
+        run: publish-release --help
