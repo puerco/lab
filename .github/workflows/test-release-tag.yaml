@@ -17,6 +17,6 @@ jobs:
         uses: puerco/release-actions/setup-publish-release@main
 
       - name: Publish Release
-        uses: puerco/release-actions/setup-publish-release@main
+        uses: puerco/release-actions/publish-release@main
         
 
