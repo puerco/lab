@@ -18,5 +18,7 @@ jobs:
 
       - name: Publish Release
         uses: puerco/release-actions/publish-release@main
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         
 
