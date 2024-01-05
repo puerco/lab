@@ -1,0 +1,15 @@
+name: Check Release Notes
+
+on:
+  pull_request:
+
+jobs:
+  check-release-notes:
+    runs-on: ubuntu-latest
+
+    permissions:
+      pull-requests: read # needed to read the PR data
+
+    steps:
+      - name: Install publish-release
+        uses: puerco/release-actions/check-release-notes@69d1b1e926c49bef7d7e5eec7cfeb560fafed6c6
