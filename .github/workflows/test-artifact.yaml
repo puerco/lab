@@ -1,0 +1,21 @@
+name: Test Artifact Upload
+
+on:
+  workflow_dispatch:
+
+jobs:
+  check-release-notes:
+    runs-on: ubuntu-latest
+
+    #permissions:
+    #  pull-requests: write # needed to read the PR data
+
+    steps:
+      - name: Create Random File
+        run: |
+          openssl rand -base64 32 > artifact.txt
+      - uses: actions/upload-artifact@65462800fd760344b1a7b4382951275a0abb4808  # v4.3.3
+        with:
+            name: artifact.txt
+            path: ${{ github.workspace }}/artifact.txt
+
