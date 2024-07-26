@@ -1,5 +1,5 @@
 ---
 dependencies:
     env-dependencies-policy:
-#        policy-url: "http://example.com"
+        policy-url: "http://example.com"
         
