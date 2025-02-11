@@ -8,5 +8,6 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: carabiner-dev/bnd-actions/setup
+      - name: Setup bnd
+        uses: carabiner-dev/bnd-actions/setup@HEAD
 
