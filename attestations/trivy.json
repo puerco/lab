@@ -1,0 +1,906 @@
+{
+  "predicateType": "",
+  "predicate": {
+    "SchemaVersion": 2,
+    "CreatedAt": "2025-02-01T14:56:23.124791+01:00",
+    "ArtifactName": "/Users/puerco/projects/kubernetes/release",
+    "ArtifactType": "filesystem",
+    "Results": [
+      {
+        "Vulnerabilities": [
+          {
+            "VulnerabilityID": "CVE-2024-41110",
+            "PkgName": "github.com/docker/docker",
+            "InstalledVersion": "v24.0.7+incompatible",
+            "FixedVersion": "23.0.15, 26.1.5, 27.1.1, 25.0.6",
+            "PkgIdentifier": {
+              "PURL": "pkg:golang/github.com/docker/docker@v24.0.7%2Bincompatible",
+              "UID": "24a852852e32ec54"
+            },
+            "CVSS": {
+              "ghsa": {
+                "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H",
+                "V3Score": 10
+              },
+              "redhat": {
+                "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H",
+                "V3Score": 9.9
+              }
+            },
+            "Title": "moby: Authz zero length regression",
+            "Description": "Moby is an open-source project created by Docker for software containerization. A security vulnerability has been detected in certain versions of Docker Engine, which could allow an attacker to bypass authorization plugins (AuthZ) under specific circumstances. The base likelihood of this being exploited is low.\n\nUsing a specially-crafted API request, an Engine API client could make the daemon forward the request or response to an authorization plugin without the body. In certain circumstances, the authorization plugin may allow a request which it would have otherwise denied if the body had been forwarded to it.\n\nA security issue was discovered In 2018, where an attacker could bypass AuthZ plugins using a specially crafted API request. This could lead to unauthorized actions, including privilege escalation. Although this issue was fixed in Docker Engine v18.09.1 in January 2019, the fix was not carried forward to later major versions, resulting in a regression. Anyone who depends on authorization plugins that introspect the request and/or response body to make access control decisions is potentially impacted.\n\nDocker EE v19.03.x and all versions of Mirantis Container Runtime are not vulnerable.\n\ndocker-ce v27.1.1 containes patches to fix the vulnerability. Patches have also been merged into the master, 19.03, 20.0, 23.0, 24.0, 25.0, 26.0, and 26.1 release branches. If one is unable to upgrade immediately, avoid using AuthZ plugins and/or restrict access to the Docker API to trusted parties, following the principle of least privilege.",
+            "Severity": "CRITICAL",
+            "CweIDs": [
+              "CWE-187",
+              "CWE-444",
+              "CWE-863"
+            ],
+            "References": [
+              "https://access.redhat.com/security/cve/CVE-2024-41110",
+              "https://github.com/moby/moby",
+              "https://github.com/moby/moby/commit/411e817ddf710ff8e08fa193da80cb78af708191",
+              "https://github.com/moby/moby/commit/42f40b1d6dd7562342f832b9cd2adf9e668eeb76",
+              "https://github.com/moby/moby/commit/65cc597cea28cdc25bea3b8a86384b4251872919",
+              "https://github.com/moby/moby/commit/852759a7df454cbf88db4e954c919becd48faa9b",
+              "https://github.com/moby/moby/commit/a31260625655cff9ae226b51757915e275e304b0",
+              "https://github.com/moby/moby/commit/a79fabbfe84117696a19671f4aa88b82d0f64fc1",
+              "https://github.com/moby/moby/commit/ae160b4edddb72ef4bd71f66b975a1a1cc434f00",
+              "https://github.com/moby/moby/commit/ae2b3666c517c96cbc2adf1af5591a6b00d4ec0f",
+              "https://github.com/moby/moby/commit/cc13f952511154a2866bddbb7dddebfe9e83b801",
+              "https://github.com/moby/moby/commit/fc274cd2ff4cf3b48c91697fb327dd1fb95588fb",
+              "https://github.com/moby/moby/security/advisories/GHSA-v23v-6jw2-98fq",
+              "https://lists.debian.org/debian-lts-announce/2024/10/msg00009.html",
+              "https://nvd.nist.gov/vuln/detail/CVE-2024-41110",
+              "https://security.netapp.com/advisory/ntap-20240802-0001/",
+              "https://ubuntu.com/security/notices/USN-7161-1",
+              "https://www.cve.org/CVERecord?id=CVE-2024-41110",
+              "https://www.docker.com/blog/docker-security-advisory-docker-engine-authz-plugin",
+              "https://www.docker.com/blog/docker-security-advisory-docker-engine-authz-plugin/"
+            ],
+            "PublishedDate": "2024-07-24T17:15:11.053Z",
+            "LastModifiedDate": "2024-11-21T09:32:15.16Z"
+          },
+          {
+            "VulnerabilityID": "CVE-2024-24557",
+            "PkgName": "github.com/docker/docker",
+            "InstalledVersion": "v24.0.7+incompatible",
+            "FixedVersion": "24.0.9, 25.0.2",
+            "PkgIdentifier": {
+              "PURL": "pkg:golang/github.com/docker/docker@v24.0.7%2Bincompatible",
+              "UID": "24a852852e32ec54"
+            },
+            "CVSS": {
+              "ghsa": {
+                "V3Vector": "CVSS:3.1/AV:L/AC:H/PR:N/UI:R/S:C/C:L/I:H/A:L",
+                "V3Score": 6.9
+              },
+              "nvd": {
+                "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+                "V3Score": 7.8
+              },
+              "redhat": {
+                "V3Vector": "CVSS:3.1/AV:L/AC:H/PR:N/UI:R/S:C/C:L/I:H/A:L",
+                "V3Score": 6.9
+              }
+            },
+            "Title": "moby: classic builder cache poisoning",
+            "Description": "Moby is an open-source project created by Docker to enable software containerization. The classic builder cache system is prone to cache poisoning if the image is built FROM scratch. Also, changes to some instructions (most important being HEALTHCHECK and ONBUILD) would not cause a cache miss. An attacker with the knowledge of the Dockerfile someone is using could poison their cache by making them pull a specially crafted image that would be considered as a valid cache candidate for some build steps. 23.0+ users are only affected if they explicitly opted out of Buildkit (DOCKER_BUILDKIT=0 environment variable) or are using the /build API endpoint. All users on versions older than 23.0 could be impacted. Image build API endpoint (/build) and ImageBuild function from github.com/docker/docker/client is also affected as it the uses classic builder by default. Patches are included in 24.0.9 and 25.0.2 releases.",
+            "Severity": "MEDIUM",
+            "CweIDs": [
+              "CWE-345",
+              "CWE-346"
+            ],
+            "References": [
+              "https://access.redhat.com/security/cve/CVE-2024-24557",
+              "https://github.com/moby/moby",
+              "https://github.com/moby/moby/commit/3e230cfdcc989dc524882f6579f9e0dac77400ae",
+              "https://github.com/moby/moby/commit/fca702de7f71362c8d103073c7e4a1d0a467fadd",
+              "https://github.com/moby/moby/commit/fce6e0ca9bc000888de3daa157af14fa41fcd0ff",
+              "https://github.com/moby/moby/security/advisories/GHSA-xw73-rw38-6vjc",
+              "https://nvd.nist.gov/vuln/detail/CVE-2024-24557",
+              "https://www.cve.org/CVERecord?id=CVE-2024-24557"
+            ],
+            "PublishedDate": "2024-02-01T17:15:10.953Z",
+            "LastModifiedDate": "2024-11-21T08:59:24.603Z"
+          },
+          {
+            "VulnerabilityID": "CVE-2025-21613",
+            "PkgName": "github.com/go-git/go-git/v5",
+            "InstalledVersion": "v5.11.0",
+            "FixedVersion": "5.13.0",
+            "PkgIdentifier": {
+              "PURL": "pkg:golang/github.com/go-git/go-git/v5@v5.11.0",
+              "UID": "1435555007445122"
+            },
+            "CVSS": {
+              "ghsa": {
+                "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+                "V3Score": 9.8
+              },
+              "redhat": {
+                "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+                "V3Score": 8.1
+              }
+            },
+            "Title": "go-git: argument injection via the URL field",
+            "Description": "go-git is a highly extensible git implementation library written in pure Go. An argument injection vulnerability was discovered in go-git versions prior to v5.13. Successful exploitation of this vulnerability could allow an attacker to set arbitrary values to git-upload-pack flags. This only happens when the file transport protocol is being used, as that is the only protocol that shells out to git binaries. This vulnerability is fixed in 5.13.0.",
+            "Severity": "CRITICAL",
+            "CweIDs": [
+              "CWE-88"
+            ],
+            "References": [
+              "https://access.redhat.com/errata/RHSA-2025:0401",
+              "https://access.redhat.com/security/cve/CVE-2025-21613",
+              "https://bugzilla.redhat.com/2335888",
+              "https://bugzilla.redhat.com/2335901",
+              "https://errata.almalinux.org/8/ALSA-2025-0401.html",
+              "https://github.com/go-git/go-git",
+              "https://github.com/go-git/go-git/security/advisories/GHSA-v725-9546-7q7m",
+              "https://linux.oracle.com/cve/CVE-2025-21613.html",
+              "https://linux.oracle.com/errata/ELSA-2025-0401.html",
+              "https://nvd.nist.gov/vuln/detail/CVE-2025-21613",
+              "https://www.cve.org/CVERecord?id=CVE-2025-21613"
+            ],
+            "PublishedDate": "2025-01-06T17:15:47.043Z",
+            "LastModifiedDate": "2025-01-06T17:15:47.043Z"
+          },
+          {
+            "VulnerabilityID": "CVE-2025-21614",
+            "PkgName": "github.com/go-git/go-git/v5",
+            "InstalledVersion": "v5.11.0",
+            "FixedVersion": "5.13.0",
+            "PkgIdentifier": {
+              "PURL": "pkg:golang/github.com/go-git/go-git/v5@v5.11.0",
+              "UID": "1435555007445122"
+            },
+            "CVSS": {
+              "ghsa": {
+                "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+                "V3Score": 7.5
+              },
+              "redhat": {
+                "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+                "V3Score": 7.5
+              }
+            },
+            "Title": "go-git: go-git clients vulnerable to DoS via maliciously crafted Git server replies",
+            "Description": "go-git is a highly extensible git implementation library written in pure Go. A denial of service (DoS) vulnerability was discovered in go-git versions prior to v5.13. This vulnerability allows an attacker to perform denial of service attacks by providing specially crafted responses from a Git server which triggers resource exhaustion in go-git clients. Users running versions of go-git from v4 and above are recommended to upgrade to v5.13 in order to mitigate this vulnerability.",
+            "Severity": "HIGH",
+            "CweIDs": [
+              "CWE-400",
+              "CWE-770"
+            ],
+            "References": [
+              "https://access.redhat.com/errata/RHSA-2025:0401",
+              "https://access.redhat.com/security/cve/CVE-2025-21614",
+              "https://bugzilla.redhat.com/2335888",
+              "https://bugzilla.redhat.com/2335901",
+              "https://errata.almalinux.org/8/ALSA-2025-0401.html",
+              "https://github.com/go-git/go-git",
+              "https://github.com/go-git/go-git/security/advisories/GHSA-r9px-m959-cxf4",
+              "https://linux.oracle.com/cve/CVE-2025-21614.html",
+              "https://linux.oracle.com/errata/ELSA-2025-0401.html",
+              "https://nvd.nist.gov/vuln/detail/CVE-2025-21614",
+              "https://www.cve.org/CVERecord?id=CVE-2025-21614"
+            ],
+            "PublishedDate": "2025-01-06T17:15:47.31Z",
+            "LastModifiedDate": "2025-01-06T17:15:47.31Z"
+          },
+          {
+            "VulnerabilityID": "CVE-2024-28180",
+            "PkgName": "github.com/go-jose/go-jose/v3",
+            "InstalledVersion": "v3.0.1",
+            "FixedVersion": "3.0.3",
+            "PkgIdentifier": {
+              "PURL": "pkg:golang/github.com/go-jose/go-jose/v3@v3.0.1",
+              "UID": "c5fe7f6e705fd960"
+            },
+            "CVSS": {
+              "ghsa": {
+                "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:L",
+                "V3Score": 4.3
+              },
+              "redhat": {
+                "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:L",
+                "V3Score": 4.3
+              }
+            },
+            "Title": "jose-go: improper handling of highly compressed data",
+            "Description": "Package jose aims to provide an implementation of the Javascript Object Signing and Encryption set of standards. An attacker could send a JWE containing compressed data that used large amounts of memory and CPU when decompressed by Decrypt or DecryptMulti. Those functions now return an error if the decompressed data would exceed 250kB or 10x the compressed size (whichever is larger). This vulnerability has been patched in versions 4.0.1, 3.0.3 and 2.6.3.\n",
+            "Severity": "MEDIUM",
+            "CweIDs": [
+              "CWE-409"
+            ],
+            "References": [
+              "https://access.redhat.com/errata/RHSA-2024:3827",
+              "https://access.redhat.com/security/cve/CVE-2024-28180",
+              "https://bugzilla.redhat.com/2268017",
+              "https://bugzilla.redhat.com/2268820",
+              "https://bugzilla.redhat.com/2268854",
+              "https://bugzilla.redhat.com/show_bug.cgi?id=2268017",
+              "https://bugzilla.redhat.com/show_bug.cgi?id=2268820",
+              "https://bugzilla.redhat.com/show_bug.cgi?id=2268854",
+              "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-45290",
+              "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-28176",
+              "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-28180",
+              "https://errata.almalinux.org/9/ALSA-2024-3827.html",
+              "https://errata.rockylinux.org/RLSA-2024:3827",
+              "https://github.com/go-jose/go-jose",
+              "https://github.com/go-jose/go-jose/commit/0dd4dd541c665fb292d664f77604ba694726f298",
+              "https://github.com/go-jose/go-jose/commit/add6a284ea0f844fd6628cba637be5451fe4b28a",
+              "https://github.com/go-jose/go-jose/commit/f4c051a0653d78199a053892f7619ebf96339502",
+              "https://github.com/go-jose/go-jose/security/advisories/GHSA-c5q2-7r4c-mv6g",
+              "https://linux.oracle.com/cve/CVE-2024-28180.html",
+              "https://linux.oracle.com/errata/ELSA-2024-3968.html",
+              "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/GD2GSBQTBLYADASUBHHZV2CZPTSLIPQJ",
+              "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/GD2GSBQTBLYADASUBHHZV2CZPTSLIPQJ/",
+              "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/I6MMWFBOXJA6ZCXNVPDFJ4XMK5PVG5RG",
+              "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/I6MMWFBOXJA6ZCXNVPDFJ4XMK5PVG5RG/",
+              "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/IJ6LAJJ2FTA2JVVOACCV5RZTOIZLXUNJ",
+              "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/IJ6LAJJ2FTA2JVVOACCV5RZTOIZLXUNJ/",
+              "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/JNPMXL36YGS3GQEVI3Q5HKHJ7YAAQXL5",
+              "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/JNPMXL36YGS3GQEVI3Q5HKHJ7YAAQXL5/",
+              "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/KXKGNCRU7OTM5AHC7YIYBNOWI742PRMY",
+              "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/KXKGNCRU7OTM5AHC7YIYBNOWI742PRMY/",
+              "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/MSOMHDKRPU3A2JEMRODT2IREDFBLVPGS",
+              "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/MSOMHDKRPU3A2JEMRODT2IREDFBLVPGS/",
+              "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/UG5FSEYJ3GP27FZXC5YAAMMEC5XWKJHG",
+              "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/UG5FSEYJ3GP27FZXC5YAAMMEC5XWKJHG/",
+              "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/UJO2U5ACZVACNQXJ5EBRFLFW6DP5BROY",
+              "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/UJO2U5ACZVACNQXJ5EBRFLFW6DP5BROY/",
+              "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/XJDO5VSIAOGT2WP63AXAAWNRSVJCNCRH",
+              "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/XJDO5VSIAOGT2WP63AXAAWNRSVJCNCRH/",
+              "https://nvd.nist.gov/vuln/detail/CVE-2024-28180",
+              "https://www.cve.org/CVERecord?id=CVE-2024-28180"
+            ],
+            "PublishedDate": "2024-03-09T01:15:07.34Z",
+            "LastModifiedDate": "2024-11-21T09:05:58.227Z"
+          },
+          {
+            "VulnerabilityID": "CVE-2024-51744",
+            "PkgName": "github.com/golang-jwt/jwt/v4",
+            "InstalledVersion": "v4.5.0",
+            "FixedVersion": "4.5.1",
+            "PkgIdentifier": {
+              "PURL": "pkg:golang/github.com/golang-jwt/jwt/v4@v4.5.0",
+              "UID": "a11bf42013e6adb9"
+            },
+            "CVSS": {
+              "ghsa": {
+                "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:L/I:N/A:N",
+                "V3Score": 3.1
+              },
+              "redhat": {
+                "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:L/I:N/A:N",
+                "V3Score": 3.1
+              }
+            },
+            "Title": "golang-jwt: Bad documentation of error handling in ParseWithClaims can lead to potentially dangerous situations in golang-jwt",
+            "Description": "golang-jwt is a Go implementation of JSON Web Tokens. Unclear documentation of the error behavior in `ParseWithClaims` can lead to situation where users are potentially not checking errors in the way they should be. Especially, if a token is both expired and invalid, the errors returned by `ParseWithClaims` return both error codes. If users only check for the `jwt.ErrTokenExpired ` using `error.Is`, they will ignore the embedded `jwt.ErrTokenSignatureInvalid` and thus potentially accept invalid tokens. A fix has been back-ported with the error handling logic from the `v5` branch to the `v4` branch. In this logic, the `ParseWithClaims` function will immediately return in \"dangerous\" situations (e.g., an invalid signature), limiting the combined errors only to situations where the signature is valid, but further validation failed (e.g., if the signature is valid, but is expired AND has the wrong audience). This fix is part of the 4.5.1 release. We are aware that this changes the behaviour of an established function and is not 100 % backwards compatible, so updating to 4.5.1 might break your code. In case you cannot update to 4.5.0, please make sure that you are properly checking for all errors (\"dangerous\" ones first), so that you are not running in the case detailed above.",
+            "Severity": "LOW",
+            "CweIDs": [
+              "CWE-755"
+            ],
+            "References": [
+              "https://access.redhat.com/security/cve/CVE-2024-51744",
+              "https://github.com/golang-jwt/jwt",
+              "https://github.com/golang-jwt/jwt/commit/7b1c1c00a171c6c79bbdb40e4ce7d197060c1c2c",
+              "https://github.com/golang-jwt/jwt/security/advisories/GHSA-29wx-vh33-7x7r",
+              "https://nvd.nist.gov/vuln/detail/CVE-2024-51744",
+              "https://www.cve.org/CVERecord?id=CVE-2024-51744"
+            ],
+            "PublishedDate": "2024-11-04T22:15:03.997Z",
+            "LastModifiedDate": "2024-11-05T16:04:26.053Z"
+          },
+          {
+            "VulnerabilityID": "CVE-2023-42821",
+            "PkgName": "github.com/gomarkdown/markdown",
+            "InstalledVersion": "v0.0.0-20210514010506-3b9f47219fe7",
+            "FixedVersion": "0.0.0-20230922105210-14b16010c2ee",
+            "PkgIdentifier": {
+              "PURL": "pkg:golang/github.com/gomarkdown/markdown@v0.0.0-20210514010506-3b9f47219fe7",
+              "UID": "8912552b264d253b"
+            },
+            "CVSS": {
+              "ghsa": {
+                "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+                "V3Score": 7.5
+              },
+              "nvd": {
+                "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+                "V3Score": 7.5
+              }
+            },
+            "Title": "The package `github.com/gomarkdown/markdown` is a Go library for parsi ...",
+            "Description": "The package `github.com/gomarkdown/markdown` is a Go library for parsing Markdown text and rendering as HTML. Prior to pseudoversion `0.0.0-20230922105210-14b16010c2ee`, which corresponds with commit `14b16010c2ee7ff33a940a541d993bd043a88940`, parsing malformed markdown input with parser that uses parser.Mmark extension could result in out-of-bounds read vulnerability. To exploit the vulnerability, parser needs to have `parser.Mmark` extension set. The panic occurs inside the `citation.go` file on the line 69 when the parser tries to access the element past its length. This can result in a denial of service. Commit `14b16010c2ee7ff33a940a541d993bd043a88940`/pseudoversion `0.0.0-20230922105210-14b16010c2ee` contains a patch for this issue.",
+            "Severity": "HIGH",
+            "CweIDs": [
+              "CWE-125"
+            ],
+            "References": [
+              "https://github.com/gomarkdown/markdown",
+              "https://github.com/gomarkdown/markdown/blob/7478c230c7cd3e7328803d89abe591d0b61c41e4/parser/citation.go#L69",
+              "https://github.com/gomarkdown/markdown/commit/14b16010c2ee7ff33a940a541d993bd043a88940",
+              "https://github.com/gomarkdown/markdown/security/advisories/GHSA-m9xq-6h2j-65r2",
+              "https://nvd.nist.gov/vuln/detail/CVE-2023-42821"
+            ],
+            "PublishedDate": "2023-09-22T17:15:14.99Z",
+            "LastModifiedDate": "2024-11-21T08:23:17.253Z"
+          },
+          {
+            "VulnerabilityID": "CVE-2024-44337",
+            "PkgName": "github.com/gomarkdown/markdown",
+            "InstalledVersion": "v0.0.0-20210514010506-3b9f47219fe7",
+            "FixedVersion": "0.0.0-20240729212818-a2a9c4f76ef5",
+            "PkgIdentifier": {
+              "PURL": "pkg:golang/github.com/gomarkdown/markdown@v0.0.0-20210514010506-3b9f47219fe7",
+              "UID": "8912552b264d253b"
+            },
+            "CVSS": {
+              "ghsa": {
+                "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:L",
+                "V3Score": 5.1
+              },
+              "redhat": {
+                "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+                "V3Score": 5.3
+              }
+            },
+            "Title": "gomarkdown/markdown: infinite loop via the paragraph function of parser/block.go",
+            "Description": "The package `github.com/gomarkdown/markdown` is a Go library for parsing Markdown text and rendering as HTML. Prior to pseudoversion `v0.0.0-20240729232818-a2a9c4f`, which corresponds with commit `a2a9c4f76ef5a5c32108e36f7c47f8d310322252`, there was a logical problem in the paragraph function of the parser/block.go file, which allowed a remote attacker to cause a denial of service (DoS) condition by providing a tailor-made input that caused an infinite loop, causing the program to hang and consume resources indefinitely. Submit `a2a9c4f76ef5a5c32108e36f7c47f8d310322252` contains fixes to this problem.",
+            "Severity": "MEDIUM",
+            "CweIDs": null,
+            "References": [
+              "https://access.redhat.com/security/cve/CVE-2024-44337",
+              "https://github.com/Brinmon/CVE-2024-44337",
+              "https://github.com/gomarkdown/markdown",
+              "https://github.com/gomarkdown/markdown/commit/a2a9c4f76ef5a5c32108e36f7c47f8d310322252",
+              "https://nvd.nist.gov/vuln/detail/CVE-2024-44337",
+              "https://pkg.go.dev/vuln/GO-2024-3205",
+              "https://www.cve.org/CVERecord?id=CVE-2024-44337"
+            ],
+            "PublishedDate": "2024-10-15T20:15:21.85Z",
+            "LastModifiedDate": "2024-11-14T16:35:14.613Z"
+          },
+          {
+            "VulnerabilityID": "CVE-2024-6104",
+            "PkgName": "github.com/hashicorp/go-retryablehttp",
+            "InstalledVersion": "v0.7.5",
+            "FixedVersion": "0.7.7",
+            "PkgIdentifier": {
+              "PURL": "pkg:golang/github.com/hashicorp/go-retryablehttp@v0.7.5",
+              "UID": "19ddc62d2027ee95"
+            },
+            "CVSS": {
+              "ghsa": {
+                "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:C/C:H/I:N/A:N",
+                "V3Score": 6
+              },
+              "nvd": {
+                "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N",
+                "V3Score": 5.5
+              },
+              "redhat": {
+                "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:C/C:H/I:N/A:N",
+                "V3Score": 6
+              }
+            },
+            "Title": "go-retryablehttp: url might write sensitive information to log file",
+            "Description": "go-retryablehttp prior to 0.7.7 did not sanitize urls when writing them to its log file. This could lead to go-retryablehttp writing sensitive HTTP basic auth credentials to its log file. This vulnerability, CVE-2024-6104, was fixed in go-retryablehttp 0.7.7.",
+            "Severity": "MEDIUM",
+            "CweIDs": [
+              "CWE-532"
+            ],
+            "References": [
+              "https://access.redhat.com/errata/RHSA-2024:9115",
+              "https://access.redhat.com/security/cve/CVE-2024-6104",
+              "https://bugzilla.redhat.com/2279814",
+              "https://bugzilla.redhat.com/2292668",
+              "https://bugzilla.redhat.com/2292787",
+              "https://bugzilla.redhat.com/2294000",
+              "https://bugzilla.redhat.com/2295310",
+              "https://discuss.hashicorp.com/c/security",
+              "https://discuss.hashicorp.com/t/hcsec-2024-12-go-retryablehttp-can-leak-basic-auth-credentials-to-log-files/68027",
+              "https://errata.almalinux.org/9/ALSA-2024-9115.html",
+              "https://github.com/advisories/GHSA-v6v8-xj6m-xwqh",
+              "https://github.com/hashicorp/go-retryablehttp",
+              "https://github.com/hashicorp/go-retryablehttp/commit/a99f07beb3c5faaa0a283617e6eb6bcf25f5049a",
+              "https://linux.oracle.com/cve/CVE-2024-6104.html",
+              "https://linux.oracle.com/errata/ELSA-2024-9115.html",
+              "https://nvd.nist.gov/vuln/detail/CVE-2024-6104",
+              "https://www.cve.org/CVERecord?id=CVE-2024-6104"
+            ],
+            "PublishedDate": "2024-06-24T17:15:11.087Z",
+            "LastModifiedDate": "2024-11-21T09:48:58.263Z"
+          },
+          {
+            "VulnerabilityID": "CVE-2024-8260",
+            "PkgName": "github.com/open-policy-agent/opa",
+            "InstalledVersion": "v0.59.0",
+            "FixedVersion": "0.68.0",
+            "PkgIdentifier": {
+              "PURL": "pkg:golang/github.com/open-policy-agent/opa@v0.59.0",
+              "UID": "f2dc4cf8195a3d83"
+            },
+            "CVSS": {
+              "ghsa": {
+                "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:R/S:U/C:H/I:L/A:L",
+                "V3Score": 6.1
+              },
+              "nvd": {
+                "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H",
+                "V3Score": 7.3
+              },
+              "redhat": {
+                "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:R/S:U/C:H/I:L/A:L",
+                "V3Score": 6.1
+              }
+            },
+            "Title": "opa: OPA SMB Force-Authentication",
+            "Description": "A SMB force-authentication vulnerability exists in all versions of OPA for Windows prior to v0.68.0. The vulnerability exists because of improper input validation, allowing a user to pass an arbitrary SMB share instead of a Rego file as an argument to OPA CLI or to one of the OPA Go library’s functions.",
+            "Severity": "MEDIUM",
+            "CweIDs": [
+              "CWE-294"
+            ],
+            "References": [
+              "https://access.redhat.com/security/cve/CVE-2024-8260",
+              "https://github.com/open-policy-agent/opa",
+              "https://github.com/open-policy-agent/opa/commit/10f4d553e6bb6ae9c69611ecdd9a77dda857070e",
+              "https://github.com/open-policy-agent/opa/releases/tag/v0.68.0",
+              "https://nvd.nist.gov/vuln/detail/CVE-2024-8260",
+              "https://pkg.go.dev/vuln/GO-2024-3141",
+              "https://www.cve.org/CVERecord?id=CVE-2024-8260",
+              "https://www.tenable.com/security/research/tra-2024-36"
+            ],
+            "PublishedDate": "2024-08-30T13:15:12.347Z",
+            "LastModifiedDate": "2024-09-19T16:08:58.863Z"
+          },
+          {
+            "VulnerabilityID": "CVE-2024-29902",
+            "PkgName": "github.com/sigstore/cosign/v2",
+            "InstalledVersion": "v2.2.2",
+            "FixedVersion": "2.2.4",
+            "PkgIdentifier": {
+              "PURL": "pkg:golang/github.com/sigstore/cosign/v2@v2.2.2",
+              "UID": "dcbac13b29f25c06"
+            },
+            "CVSS": {
+              "bitnami": {
+                "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:H/UI:R/S:U/C:N/I:N/A:H",
+                "V3Score": 4.2
+              },
+              "ghsa": {
+                "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:H/UI:R/S:U/C:N/I:N/A:H",
+                "V3Score": 4.2
+              },
+              "nvd": {
+                "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H",
+                "V3Score": 5.9
+              },
+              "redhat": {
+                "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:H/UI:R/S:U/C:N/I:N/A:H",
+                "V3Score": 4.2
+              }
+            },
+            "Title": "cosign: Malicious attachments can cause system-wide denial of service",
+            "Description": "Cosign provides code signing and transparency for containers and binaries. Prior to version 2.2.4, a remote image with a malicious attachment can cause denial of service of the host machine running Cosign. This can impact other services on the machine that rely on having memory available such as a Redis database which can result in data loss. It can also impact the availability of other services on the machine that will not be available for the duration of the machine denial. The root cause of this issue is that Cosign reads the attachment from a remote image entirely into memory without checking the size of the attachment first. As such, a large attachment can make Cosign read a large attachment into memory; If the attachments size is larger than the machine has memory available, the machine will be denied of service. The Go runtime will make a SigKill after a few seconds of system-wide denial. This issue can allow a supply-chain escalation from a compromised registry to the Cosign user: If an attacher has compromised a registry or the account of an image vendor, they can include a malicious attachment and hurt the image consumer. Version 2.2.4 contains a patch for the vulnerability.",
+            "Severity": "MEDIUM",
+            "CweIDs": [
+              "CWE-770"
+            ],
+            "References": [
+              "https://access.redhat.com/security/cve/CVE-2024-29902",
+              "https://github.com/google/go-containerregistry/blob/a0658aa1d0cc7a7f1bcc4a3af9155335b6943f40/pkg/v1/remote/layer.go#L36-L40",
+              "https://github.com/sigstore/cosign",
+              "https://github.com/sigstore/cosign/blob/9bc3ee309bf35d2f6e17f5d23f231a3d8bf580bc/pkg/oci/remote/remote.go#L228-L239",
+              "https://github.com/sigstore/cosign/commit/629f5f8fa672973503edde75f84dcd984637629e",
+              "https://github.com/sigstore/cosign/releases/tag/v2.2.4",
+              "https://github.com/sigstore/cosign/security/advisories/GHSA-88jx-383q-w4qc",
+              "https://nvd.nist.gov/vuln/detail/CVE-2024-29902",
+              "https://www.cve.org/CVERecord?id=CVE-2024-29902"
+            ],
+            "PublishedDate": "2024-04-10T23:15:06.92Z",
+            "LastModifiedDate": "2025-01-09T15:56:50.707Z"
+          },
+          {
+            "VulnerabilityID": "CVE-2024-29903",
+            "PkgName": "github.com/sigstore/cosign/v2",
+            "InstalledVersion": "v2.2.2",
+            "FixedVersion": "2.2.4",
+            "PkgIdentifier": {
+              "PURL": "pkg:golang/github.com/sigstore/cosign/v2@v2.2.2",
+              "UID": "dcbac13b29f25c06"
+            },
+            "CVSS": {
+              "bitnami": {
+                "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:H/UI:R/S:U/C:N/I:N/A:H",
+                "V3Score": 4.2
+              },
+              "ghsa": {
+                "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:H/UI:R/S:U/C:N/I:N/A:H",
+                "V3Score": 4.2
+              },
+              "nvd": {
+                "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+                "V3Score": 7.5
+              },
+              "redhat": {
+                "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:H/UI:R/S:U/C:N/I:N/A:H",
+                "V3Score": 4.2
+              }
+            },
+            "Title": "cosign: Malicious artifects can cause machine-wide denial of service",
+            "Description": "Cosign provides code signing and transparency for containers and binaries. Prior to version 2.2.4, maliciously-crafted software artifacts can cause denial of service of the machine running Cosign thereby impacting all services on the machine. The root cause is that Cosign creates slices based on the number of signatures, manifests or attestations in untrusted artifacts. As such, the untrusted artifact can control the amount of memory that Cosign allocates. The exact issue is Cosign allocates excessive memory on the lines that creates a slice of the same length as the manifests. Version 2.2.4 contains a patch for the vulnerability.",
+            "Severity": "MEDIUM",
+            "CweIDs": [
+              "CWE-770"
+            ],
+            "References": [
+              "https://access.redhat.com/security/cve/CVE-2024-29903",
+              "https://github.com/sigstore/cosign",
+              "https://github.com/sigstore/cosign/blob/14795db16417579fac0c00c11e166868d7976b61/pkg/cosign/verify.go#L948-L955",
+              "https://github.com/sigstore/cosign/blob/286a98a4a99c1b2f32f84b0d560e324100312280/pkg/oci/remote/signatures.go#L56-L70",
+              "https://github.com/sigstore/cosign/commit/629f5f8fa672973503edde75f84dcd984637629e",
+              "https://github.com/sigstore/cosign/releases/tag/v2.2.4",
+              "https://github.com/sigstore/cosign/security/advisories/GHSA-95pr-fxf5-86gv",
+              "https://nvd.nist.gov/vuln/detail/CVE-2024-29903",
+              "https://www.cve.org/CVERecord?id=CVE-2024-29903"
+            ],
+            "PublishedDate": "2024-04-10T23:15:07.13Z",
+            "LastModifiedDate": "2025-01-09T15:40:24.663Z"
+          },
+          {
+            "VulnerabilityID": "CVE-2024-45337",
+            "PkgName": "golang.org/x/crypto",
+            "InstalledVersion": "v0.18.0",
+            "FixedVersion": "0.31.0",
+            "PkgIdentifier": {
+              "PURL": "pkg:golang/golang.org/x/crypto@v0.18.0",
+              "UID": "88886c53c8e43597"
+            },
+            "CVSS": {
+              "ghsa": {
+                "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N",
+                "V3Score": 9.1
+              },
+              "redhat": {
+                "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:C/C:H/I:H/A:N",
+                "V3Score": 8.2
+              }
+            },
+            "Title": "golang.org/x/crypto/ssh: Misuse of ServerConfig.PublicKeyCallback may cause authorization bypass in golang.org/x/crypto",
+            "Description": "Applications and libraries which misuse the ServerConfig.PublicKeyCallback callback may be susceptible to an authorization bypass. The documentation for ServerConfig.PublicKeyCallback says that \"A call to this function does not guarantee that the key offered is in fact used to authenticate.\" Specifically, the SSH protocol allows clients to inquire about whether a public key is acceptable before proving control of the corresponding private key. PublicKeyCallback may be called with multiple keys, and the order in which the keys were provided cannot be used to infer which key the client successfully authenticated with, if any. Some applications, which store the key(s) passed to PublicKeyCallback (or derived information) and make security relevant determinations based on it once the connection is established, may make incorrect assumptions. For example, an attacker may send public keys A and B, and then authenticate with A. PublicKeyCallback would be called only twice, first with A and then with B. A vulnerable application may then make authorization decisions based on key B for which the attacker does not actually control the private key. Since this API is widely misused, as a partial mitigation golang.org/x/cry...@v0.31.0 enforces the property that, when successfully authenticating via public key, the last key passed to ServerConfig.PublicKeyCallback will be the key used to authenticate the connection. PublicKeyCallback will now be called multiple times with the same key, if necessary. Note that the client may still not control the last key passed to PublicKeyCallback if the connection is then authenticated with a different method, such as PasswordCallback, KeyboardInteractiveCallback, or NoClientAuth. Users should be using the Extensions field of the Permissions return value from the various authentication callbacks to record data associated with the authentication attempt instead of referencing external state. Once the connection is established the state corresponding to the successful authentication attempt can be retrieved via the ServerConn.Permissions field. Note that some third-party libraries misuse the Permissions type by sharing it across authentication attempts; users of third-party libraries should refer to the relevant projects for guidance.",
+            "Severity": "CRITICAL",
+            "CweIDs": null,
+            "References": [
+              "http://www.openwall.com/lists/oss-security/2024/12/11/2",
+              "https://access.redhat.com/security/cve/CVE-2024-45337",
+              "https://github.com/golang/crypto",
+              "https://github.com/golang/crypto/commit/b4f1988a35dee11ec3e05d6bf3e90b695fbd8909",
+              "https://go.dev/cl/635315",
+              "https://go.dev/issue/70779",
+              "https://groups.google.com/g/golang-announce/c/-nPEi39gI4Q/m/cGVPJCqdAQAJ",
+              "https://nvd.nist.gov/vuln/detail/CVE-2024-45337",
+              "https://pkg.go.dev/vuln/GO-2024-3321",
+              "https://security.netapp.com/advisory/ntap-20250131-0007",
+              "https://security.netapp.com/advisory/ntap-20250131-0007/",
+              "https://www.cve.org/CVERecord?id=CVE-2024-45337"
+            ],
+            "PublishedDate": "2024-12-12T02:02:07.97Z",
+            "LastModifiedDate": "2025-01-31T15:15:13.19Z"
+          },
+          {
+            "VulnerabilityID": "CVE-2024-45338",
+            "PkgName": "golang.org/x/net",
+            "InstalledVersion": "v0.20.0",
+            "FixedVersion": "0.33.0",
+            "PkgIdentifier": {
+              "PURL": "pkg:golang/golang.org/x/net@v0.20.0",
+              "UID": "318fc63373d71e09"
+            },
+            "CVSS": {
+              "redhat": {
+                "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+                "V3Score": 7.5
+              }
+            },
+            "Title": "golang.org/x/net/html: Non-linear parsing of case-insensitive content in golang.org/x/net/html",
+            "Description": "An attacker can craft an input to the Parse functions that would be processed non-linearly with respect to its length, resulting in extremely slow parsing. This could cause a denial of service.",
+            "Severity": "HIGH",
+            "CweIDs": [
+              "CWE-1333"
+            ],
+            "References": [
+              "https://access.redhat.com/security/cve/CVE-2024-45338",
+              "https://cs.opensource.google/go/x/net",
+              "https://github.com/golang/go/issues/70906",
+              "https://go-review.googlesource.com/c/net/+/637536",
+              "https://go.dev/cl/637536",
+              "https://go.dev/issue/70906",
+              "https://groups.google.com/g/golang-announce/c/wSCRmFnNmPA/m/Lvcd0mRMAwAJ",
+              "https://nvd.nist.gov/vuln/detail/CVE-2024-45338",
+              "https://pkg.go.dev/vuln/GO-2024-3333",
+              "https://ubuntu.com/security/notices/USN-7197-1",
+              "https://www.cve.org/CVERecord?id=CVE-2024-45338"
+            ],
+            "PublishedDate": "2024-12-18T21:15:08.173Z",
+            "LastModifiedDate": "2024-12-31T20:16:06.603Z"
+          },
+          {
+            "VulnerabilityID": "CVE-2023-45288",
+            "PkgName": "golang.org/x/net",
+            "InstalledVersion": "v0.20.0",
+            "FixedVersion": "0.23.0",
+            "PkgIdentifier": {
+              "PURL": "pkg:golang/golang.org/x/net@v0.20.0",
+              "UID": "318fc63373d71e09"
+            },
+            "CVSS": {
+              "bitnami": {
+                "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+                "V3Score": 7.5
+              },
+              "ghsa": {
+                "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+                "V3Score": 5.3
+              },
+              "redhat": {
+                "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+                "V3Score": 7.5
+              }
+            },
+            "Title": "golang: net/http, x/net/http2: unlimited number of CONTINUATION frames causes DoS",
+            "Description": "An attacker may cause an HTTP/2 endpoint to read arbitrary amounts of header data by sending an excessive number of CONTINUATION frames. Maintaining HPACK state requires parsing and processing all HEADERS and CONTINUATION frames on a connection. When a request's headers exceed MaxHeaderBytes, no memory is allocated to store the excess headers, but they are still parsed. This permits an attacker to cause an HTTP/2 endpoint to read arbitrary amounts of header data, all associated with a request which is going to be rejected. These headers can include Huffman-encoded data which is significantly more expensive for the receiver to decode than for an attacker to send. The fix sets a limit on the amount of excess header frames we will process before closing a connection.",
+            "Severity": "MEDIUM",
+            "CweIDs": null,
+            "References": [
+              "http://www.openwall.com/lists/oss-security/2024/04/03/16",
+              "http://www.openwall.com/lists/oss-security/2024/04/05/4",
+              "https://access.redhat.com/errata/RHSA-2024:2724",
+              "https://access.redhat.com/security/cve/CVE-2023-45288",
+              "https://bugzilla.redhat.com/2268017",
+              "https://bugzilla.redhat.com/2268018",
+              "https://bugzilla.redhat.com/2268019",
+              "https://bugzilla.redhat.com/2268273",
+              "https://bugzilla.redhat.com/show_bug.cgi?id=2268017",
+              "https://bugzilla.redhat.com/show_bug.cgi?id=2268018",
+              "https://bugzilla.redhat.com/show_bug.cgi?id=2268019",
+              "https://bugzilla.redhat.com/show_bug.cgi?id=2268273",
+              "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-45288",
+              "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-45289",
+              "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-45290",
+              "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-24783",
+              "https://errata.almalinux.org/9/ALSA-2024-2724.html",
+              "https://errata.rockylinux.org/RLSA-2024:2724",
+              "https://go.dev/cl/576155",
+              "https://go.dev/issue/65051",
+              "https://groups.google.com/g/golang-announce/c/YgW0sx8mN3M",
+              "https://kb.cert.org/vuls/id/421644",
+              "https://linux.oracle.com/cve/CVE-2023-45288.html",
+              "https://linux.oracle.com/errata/ELSA-2024-3346.html",
+              "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/QRYFHIQ6XRKRYBI2F5UESH67BJBQXUPT",
+              "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/QRYFHIQ6XRKRYBI2F5UESH67BJBQXUPT/",
+              "https://nowotarski.info/http2-continuation-flood-technical-details",
+              "https://nowotarski.info/http2-continuation-flood/",
+              "https://nvd.nist.gov/vuln/detail/CVE-2023-45288",
+              "https://pkg.go.dev/vuln/GO-2024-2687",
+              "https://security.netapp.com/advisory/ntap-20240419-0009",
+              "https://security.netapp.com/advisory/ntap-20240419-0009/",
+              "https://ubuntu.com/security/notices/USN-6886-1",
+              "https://ubuntu.com/security/notices/USN-7109-1",
+              "https://ubuntu.com/security/notices/USN-7111-1",
+              "https://www.cve.org/CVERecord?id=CVE-2023-45288",
+              "https://www.kb.cert.org/vuls/id/421644"
+            ],
+            "PublishedDate": "2024-04-04T21:15:16.113Z",
+            "LastModifiedDate": "2024-11-21T08:26:42.38Z"
+          },
+          {
+            "VulnerabilityID": "CVE-2024-24786",
+            "PkgName": "google.golang.org/protobuf",
+            "InstalledVersion": "v1.31.0",
+            "FixedVersion": "1.33.0",
+            "PkgIdentifier": {
+              "PURL": "pkg:golang/google.golang.org/protobuf@v1.31.0",
+              "UID": "cae6fe674d9247c4"
+            },
+            "CVSS": {
+              "ghsa": {
+                "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+                "V3Score": 7.5
+              },
+              "redhat": {
+                "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H",
+                "V3Score": 5.9
+              }
+            },
+            "Title": "golang-protobuf: encoding/protojson, internal/encoding/json: infinite loop in protojson.Unmarshal when unmarshaling certain forms of invalid JSON",
+            "Description": "The protojson.Unmarshal function can enter an infinite loop when unmarshaling certain forms of invalid JSON. This condition can occur when unmarshaling into a message which contains a google.protobuf.Any value, or when the UnmarshalOptions.DiscardUnknown option is set.",
+            "Severity": "MEDIUM",
+            "CweIDs": null,
+            "References": [
+              "http://www.openwall.com/lists/oss-security/2024/03/08/4",
+              "https://access.redhat.com/errata/RHSA-2024:2550",
+              "https://access.redhat.com/security/cve/CVE-2024-24786",
+              "https://bugzilla.redhat.com/2268046",
+              "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-24786",
+              "https://errata.almalinux.org/9/ALSA-2024-2550.html",
+              "https://errata.rockylinux.org/RLSA-2024:2550",
+              "https://github.com/protocolbuffers/protobuf-go",
+              "https://github.com/protocolbuffers/protobuf-go/commit/f01a588e5810b90996452eec4a28f22a0afae023",
+              "https://github.com/protocolbuffers/protobuf-go/releases/tag/v1.33.0",
+              "https://go-review.googlesource.com/c/protobuf/+/569356",
+              "https://go.dev/cl/569356",
+              "https://groups.google.com/g/golang-announce/c/ArQ6CDgtEjY/",
+              "https://linux.oracle.com/cve/CVE-2024-24786.html",
+              "https://linux.oracle.com/errata/ELSA-2024-4246.html",
+              "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/JDMBHAVSDU2FBDZ45U3A2VLSM35OJ2HU",
+              "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/JDMBHAVSDU2FBDZ45U3A2VLSM35OJ2HU/",
+              "https://nvd.nist.gov/vuln/detail/CVE-2024-24786",
+              "https://pkg.go.dev/vuln/GO-2024-2611",
+              "https://security.netapp.com/advisory/ntap-20240517-0002",
+              "https://security.netapp.com/advisory/ntap-20240517-0002/",
+              "https://ubuntu.com/security/notices/USN-6746-1",
+              "https://ubuntu.com/security/notices/USN-6746-2",
+              "https://www.cve.org/CVERecord?id=CVE-2024-24786"
+            ],
+            "PublishedDate": "2024-03-05T23:15:07.82Z",
+            "LastModifiedDate": "2024-11-21T08:59:42.117Z"
+          },
+          {
+            "VulnerabilityID": "CVE-2024-28180",
+            "PkgName": "gopkg.in/go-jose/go-jose.v2",
+            "InstalledVersion": "v2.6.1",
+            "FixedVersion": "2.6.3",
+            "PkgIdentifier": {
+              "PURL": "pkg:golang/gopkg.in/go-jose/go-jose.v2@v2.6.1",
+              "UID": "36eaa0e81f22a2c1"
+            },
+            "CVSS": {
+              "ghsa": {
+                "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:L",
+                "V3Score": 4.3
+              },
+              "redhat": {
+                "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:L",
+                "V3Score": 4.3
+              }
+            },
+            "Title": "jose-go: improper handling of highly compressed data",
+            "Description": "Package jose aims to provide an implementation of the Javascript Object Signing and Encryption set of standards. An attacker could send a JWE containing compressed data that used large amounts of memory and CPU when decompressed by Decrypt or DecryptMulti. Those functions now return an error if the decompressed data would exceed 250kB or 10x the compressed size (whichever is larger). This vulnerability has been patched in versions 4.0.1, 3.0.3 and 2.6.3.\n",
+            "Severity": "MEDIUM",
+            "CweIDs": [
+              "CWE-409"
+            ],
+            "References": [
+              "https://access.redhat.com/errata/RHSA-2024:3827",
+              "https://access.redhat.com/security/cve/CVE-2024-28180",
+              "https://bugzilla.redhat.com/2268017",
+              "https://bugzilla.redhat.com/2268820",
+              "https://bugzilla.redhat.com/2268854",
+              "https://bugzilla.redhat.com/show_bug.cgi?id=2268017",
+              "https://bugzilla.redhat.com/show_bug.cgi?id=2268820",
+              "https://bugzilla.redhat.com/show_bug.cgi?id=2268854",
+              "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-45290",
+              "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-28176",
+              "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-28180",
+              "https://errata.almalinux.org/9/ALSA-2024-3827.html",
+              "https://errata.rockylinux.org/RLSA-2024:3827",
+              "https://github.com/go-jose/go-jose",
+              "https://github.com/go-jose/go-jose/commit/0dd4dd541c665fb292d664f77604ba694726f298",
+              "https://github.com/go-jose/go-jose/commit/add6a284ea0f844fd6628cba637be5451fe4b28a",
+              "https://github.com/go-jose/go-jose/commit/f4c051a0653d78199a053892f7619ebf96339502",
+              "https://github.com/go-jose/go-jose/security/advisories/GHSA-c5q2-7r4c-mv6g",
+              "https://linux.oracle.com/cve/CVE-2024-28180.html",
+              "https://linux.oracle.com/errata/ELSA-2024-3968.html",
+              "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/GD2GSBQTBLYADASUBHHZV2CZPTSLIPQJ",
+              "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/GD2GSBQTBLYADASUBHHZV2CZPTSLIPQJ/",
+              "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/I6MMWFBOXJA6ZCXNVPDFJ4XMK5PVG5RG",
+              "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/I6MMWFBOXJA6ZCXNVPDFJ4XMK5PVG5RG/",
+              "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/IJ6LAJJ2FTA2JVVOACCV5RZTOIZLXUNJ",
+              "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/IJ6LAJJ2FTA2JVVOACCV5RZTOIZLXUNJ/",
+              "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/JNPMXL36YGS3GQEVI3Q5HKHJ7YAAQXL5",
+              "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/JNPMXL36YGS3GQEVI3Q5HKHJ7YAAQXL5/",
+              "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/KXKGNCRU7OTM5AHC7YIYBNOWI742PRMY",
+              "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/KXKGNCRU7OTM5AHC7YIYBNOWI742PRMY/",
+              "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/MSOMHDKRPU3A2JEMRODT2IREDFBLVPGS",
+              "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/MSOMHDKRPU3A2JEMRODT2IREDFBLVPGS/",
+              "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/UG5FSEYJ3GP27FZXC5YAAMMEC5XWKJHG",
+              "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/UG5FSEYJ3GP27FZXC5YAAMMEC5XWKJHG/",
+              "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/UJO2U5ACZVACNQXJ5EBRFLFW6DP5BROY",
+              "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/UJO2U5ACZVACNQXJ5EBRFLFW6DP5BROY/",
+              "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/XJDO5VSIAOGT2WP63AXAAWNRSVJCNCRH",
+              "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/XJDO5VSIAOGT2WP63AXAAWNRSVJCNCRH/",
+              "https://nvd.nist.gov/vuln/detail/CVE-2024-28180",
+              "https://www.cve.org/CVERecord?id=CVE-2024-28180"
+            ],
+            "PublishedDate": "2024-03-09T01:15:07.34Z",
+            "LastModifiedDate": "2024-11-21T09:05:58.227Z"
+          },
+          {
+            "VulnerabilityID": "CVE-2024-28180",
+            "PkgName": "gopkg.in/square/go-jose.v2",
+            "InstalledVersion": "v2.6.0",
+            "FixedVersion": "",
+            "PkgIdentifier": {
+              "PURL": "pkg:golang/gopkg.in/square/go-jose.v2@v2.6.0",
+              "UID": "96041a44a89c2791"
+            },
+            "CVSS": {
+              "ghsa": {
+                "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:L",
+                "V3Score": 4.3
+              },
+              "redhat": {
+                "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:L",
+                "V3Score": 4.3
+              }
+            },
+            "Title": "jose-go: improper handling of highly compressed data",
+            "Description": "Package jose aims to provide an implementation of the Javascript Object Signing and Encryption set of standards. An attacker could send a JWE containing compressed data that used large amounts of memory and CPU when decompressed by Decrypt or DecryptMulti. Those functions now return an error if the decompressed data would exceed 250kB or 10x the compressed size (whichever is larger). This vulnerability has been patched in versions 4.0.1, 3.0.3 and 2.6.3.\n",
+            "Severity": "MEDIUM",
+            "CweIDs": [
+              "CWE-409"
+            ],
+            "References": [
+              "https://access.redhat.com/errata/RHSA-2024:3827",
+              "https://access.redhat.com/security/cve/CVE-2024-28180",
+              "https://bugzilla.redhat.com/2268017",
+              "https://bugzilla.redhat.com/2268820",
+              "https://bugzilla.redhat.com/2268854",
+              "https://bugzilla.redhat.com/show_bug.cgi?id=2268017",
+              "https://bugzilla.redhat.com/show_bug.cgi?id=2268820",
+              "https://bugzilla.redhat.com/show_bug.cgi?id=2268854",
+              "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-45290",
+              "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-28176",
+              "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-28180",
+              "https://errata.almalinux.org/9/ALSA-2024-3827.html",
+              "https://errata.rockylinux.org/RLSA-2024:3827",
+              "https://github.com/go-jose/go-jose",
+              "https://github.com/go-jose/go-jose/commit/0dd4dd541c665fb292d664f77604ba694726f298",
+              "https://github.com/go-jose/go-jose/commit/add6a284ea0f844fd6628cba637be5451fe4b28a",
+              "https://github.com/go-jose/go-jose/commit/f4c051a0653d78199a053892f7619ebf96339502",
+              "https://github.com/go-jose/go-jose/security/advisories/GHSA-c5q2-7r4c-mv6g",
+              "https://linux.oracle.com/cve/CVE-2024-28180.html",
+              "https://linux.oracle.com/errata/ELSA-2024-3968.html",
+              "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/GD2GSBQTBLYADASUBHHZV2CZPTSLIPQJ",
+              "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/GD2GSBQTBLYADASUBHHZV2CZPTSLIPQJ/",
+              "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/I6MMWFBOXJA6ZCXNVPDFJ4XMK5PVG5RG",
+              "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/I6MMWFBOXJA6ZCXNVPDFJ4XMK5PVG5RG/",
+              "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/IJ6LAJJ2FTA2JVVOACCV5RZTOIZLXUNJ",
+              "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/IJ6LAJJ2FTA2JVVOACCV5RZTOIZLXUNJ/",
+              "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/JNPMXL36YGS3GQEVI3Q5HKHJ7YAAQXL5",
+              "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/JNPMXL36YGS3GQEVI3Q5HKHJ7YAAQXL5/",
+              "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/KXKGNCRU7OTM5AHC7YIYBNOWI742PRMY",
+              "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/KXKGNCRU7OTM5AHC7YIYBNOWI742PRMY/",
+              "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/MSOMHDKRPU3A2JEMRODT2IREDFBLVPGS",
+              "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/MSOMHDKRPU3A2JEMRODT2IREDFBLVPGS/",
+              "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/UG5FSEYJ3GP27FZXC5YAAMMEC5XWKJHG",
+              "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/UG5FSEYJ3GP27FZXC5YAAMMEC5XWKJHG/",
+              "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/UJO2U5ACZVACNQXJ5EBRFLFW6DP5BROY",
+              "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/UJO2U5ACZVACNQXJ5EBRFLFW6DP5BROY/",
+              "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/XJDO5VSIAOGT2WP63AXAAWNRSVJCNCRH",
+              "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/XJDO5VSIAOGT2WP63AXAAWNRSVJCNCRH/",
+              "https://nvd.nist.gov/vuln/detail/CVE-2024-28180",
+              "https://www.cve.org/CVERecord?id=CVE-2024-28180"
+            ],
+            "PublishedDate": "2024-03-09T01:15:07.34Z",
+            "LastModifiedDate": "2024-11-21T09:05:58.227Z"
+          }
+        ]
+      },
+      {
+        "Vulnerabilities": null
+      }
+    ]
+  },
+  "type": "https://in-toto.io/Statement/v1",
+  "subject": [
+    {
+      "digest": {
+        "sha256": "dd0f5732fadd6f278a899b4a48b35297dc0792fe1a82aa53f5339c557e298e72"
+      }
+    }
+  ],
+  "predicate_type": "https://trivy.dev/report"
+}
