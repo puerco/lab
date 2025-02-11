@@ -11,3 +11,7 @@ jobs:
       - name: Setup bnd
         uses: carabiner-dev/bnd-actions/setup@HEAD
 
+      - name: Sign Some Stuff
+        run: bnd statement si.json
+        id: sign
+
