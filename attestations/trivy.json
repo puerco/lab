@@ -1,5 +1,5 @@
 {
-  "predicateType": "",
+  "predicateType": "https://trivy.dev/report",
   "predicate": {
     "SchemaVersion": 2,
     "CreatedAt": "2025-02-01T14:56:23.124791+01:00",
@@ -894,13 +894,11 @@
       }
     ]
   },
-  "type": "https://in-toto.io/Statement/v1",
   "subject": [
     {
       "digest": {
         "sha256": "dd0f5732fadd6f278a899b4a48b35297dc0792fe1a82aa53f5339c557e298e72"
       }
     }
-  ],
-  "predicate_type": "https://trivy.dev/report"
+  ]
 }
