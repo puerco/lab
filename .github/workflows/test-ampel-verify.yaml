@@ -33,7 +33,13 @@ jobs:
           unpack extract . --ignore-other-codebases -f spdx --attest > attestations/spdx.intoto.json
           bnd statement attestations/spdx.intoto.json --out attestations/spdx.bundle.json
           rm -f attestations/spdx.intoto.json
-          bnd pack attestations >> attestations.jsonl
+          bnd pack attestations/ >> attestations.jsonl
+
+      - name: Archive production artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: attestations.jsonl
+          path: attestations.jsonl
 
       - uses: carabiner-dev/actions/ampel/verify@HEAD
         with:
