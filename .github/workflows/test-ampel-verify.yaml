@@ -1,0 +1,40 @@
+---
+name: Test AMPEL Verify
+
+on:
+  workflow_dispatch:
+
+jobs:
+  check-release-notes:
+    runs-on: ubuntu-latest
+
+    #permissions:
+    #  pull-requests: write # needed to read the PR data
+
+    steps:
+      - name: Checkout code (drop)
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          persist-credentials: false
+          repository: carabiner-dev/drop
+
+      - name: Setup bnd
+        uses: carabiner-dev/actions/install/bnd@HEAD
+
+      - name: Setup unpack
+        uses: carabiner-dev/actions/install/unpack@HEAD
+
+      - name: Generate SBOM
+        run: |
+          mkdir attestations
+          unpack extract . --ignore-other-codebases -f spdx --attest > attestations/spdx.intoto.json
+          bnd statement attestations/spdx.intoto.json --out attestations/spdx.bundle.json
+          rm -f attestations/spdx.intoto.json
+
+      - uses: carabiner-dev/actions/ampel/verify@HEAD
+        with:
+          name: ${{ github.sha }}
+          collector: "jsonl:attestations.jsonl"
+          policy: 
+
+
