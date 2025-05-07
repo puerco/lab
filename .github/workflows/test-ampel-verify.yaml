@@ -36,8 +36,8 @@ jobs:
 
       - uses: carabiner-dev/actions/ampel/verify@HEAD
         with:
-          name: ${{ github.sha }}
+          subject: ${{ github.sha }}
           collector: "jsonl:attestations.jsonl"
-          policy: 
+          policy: "git+https://github.com/carabiner-dev/examples#sbom/minimum-elements/policy.json"
 
 
