@@ -4,12 +4,15 @@ name: Test AMPEL Verify
 on:
   workflow_dispatch:
 
+permissions: {}
+
 jobs:
-  check-release-notes:
+  attest-and-verify:
     runs-on: ubuntu-latest
 
-    #permissions:
-    #  pull-requests: write # needed to read the PR data
+    permissions:
+      id-token: write # needed for keyless signing
+      attestations: write # needed to push attestations
 
     steps:
       - name: Checkout code (drop)
