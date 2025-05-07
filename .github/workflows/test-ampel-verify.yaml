@@ -30,8 +30,8 @@ jobs:
       - name: Generate SBOM
         run: |
           mkdir attestations
-          unpack extract . --ignore-other-codebases -f spdx --attest > attestations/spdx.intoto.json
-          bnd statement attestations/spdx.intoto.json --out attestations/spdx.bundle.json
+          unpack extract . --ignore-other-codebases -f spdx > attestations/spdx.json
+          bnd predicate --subject="sha1:${{ github.sha }}" --type="https://spdx.dev/Document" attestations/spdx.json --out attestations/spdx.bundle.json
           rm -f attestations/spdx.intoto.json
           bnd pack attestations/ >> attestations.jsonl
 
