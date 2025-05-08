@@ -47,5 +47,6 @@ jobs:
           collector: "jsonl:attestations.jsonl"
           policy: "git+https://github.com/carabiner-dev/examples#sbom/minimum-elements/policy.json"
           fail: "false"
+          attest: "true"
 
 
