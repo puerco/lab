@@ -36,14 +36,14 @@ jobs:
           bnd pack attestations/ >> attestations.jsonl
 
       - name: Archive production artifacts
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
         with:
           name: attestations.jsonl
           path: attestations.jsonl
 
       - uses: carabiner-dev/actions/ampel/verify@HEAD
         with:
-          subject: ${{ github.sha }}
+          subject: sha1:${{ github.sha }}
           collector: "jsonl:attestations.jsonl"
           policy: "git+https://github.com/carabiner-dev/examples#sbom/minimum-elements/policy.json"
           fail: "false"
