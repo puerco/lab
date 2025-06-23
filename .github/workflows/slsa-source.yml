@@ -4,10 +4,14 @@ on:
   push:
     branches: [ "master" ]
 
+permissions: {} 
+
 jobs:
   # Whenever new source is pushed recompute the slsa source information.
   generate-provenance:
+    runs-on: ubuntu-latest
     permissions:
       contents: write # needed for storing the vsa in the repo.
-      id-token: write
-    uses: slsa-framework/slsa-source-poc/actions/slsa_with_provenance@main
+      id-token: write # Required to mint tokens for signing attestations
+    steps:
+      - uses: slsa-framework/slsa-source-poc/actions/slsa_with_provenance@main
