@@ -8,7 +8,7 @@ permissions: {}
 
 jobs:
   # Whenever new source is pushed recompute the slsa source information.
-  generate-provenance:
+  source-provenance:
     runs-on: ubuntu-latest
     permissions:
       contents: write # needed for storing the vsa in the repo.
