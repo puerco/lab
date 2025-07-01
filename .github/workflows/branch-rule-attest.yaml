@@ -1,0 +1,10 @@
+name: branch-rule-attest
+on: branch_protection_rule
+jobs:
+    branch-changed:
+        runs-on: ubuntu-latest
+        steps:
+            - id: attest
+              run: |
+                echo "Hello"
+
