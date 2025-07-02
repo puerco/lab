@@ -1,5 +1,7 @@
 name: branch-rule-attest
-on: branch_protection_rule
+on:
+  branch_protection_rule:
+    types: [created, deleted, edited]
 jobs:
     branch-changed:
         runs-on: ubuntu-latest
