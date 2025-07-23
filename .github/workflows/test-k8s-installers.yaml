@@ -1,0 +1,19 @@
+name: Test bnd setup
+
+on:
+  workflow_dispatch:
+
+jobs:
+  test-installers:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: 'read'
+
+    steps:
+      - name: Setup bnd
+        uses: puerco/release-actions/setup-release-notes@164f064ef32e895b036bc892ff88a97c3e175511
+      - run: |
+          release-notes version
+
+
