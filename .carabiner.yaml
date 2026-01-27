@@ -1,0 +1,14 @@
+# Carabiner Stamping Service Configuration Example
+
+version: "v1"
+
+attesters:
+  test:
+    driver: "test"
+    disabled: false
+    events:
+      - workflow_run
+      - workflow
+      - repository
+    config:
+      customField: "example-value"
