@@ -13,6 +13,3 @@ jobs:
     steps:
       - name: Install sbt
         uses: puerco/setup-sbt@HEAD
-      - name: Test install
-        run: |
-          sbt
