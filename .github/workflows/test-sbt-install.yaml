@@ -1,0 +1,18 @@
+---
+name: Test sbt install with verify
+
+on:
+  workflow_dispatch:
+
+permissions: {}
+
+jobs:
+  test-sbt-install:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Install sbt
+        uses: puerco/setup-sbt@HEAD
+      - name: Test install
+        run: |
+          sbt
