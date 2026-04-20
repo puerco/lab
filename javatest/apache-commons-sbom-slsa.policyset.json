@@ -1,0 +1,115 @@
+{
+    "id": "apache-commons-sbom-slsa",
+    "meta": {
+        "description": "Extracts top-level dependencies from an SBOM and verifies SLSA provenance for each"
+    },
+    "chain": [
+        {
+            "predicate": {
+                "type": "https://spdx.dev/Document",
+                "runtime": "cel@v0",
+                "selector": "cel.bind(root, sboms[0].get_root_nodes()[0], sboms[0].get_node_list().get_node_descendants(root.id, 1).get_nodes().map(n, {'name': n.name, 'uri': has(n.identifiers.PURL) ? n.identifiers.PURL : '', 'digest': n.hashes}))"
+            }
+        }
+    ],
+    "groups": [
+        {
+            "id": "apache-commons-sbom-slsa",
+            "meta": {
+                "description": "Verifies SLSA provenance for Apache Commons components, skipping components not in the known list",
+                "assert_mode": "OR"
+            },
+            "common": {
+                "context": {
+                    "components": {
+                        "type": "list",
+                        "required": false,
+                        "default": [
+                            "commons-lang3"
+                        ]
+                    }
+                }
+            },
+            "blocks": [
+                {
+                    "id": "component-gate",
+                    "policies": [
+                        {
+                            "id": "not-in-scope",
+                            "meta": {
+                                "description": "Passes when the component is not in the known components list"
+                            },
+                            "tenets": [
+                                {
+                                    "id": "not-in-list",
+                                    "code": "!context.components.exists(c, c == subject.name)",
+                                    "assessment": { "message": "Component not in scope, skipping SLSA checks" },
+                                    "error": {
+                                        "message": "Component is in scope",
+                                        "guidance": "Component {{ .Subject.Name }} is in the components list and must pass SLSA checks"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "slsa-provenance-checks",
+                    "meta": {
+                        "assert_mode": "AND"
+                    },
+                    "policies": [
+                        {
+                            "id": "slsa-builder-id",
+                            "source": {
+                                "location": {
+                                    "uri": "git+https://github.com/carabiner-dev/policies@eed2d09ac2a7f8f5238a24b30492e378d8d77ad3#slsa/slsa-builder-id.json"
+                                }
+                            },
+                            "meta": {
+                                "description": "Ensures the artifact was built by the Apache Commons builder"
+                            },
+                            "context": {
+                                "builderId": {
+                                    "value": "https://commons.apache.org/builds/0.1.0"
+                                }
+                            }
+                        },
+                        {
+                            "id": "slsa-build-type",
+                            "source": {
+                                "location": {
+                                    "uri": "git+https://github.com/carabiner-dev/policies@eed2d09ac2a7f8f5238a24b30492e378d8d77ad3#slsa/slsa-build-type.json"
+                                }
+                            },
+                            "meta": {
+                                "description": "Ensures the artifact was built using the Apache Commons build type"
+                            },
+                            "context": {
+                                "buildType": {
+                                    "value": "https://commons.apache.org/builds/0.1.0"
+                                }
+                            }
+                        },
+                        {
+                            "id": "slsa-build-point",
+                            "source": {
+                                "location": {
+                                    "uri": "git+https://github.com/carabiner-dev/policies@eed2d09ac2a7f8f5238a24b30492e378d8d77ad3#slsa/slsa-build-point.json"
+                                }
+                            },
+                            "meta": {
+                                "description": "Ensures the artifact was built from the Apache Commons Lang repository"
+                            },
+                            "context": {
+                                "buildPoint": {
+                                    "value": "git+https://gitbox.apache.org/repos/asf/commons-lang.git@feat/slsa"
+                                }
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
