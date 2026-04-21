@@ -1,0 +1,284 @@
+{
+    "spdxVersion": "SPDX-2.3",
+    "dataLicense": "CC0-1.0",
+    "SPDXID": "SPDXRef-DOCUMENT",
+    "name": "",
+    "documentNamespace": "urn:uuid:3dcadd76-8ecd-58bf-a9c2-28821f25367b",
+    "creationInfo": {
+        "licenseListVersion": "3.20",
+        "creators": [
+            "Tool: protobom-devel",
+            "Tool: unpack-devel"
+        ],
+        "created": "2026-04-20T22:04:12Z"
+    },
+    "packages": [
+        {
+            "name": "insult-generator",
+            "SPDXID": "SPDXRef-0d57a530-8819-4d0b-bbcf-16ae2a9e9da5",
+            "versionInfo": "1.0-SNAPSHOT",
+            "downloadLocation": "NOASSERTION",
+            "filesAnalyzed": false,
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceType": "purl",
+                    "referenceLocator": "pkg:maven/com.example/insult-generator@1.0-SNAPSHOT"
+                }
+            ],
+            "primaryPackagePurpose": "APPLICATION"
+        },
+        {
+            "name": "commons-lang3",
+            "SPDXID": "SPDXRef-76d9b7d7-38a3-4431-b3f2-b819c49038d2",
+            "versionInfo": "3.21.0.slsa-SNAPSHOT",
+            "downloadLocation": "https://repository.apache.org/content/repositories/snapshots/org/apache/commons/commons-lang3/3.21.0.slsa-SNAPSHOT/commons-lang3-3.21.0.slsa-20260420.135524-7.jar",
+            "filesAnalyzed": false,
+            "checksums": [
+                {
+                    "algorithm": "SHA512",
+                    "checksumValue": "83a786c56bb2524660ab628cc534d69676cb17ffc80c93b9abbb688fa99cb2719b7b692c76f94b02032ef55836c69ba1a2cce4d497ede2b671ff7acd2261b228"
+                },
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "815b26e4b44309e4ae3983fdef615d8f027c29a2"
+                },
+                {
+                    "algorithm": "SHA256",
+                    "checksumValue": "fcaf316a924b98cfaeb5ab90b5c289f7ce8bc9c86b34225807f452f73e6adf3c"
+                }
+            ],
+            "licenseDeclared": "Apache-2.0",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceType": "purl",
+                    "referenceLocator": "pkg:maven/org.apache.commons/commons-lang3@3.21.0.slsa-SNAPSHOT?repository_url=https://repository.apache.org/content/repositories/snapshots"
+                }
+            ],
+            "primaryPackagePurpose": "LIBRARY"
+        },
+        {
+            "name": "commons-text",
+            "SPDXID": "SPDXRef-c8c3fb00-afd8-4646-831f-684a17cb8a71",
+            "versionInfo": "1.13.0",
+            "downloadLocation": "https://repo1.maven.org/maven2/org/apache/commons/commons-text/1.13.0/commons-text-1.13.0.jar",
+            "filesAnalyzed": false,
+            "checksums": [
+                {
+                    "algorithm": "SHA256",
+                    "checksumValue": "1e323a501127df78ed0987f345d69d65d0ea7fa3d4fb5b3f84aaeba3a8b20f38"
+                },
+                {
+                    "algorithm": "SHA512",
+                    "checksumValue": "d4fdc5b2f1d3cbe1ed4bec867fad4430a38ae7ce7a3a9815c9839c9b16a2af3b67d92bb663854282e71042e3f391fe35a5de0fc9f0fcfb6ae7becaf725f8bfeb"
+                },
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "ba2ed5521c491cabf7ecdb57f77922561c2e8958"
+                }
+            ],
+            "licenseDeclared": "Apache-2.0",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceType": "purl",
+                    "referenceLocator": "pkg:maven/org.apache.commons/commons-text@1.13.0"
+                }
+            ],
+            "primaryPackagePurpose": "LIBRARY"
+        },
+        {
+            "name": "mockito-inline",
+            "SPDXID": "SPDXRef-0823db30-6f0a-4899-9387-8a3aa76af731",
+            "versionInfo": "4.11.0",
+            "downloadLocation": "https://repo1.maven.org/maven2/org/mockito/mockito-inline/4.11.0/mockito-inline-4.11.0.jar",
+            "filesAnalyzed": false,
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "3d1dffee9a8a1998ec782383ca2f818848f2d5f1"
+                },
+                {
+                    "algorithm": "SHA256",
+                    "checksumValue": "ee52e1c299a632184fba274a9370993e09140429f5e516e6c5570fd6574b297f"
+                },
+                {
+                    "algorithm": "SHA512",
+                    "checksumValue": "9c948cf7fc88f7f747faba78a03497b2ff6153a9d944fa2e1a477dadc4528afc21721854e3d43d53e190d5abe24dbfad69eaf37457e67a34ac099b332bea1350"
+                }
+            ],
+            "licenseDeclared": "MIT",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceType": "purl",
+                    "referenceLocator": "pkg:maven/org.mockito/mockito-inline@4.11.0"
+                }
+            ],
+            "primaryPackagePurpose": "LIBRARY"
+        },
+        {
+            "name": "mockito-core",
+            "SPDXID": "SPDXRef-bb222238-9fff-4bcc-9437-67a491ec859f",
+            "versionInfo": "4.11.0",
+            "downloadLocation": "https://repo1.maven.org/maven2/org/mockito/mockito-core/4.11.0/mockito-core-4.11.0.jar",
+            "filesAnalyzed": false,
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "ce5226440c2ee78915716d4ce3d10aed2dbf26fb"
+                },
+                {
+                    "algorithm": "SHA256",
+                    "checksumValue": "4b909690cab288c761eb94c0bf0e814496cf3921d8affac84cd87774530351e5"
+                },
+                {
+                    "algorithm": "SHA512",
+                    "checksumValue": "4c6f12cbcf48a2e3f6fe98d61759cef8f927d077baf96a89dd7274b34325d793d9da285d35a3cc874685989dcfdeeafc38f1d64b169871cb246ab9172559c4d9"
+                }
+            ],
+            "licenseDeclared": "MIT",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceType": "purl",
+                    "referenceLocator": "pkg:maven/org.mockito/mockito-core@4.11.0"
+                }
+            ],
+            "primaryPackagePurpose": "LIBRARY"
+        },
+        {
+            "name": "byte-buddy",
+            "SPDXID": "SPDXRef-95c019b3-e876-404a-b650-ebd864a853ee",
+            "versionInfo": "1.12.19",
+            "downloadLocation": "https://repo1.maven.org/maven2/net/bytebuddy/byte-buddy/1.12.19/byte-buddy-1.12.19.jar",
+            "filesAnalyzed": false,
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "178d26e6a95e50502ae16673e08269797f8b254a"
+                },
+                {
+                    "algorithm": "SHA256",
+                    "checksumValue": "030704139e46f32c38d27060edee9e0676b0a0fff8a8be53461515154ba8a7be"
+                },
+                {
+                    "algorithm": "SHA512",
+                    "checksumValue": "27d993effe7c574d70d9f31f716a533a2e2361c9a0f4ae6f058b31bed4b01c8d97a215848cc4c2ad2d1c76e5ad1ec572448345ba48ce86bad04187fb4db09d26"
+                }
+            ],
+            "licenseDeclared": "Apache-2.0",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceType": "purl",
+                    "referenceLocator": "pkg:maven/net.bytebuddy/byte-buddy@1.12.19"
+                }
+            ],
+            "primaryPackagePurpose": "LIBRARY"
+        },
+        {
+            "name": "byte-buddy-agent",
+            "SPDXID": "SPDXRef-3f0d66c5-4f31-48fb-bb84-8994b9d71281",
+            "versionInfo": "1.12.19",
+            "downloadLocation": "https://repo1.maven.org/maven2/net/bytebuddy/byte-buddy-agent/1.12.19/byte-buddy-agent-1.12.19.jar",
+            "filesAnalyzed": false,
+            "checksums": [
+                {
+                    "algorithm": "SHA256",
+                    "checksumValue": "3a70240de7cdcde04e7c504c2327d7035b9c25ae0206881e3bf4e6798a273ed8"
+                },
+                {
+                    "algorithm": "SHA512",
+                    "checksumValue": "28f86e3fd49bff9a1b0b1ad2eae099b10e4ab6d6a3150b72580efb89750c4510123d239fb874ad7c54e507c0865645866b741add4f7966f9a9aa55b127ee1a25"
+                },
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "450917cf3b358b691a824acf4c67aa89c826f67e"
+                }
+            ],
+            "licenseDeclared": "Apache-2.0",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceType": "purl",
+                    "referenceLocator": "pkg:maven/net.bytebuddy/byte-buddy-agent@1.12.19"
+                }
+            ],
+            "primaryPackagePurpose": "LIBRARY"
+        },
+        {
+            "name": "objenesis",
+            "SPDXID": "SPDXRef-5304f8fd-ad25-4220-9ec4-d94bebde419c",
+            "versionInfo": "3.3",
+            "downloadLocation": "https://repo1.maven.org/maven2/org/objenesis/objenesis/3.3/objenesis-3.3.jar",
+            "filesAnalyzed": false,
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "1049c09f1de4331e8193e579448d0916d75b7631"
+                },
+                {
+                    "algorithm": "SHA512",
+                    "checksumValue": "1fa990d15bd179f07ffbc460d580a6fd0562e45dee8bd4a9405917536b78f45c0d6f644b67f85d781c758aa56eff90aef23eedcc9bd7f5ff887a67b716083e61"
+                },
+                {
+                    "algorithm": "SHA256",
+                    "checksumValue": "02dfd0b0439a5591e35b708ed2f5474eb0948f53abf74637e959b8e4ef69bfeb"
+                }
+            ],
+            "licenseDeclared": "Apache-2.0",
+            "externalRefs": [
+                {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceType": "purl",
+                    "referenceLocator": "pkg:maven/org.objenesis/objenesis@3.3"
+                }
+            ],
+            "primaryPackagePurpose": "LIBRARY"
+        }
+    ],
+    "relationships": [
+        {
+            "spdxElementId": "SPDXRef-0d57a530-8819-4d0b-bbcf-16ae2a9e9da5",
+            "relatedSpdxElement": "SPDXRef-76d9b7d7-38a3-4431-b3f2-b819c49038d2",
+            "relationshipType": "DEPENDS_ON"
+        },
+        {
+            "spdxElementId": "SPDXRef-0d57a530-8819-4d0b-bbcf-16ae2a9e9da5",
+            "relatedSpdxElement": "SPDXRef-c8c3fb00-afd8-4646-831f-684a17cb8a71",
+            "relationshipType": "DEPENDS_ON"
+        },
+        {
+            "spdxElementId": "SPDXRef-76d9b7d7-38a3-4431-b3f2-b819c49038d2",
+            "relatedSpdxElement": "SPDXRef-0823db30-6f0a-4899-9387-8a3aa76af731",
+            "relationshipType": "DEPENDS_ON"
+        },
+        {
+            "spdxElementId": "SPDXRef-0823db30-6f0a-4899-9387-8a3aa76af731",
+            "relatedSpdxElement": "SPDXRef-bb222238-9fff-4bcc-9437-67a491ec859f",
+            "relationshipType": "DEPENDS_ON"
+        },
+        {
+            "spdxElementId": "SPDXRef-bb222238-9fff-4bcc-9437-67a491ec859f",
+            "relatedSpdxElement": "SPDXRef-95c019b3-e876-404a-b650-ebd864a853ee",
+            "relationshipType": "DEPENDS_ON"
+        },
+        {
+            "spdxElementId": "SPDXRef-bb222238-9fff-4bcc-9437-67a491ec859f",
+            "relatedSpdxElement": "SPDXRef-3f0d66c5-4f31-48fb-bb84-8994b9d71281",
+            "relationshipType": "DEPENDS_ON"
+        },
+        {
+            "spdxElementId": "SPDXRef-bb222238-9fff-4bcc-9437-67a491ec859f",
+            "relatedSpdxElement": "SPDXRef-5304f8fd-ad25-4220-9ec4-d94bebde419c",
+            "relationshipType": "DEPENDS_ON"
+        },
+        {
+            "spdxElementId": "SPDXRef-DOCUMENT",
+            "relatedSpdxElement": "SPDXRef-0d57a530-8819-4d0b-bbcf-16ae2a9e9da5",
+            "relationshipType": "DESCRIBES"
+        }
+    ]
+}

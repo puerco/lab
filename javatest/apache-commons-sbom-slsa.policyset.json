@@ -8,7 +8,7 @@
             "predicate": {
                 "type": "https://spdx.dev/Document",
                 "runtime": "cel@v0",
-                "selector": "cel.bind(root, sboms[0].get_root_nodes()[0], sboms[0].get_node_list().get_node_descendants(root.id, 1).get_nodes().map(n, {'name': n.name, 'uri': has(n.identifiers.PURL) ? n.identifiers.PURL : '', 'digest': n.hashes}))"
+                "selector": "cel.bind(root, sboms[0].get_root_nodes()[0], sboms[0].get_node_list().get_node_descendants(root.id, 1).get_nodes().filter(n, n.id != root.id).map(n, {'name': n.name, 'uri': has(n.identifiers.PURL) ? n.identifiers.PURL : '', 'digest': n.hashes}))"
             }
         }
     ],
@@ -22,7 +22,6 @@
             "common": {
                 "context": {
                     "components": {
-                        "type": "list",
                         "required": false,
                         "default": [
                             "commons-lang3"
@@ -43,9 +42,9 @@
                                 {
                                     "id": "not-in-list",
                                     "code": "!context.components.exists(c, c == subject.name)",
-                                    "assessment": { "message": "Component not in scope, skipping SLSA checks" },
+                                    "assessment": { "message": "{{ .Subject.Name }} not in scope, skipping SLSA checks" },
                                     "error": {
-                                        "message": "Component is in scope",
+                                        "message": "{{ .Subject.Name }} is in scope",
                                         "guidance": "Component {{ .Subject.Name }} is in the components list and must pass SLSA checks"
                                     }
                                 }
@@ -55,9 +54,6 @@
                 },
                 {
                     "id": "slsa-provenance-checks",
-                    "meta": {
-                        "assert_mode": "AND"
-                    },
                     "policies": [
                         {
                             "id": "slsa-builder-id",
@@ -71,7 +67,7 @@
                             },
                             "context": {
                                 "builderId": {
-                                    "value": "https://commons.apache.org/builds/0.1.0"
+                                    "value": "pkg:maven/org.apache.commons/commons-release-plugin"
                                 }
                             }
                         },
@@ -87,7 +83,7 @@
                             },
                             "context": {
                                 "buildType": {
-                                    "value": "https://commons.apache.org/builds/0.1.0"
+                                    "value": "https://commons.apache.org/proper/commons-release-plugin/slsa/v0.1.0"
                                 }
                             }
                         },
