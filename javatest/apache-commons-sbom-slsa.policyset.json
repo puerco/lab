@@ -1,111 +1,122 @@
 {
-    "id": "apache-commons-sbom-slsa",
-    "meta": {
-        "description": "Extracts top-level dependencies from an SBOM and verifies SLSA provenance for each"
-    },
-    "chain": [
-        {
-            "predicate": {
-                "type": "https://spdx.dev/Document",
-                "runtime": "cel@v0",
-                "selector": "cel.bind(root, sboms[0].get_root_nodes()[0], sboms[0].get_node_list().get_node_descendants(root.id, 1).get_nodes().filter(n, n.id != root.id).map(n, {'name': n.name, 'uri': has(n.identifiers.PURL) ? n.identifiers.PURL : '', 'digest': n.hashes}))"
-            }
-        }
-    ],
-    "groups": [
-        {
-            "id": "apache-commons-sbom-slsa",
-            "meta": {
-                "description": "Verifies SLSA provenance for Apache Commons components, skipping components not in the known list",
-                "assert_mode": "OR"
-            },
-            "common": {
-                "context": {
-                    "components": {
-                        "required": false,
-                        "default": [
-                            "commons-lang3"
-                        ]
-                    }
-                }
-            },
-            "blocks": [
-                {
-                    "id": "component-gate",
-                    "policies": [
-                        {
-                            "id": "not-in-scope",
-                            "meta": {
-                                "description": "Passes when the component is not in the known components list"
-                            },
-                            "tenets": [
-                                {
-                                    "id": "not-in-list",
-                                    "code": "!context.components.exists(c, c == subject.name)",
-                                    "assessment": { "message": "{{ .Subject.Name }} not in scope, skipping SLSA checks" },
-                                    "error": {
-                                        "message": "{{ .Subject.Name }} is in scope",
-                                        "guidance": "Component {{ .Subject.Name }} is in the components list and must pass SLSA checks"
-                                    }
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "id": "slsa-provenance-checks",
-                    "policies": [
-                        {
-                            "id": "slsa-builder-id",
-                            "source": {
-                                "location": {
-                                    "uri": "git+https://github.com/carabiner-dev/policies@eed2d09ac2a7f8f5238a24b30492e378d8d77ad3#slsa/slsa-builder-id.json"
-                                }
-                            },
-                            "meta": {
-                                "description": "Ensures the artifact was built by the Apache Commons builder"
-                            },
-                            "context": {
-                                "builderId": {
-                                    "value": "pkg:maven/org.apache.commons/commons-release-plugin"
-                                }
-                            }
-                        },
-                        {
-                            "id": "slsa-build-type",
-                            "source": {
-                                "location": {
-                                    "uri": "git+https://github.com/carabiner-dev/policies@eed2d09ac2a7f8f5238a24b30492e378d8d77ad3#slsa/slsa-build-type.json"
-                                }
-                            },
-                            "meta": {
-                                "description": "Ensures the artifact was built using the Apache Commons build type"
-                            },
-                            "context": {
-                                "buildType": {
-                                    "value": "https://commons.apache.org/proper/commons-release-plugin/slsa/v0.1.0"
-                                }
-                            }
-                        },
-                        {
-                            "id": "slsa-build-point",
-                            "source": {
-                                "location": {
-                                    "uri": "git+https://github.com/carabiner-dev/policies@eed2d09ac2a7f8f5238a24b30492e378d8d77ad3#slsa/slsa-build-point.json"
-                                }
-                            },
-                            "meta": {
-                                "description": "Ensures the artifact was built from the Apache Commons Lang repository"
-                            },
-                            "context": {
-                                "buildPoint": {
-                                    "value": "git+https://gitbox.apache.org/repos/asf/commons-lang.git@feat/slsa"
-                                }
-                            }
-                        }
-                    ]
-                }
+  "id": "apache-commons-sbom-slsa",
+  "meta": {
+    "description": "Extracts top-level dependencies from an SBOM and verifies SLSA provenance for each"
+  },
+  "chain": [
+    {
+      "predicate": {
+        "type": "https://spdx.dev/Document",
+        "runtime": "cel@v0",
+        "selector": "cel.bind(root, sboms[0].get_root_nodes()[0], sboms[0].get_node_list().get_node_descendants(root.id, 1).get_nodes().filter(n, n.id != root.id).map(n, {'name': n.name, 'uri': has(n.identifiers.PURL) ? n.identifiers.PURL : '', 'digest': n.hashes}))"
+      }
+    }
+  ],
+  "groups": [
+    {
+      "id": "apache-commons-sbom-slsa",
+      "meta": {
+        "description": "Verifies SLSA provenance for Apache Commons components, skipping components not in the known list",
+        "assert_mode": "OR"
+      },
+      "common": {
+        "context": {
+          "components": {
+            "required": false,
+            "default": [
+              "commons-lang3"
             ]
+          }
         }
+      },
+      "blocks": [
+        {
+          "id": "component-gate",
+          "policies": [
+            {
+              "id": "not-in-scope",
+              "meta": {
+                "description": "Passes when the component is not in the known components list"
+              },
+              "tenets": [
+                {
+                  "id": "not-in-list",
+                  "code": "!context.components.exists(c, c == subject.name)",
+                  "assessment": {
+                    "message": "{{ .Subject.Name }} not in scope, skipping SLSA checks"
+                  },
+                  "error": {
+                    "message": "{{ .Subject.Name }} is in scope",
+                    "guidance": "Component {{ .Subject.Name }} is in the components list and must pass SLSA checks"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "slsa-provenance-checks",
+          "policies": [
+            {
+              "id": "slsa-builder-id",
+              "source": {
+                "location": {
+                  "uri": "git+https://github.com/carabiner-dev/policies@eed2d09ac2a7f8f5238a24b30492e378d8d77ad3#slsa/slsa-builder-id.json"
+                }
+              },
+              "meta": {
+                "description": "Ensures the artifact was built by the Apache Commons builder"
+              },
+              "context": {
+                "builderId": {
+                  "value": "pkg:maven/org.apache.commons/commons-release-plugin"
+                }
+              }
+            },
+            {
+              "id": "slsa-build-type",
+              "source": {
+                "location": {
+                  "uri": "git+https://github.com/carabiner-dev/policies@eed2d09ac2a7f8f5238a24b30492e378d8d77ad3#slsa/slsa-build-type.json"
+                }
+              },
+              "meta": {
+                "description": "Ensures the artifact was built using the Apache Commons build type"
+              },
+              "context": {
+                "buildType": {
+                  "value": "https://commons.apache.org/proper/commons-release-plugin/slsa/v0.1.0"
+                }
+              }
+            },
+            {
+              "id": "slsa-build-point",
+              "source": {
+                "location": {
+                  "uri": "git+https://github.com/carabiner-dev/policies@eed2d09ac2a7f8f5238a24b30492e378d8d77ad3#slsa/slsa-build-point.json"
+                }
+              },
+              "meta": {
+                "description": "Ensures the artifact was built from the Apache Commons Lang repository"
+              },
+              "context": {
+                "buildPoint": {
+                  "value": "git+https://gitbox.apache.org/repos/asf/commons-lang.git@feat/slsa"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "common": {
+    "identities": [
+      {
+        "key": {
+          "data": "-----BEGIN PGP PUBLIC KEY BLOCK-----\nComment: 5270 DFC5 17AD 5095 7EDA  0CFD BE1B 8E71 C9A0 F3B2\nComment: Piotr P. Karwasz (code signing) <pkarwasz@apache.org>\nComment: Piotr P. Karwasz <piotr@github.copernik.eu>\n\nxjMEYycBsxYJKwYBBAHaRw8BAQdAptSgM1+8PFVIY/SCFosnftDlu+bH8KBTqU/d\nkh/rrD3NNVBpb3RyIFAuIEthcndhc3ogKGNvZGUgc2lnbmluZykgPHBrYXJ3YXN6\nQGFwYWNoZS5vcmc+wpAEExYIADgWIQRScN/FF61QlX7aDP2+G45xyaDzsgUCYycB\nswIbAQULCQgHAgYVCgkICwIEFgIDAQIeAQIXgAAKCRC+G45xyaDzsljWAQDnmTMN\nQya0KGyElZQpKCBxG9SbyWlT2uoHRLvecBiTRQD/fkZGU1/+QRS5GZKaU5CVw6hV\nXZZavKPjVHetLZMqKwfNK1Bpb3RyIFAuIEthcndhc3ogPHBpb3RyQGdpdGh1Yi5j\nb3Blcm5pay5ldT7CkAQTFggAOBYhBFJw38UXrVCVftoM/b4bjnHJoPOyBQJn3df5\nAhsBBQsJCAcCBhUKCQgLAgQWAgMBAh4BAheAAAoJEL4bjnHJoPOytZMA/1sltO6f\ndisFoRL+Vjh0XOED20qnyiPnE8ae8W/ORxHKAQDzWVPS8l07evKFlYS3/+giTRYf\nXkwwg3SDqtIjfEAIDs4zBGMnBnMWCSsGAQQB2kcPAQEHQItqVeqHDlvevJmZI0xr\nRB8p13zlvH1dUjlgCuaEjg0WwsA1BBgWCAAmFiEEUnDfxRetUJV+2gz9vhuOccmg\n87IFAmMnBnMCGwIFCQlmAYAAgQkQvhuOccmg87J2IAQZFggAHRYhBAS0TAVmY5Bk\nRrd6bYnxHcGRqnBCBQJjJwZzAAoJEInxHcGRqnBCxEwA/3XSEixaeNNC7lJ40wJg\npK6xmdguh/ToHkTG0bl9E03yAQDJkEeLOWwhmS0OyZ1Exca9Pk73StsAEBtC/q3d\nrGvLAmn2AP4mtz1h2vYzRaSBznjUe4viqaXoBzTQ4KcTxTcIuS5B1gEAzFPpOjh3\nGNeWJNirCpd6rNhqj8s0F5TBy4ui9XfjZQHOOARjvIPPEgorBgEEAZdVAQUBAQdA\n3h7ospmMnRbUmb4pMgQFAjthwwuIWO6LTEbOtLB6rmcDAQgHwn4EGBYIACYWIQRS\ncN/FF61QlX7aDP2+G45xyaDzsgUCY7yDzwIbDAUJCWYBgAAKCRC+G45xyaDzsqGJ\nAP9OWAHlxF2zFPW1vBtY1CruqObDdYbCS0q1SxA6sxqpDwEAyrvVeLstlgZfaDjk\nc/Hx0Sb56W4ZDN5/uyxl+pM2bgk=\n=r9Bh\n-----END PGP PUBLIC KEY BLOCK-----\n"
+        }
+      }
     ]
+  }
 }
