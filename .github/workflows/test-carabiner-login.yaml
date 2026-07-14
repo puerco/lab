@@ -1,0 +1,42 @@
+name: Test Carabiner Login
+
+on:
+  workflow_dispatch:
+    inputs:
+      scope:
+        description: >-
+          Capability scopes to request. Leave the default for the happy path,
+          add a bogus scope to test narrowing, or set a single unknown scope
+          (e.g. "bogus:scope") to test the invalid_scope refusal. An empty
+          value requests an identity-only token.
+        required: false
+        default: "attestations:read attestations:write"
+
+permissions: {}
+
+jobs:
+  login:
+    runs-on: ubuntu-latest
+    permissions:
+      id-token: write
+    steps:
+      - name: Log in to Carabiner (dev)
+        id: login
+        uses: carabiner-dev/actions/login@main
+        with:
+          exchange-url: https://auth.dev.carabiner.dev
+          scope: ${{ inputs.scope }}
+
+      - name: Inspect the issued token
+        env:
+          GRANTED: ${{ steps.login.outputs.scope }}
+          EXPIRES: ${{ steps.login.outputs.expires-in }}
+        run: |
+          set -euo pipefail
+          echo "granted scope: '${GRANTED}'"
+          echo "expires-in:    ${EXPIRES}s"
+
+          # Decode the token's claims (base64url payload segment).
+          payload="$(printf '%s' "${CARABINER_CREDENTIALS}" | cut -d. -f2 | tr '_-' '/+')"
+          while [ $(( ${#payload} % 4 )) -ne 0 ]; do payload="${payload}="; done
+          printf '%s' "${payload}" | base64 -d | jq '{iss, sub, aud, org, username, scope, exp}'
