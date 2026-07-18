@@ -1,0 +1,40 @@
+---
+name: Test setup-tejolote
+
+on:
+  workflow_dispatch:
+    inputs:
+      tejolote-release:
+        description: >-
+          tejolote version to install. "default" lets the action pick its
+          built-in default (there is no "latest").
+        type: choice
+        required: false
+        default: default
+        options:
+          - default
+          - 0.5.0
+          - 0.4.8
+
+permissions: {}
+
+jobs:
+  test-setup-tejolote:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: read
+
+    steps:
+      - name: Setup tejolote (action default)
+        if: ${{ inputs.tejolote-release == 'default' }}
+        uses: kubernetes-sigs/release-actions/setup-tejolote@main
+
+      - name: Setup tejolote (${{ inputs.tejolote-release }})
+        if: ${{ inputs.tejolote-release != 'default' }}
+        uses: kubernetes-sigs/release-actions/setup-tejolote@main
+        with:
+          tejolote-release: ${{ inputs.tejolote-release }}
+
+      - name: Print tejolote version
+        run: tejolote version
