@@ -1,0 +1,19 @@
+---
+name: OSPS Compliance
+
+# Exercises the reusable compliance workflow from carabiner-labs/actions.
+# Pinned to main while the workflow is being developed.
+on:
+  push:
+    branches: [ "master" ]
+  workflow_dispatch:
+
+permissions: {}
+
+jobs:
+  compliance:
+    permissions:
+      id-token: write # keyless signing of the attestations
+      contents: read
+      actions: read   # download the SLSA source provenance from another run
+    uses: carabiner-labs/actions/.github/workflows/osps-compliance.yaml@main
